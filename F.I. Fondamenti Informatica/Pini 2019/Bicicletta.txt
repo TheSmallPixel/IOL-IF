@@ -1,0 +1,59 @@
+//
+//  main.cpp
+//  Bycicle
+//
+//  Created by Maristella on 18/12/2019.
+//  Copyright © 2019 Andrea. All rights reserved.
+//
+#include <iostream>
+
+using namespace std;
+
+class Bicycle {
+public:
+    Bicycle();
+    Bicycle(int c, int g, int s);
+    void changeCadence(int c);
+    void changeGear(int g);
+    void speedUp(int inc);
+    void applyBrakes(int dec);
+    void printStates();
+private:
+    int cadence;
+    int speed;
+    int gear;
+};
+
+Bicycle::Bicycle() {cadence = 0; gear = 0; speed = 0; }
+Bicycle::Bicycle(int c, int g, int s) {cadence = c; gear = g; speed = s;}
+
+void Bicycle::changeCadence(int c) { cadence = c; }
+void Bicycle::changeGear(int g) { gear = g; }
+void Bicycle::speedUp(int inc) { speed += inc; }
+void Bicycle::applyBrakes(int dec) { speed -= dec; }
+void Bicycle::printStates() {
+    cout << "cadence: " << cadence << " gear:"
+    << gear << " speed:" << speed << endl; }
+
+
+int main() {
+    // Create two different Bicycle objects
+    Bicycle *bike1;
+    bike1 = new Bicycle;
+    Bicycle bike2;
+    Bicycle bike3(10, 15, 10);
+    // Invoke methods on those objects
+    bike1 ->changeCadence(50);
+    bike1 ->speedUp(10);
+    bike1 ->changeGear(2);
+    bike1 ->printStates();
+    
+    bike2.changeCadence(40);
+    bike2.speedUp(20);
+    bike2.changeGear(3);
+    bike2.printStates();
+    
+    bike3.printStates();
+    
+    delete bike1;
+}

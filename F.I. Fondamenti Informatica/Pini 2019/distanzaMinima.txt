@@ -1,0 +1,81 @@
+//
+//  main.cpp
+//  DistanzaMinima
+//
+//  Created by Maristella on 17/12/2019.
+//  Copyright © 2019 Andrea. All rights reserved.
+//
+
+#include <iostream>
+#include <math.h>
+#include <fstream>
+
+const int dim = 5;
+struct Punto {         //record per memorizzare la singola puntata
+    double x;           //l'importo puntato
+    double y;         //il codice del giocatore
+           //il numero puntato (se singolo numero ) o una
+    // delle due costanti PARI o DISPARI
+};
+using namespace std;
+
+void riempi(Punto punti[]);
+double distanzaMinima(Punto punti[], Punto p, Punto &vicino);
+
+
+
+
+int main(int argc, const char * argv[]) {
+    // insert code here...
+    Punto punti[dim];
+    Punto p;
+    Punto vicino;
+    p.x = 0;
+    p.y = 0;
+    
+    srand((int)time(NULL));
+    
+    riempi(punti);
+    cout << "Distanza minima = " << distanzaMinima(punti, p, vicino) << endl;
+    cout << "x = " << vicino.x << "    y = " << vicino.y << endl;
+    return 0;
+}
+
+void riempi(Punto punti[]){
+    int i;
+    ofstream out1 ("Punti.txt", ios::out);
+    for (i=0; i<dim; i++){
+        punti[i].x = rand()%20 + 1;
+        punti[i].y = rand()%20 + 1;
+        cout << punti[i].x << ", " << punti[i].y << endl;
+    }
+    cout << endl;
+    for (i=0; i<dim; i++){
+        cout << punti[i].x << ", " << punti[i].y << endl;
+        out1 << punti[i].x << ", " << punti[i].y << endl;
+        
+    }
+    out1.close();
+    
+}
+
+double distanzaMinima(Punto punti[], Punto p, Punto &vicino){
+    double dm, distanza, X2, Y2;
+    int i;
+    dm = 9999999999;
+
+    for (i=0; i<dim; i++){
+        X2 = pow((p.x -punti[i].x) ,2);
+        Y2 = pow((p.y -punti[i].y) ,2);
+        distanza = sqrt(X2 + Y2);
+        if (distanza < dm) {
+            dm = distanza;
+            vicino.x = punti[i].x;
+            vicino.y = punti[i].y;
+        }
+    
+    }
+    cout << "X = " << vicino.x << "    Y = " << vicino.y << endl;
+    
+    return dm;
+}

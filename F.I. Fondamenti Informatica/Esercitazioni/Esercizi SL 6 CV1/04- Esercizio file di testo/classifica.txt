@@ -1,0 +1,6 @@
+Verdi 8.15
+Rossi 8.13
+Bianchi 8.12
+Cacace 8.1
+Brambilla 8.08
+Celestini 7.96

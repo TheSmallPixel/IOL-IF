@@ -1,0 +1,2 @@
+10 123.23 
+Breve file di testo.

@@ -1,0 +1,36 @@
+//
+//  main.cpp
+//  fileExample
+//
+//  Created by Maristella on 17/12/2019.
+//  Copyright © 2019 Andrea. All rights reserved.
+//
+
+#include <iostream>
+#include <fstream>
+
+using namespace std;
+
+
+int main(int argc, const char * argv[]) {
+    // insert code here...
+    const int tot = 20;
+    int i;
+    string io;
+    
+    ofstream out1 ("generato.txt", ios::out);
+    out1 << "the results are:" << endl;
+    for (i=1; i<tot; i++){
+        out1 << "i = " << i+1 << " di " << tot << endl;
+    }
+    out1.close();
+    
+    //___________________________________
+    
+    ifstream in1("generato.txt", ios::in);
+    while (getline(in1, io)) {
+        cout << "riga: " << io << endl;
+    }
+    in1.close();
+    return 0;
+}

@@ -1,0 +1,132 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1348\cocoasubrtf170
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red0\green116\blue0;\red100\green56\blue32;\red196\green26\blue22;
+\red170\green13\blue145;\red92\green38\blue153;\red28\green0\blue207;\red46\green13\blue110;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww20980\viewh13680\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\fs24 \cf0 \
+\
+Obiettivi\
+	misurabili\
+Scenario\
+	limitazioni\
+	standard\
+	chi \'e8 l\'92utilizzatore\
+	come utilizzer\'e0\
+	quando\
+	definizione di ambienti di sviluppo (linguaggi) e modalit\'e0\
+Specifiche\
+	\'93quello che si vuole ottenere\'94\
+	come dovr\'e0 funzionare\
+	con quali interfaccia\
+	con che modalit\'e0\
+Disegno della soluzione\
+	
+\b analisi di tipo \'93top down\'94\
+	partendo da uno schema a blocchi anche generico\
+		dati di input\
+		dati di output\
+		strutture dati\
+		algoritmi\
+		
+\b0 pseudocodifica\
+\
+\
+esempio\
+\
+Voglio sviluppare una calcolatrice\
+\
+Obiettivo\
+	didattico: ci serve vedere come \'e8 impostato un programma \
+	in C++\
+	Quindi vogliamo una emulazione molto semplice, che potremo \
+	in seguito migliorare\
+Scenario\
+	Supporto in una lezione live in ambiente di didattica on line\
+	Limitazioni: difficolt\'e0 di dialogo => semplice ma efficace\
+	Non c\'92\'e8 interfaccia grafica\
+	Ambiente di sviluppo Xcode\
+Specifiche\
+	Quattro operazioni: +, *, -, /\
+	Voglio inserire una stringa: 3 + 5 \
+	Il sistema risponder\'e0: \'93il risultato \'e8:\'94, risultato\
+Disegno della soluzione\
+	Definisco le variabili\
+		primo, secondo, risultato di tipo float\
+		operatore di tipo char\
+		leggere la stringa con le due variabili e l\'92operatore\
+		testare la bont\'e0 dell\'92input  \'a3 + 5 \
+		
+\b fare l\'92operazione
+\b0 \
+		stampare a video il risultato\
+\
+\
+\pard\tx529\pardeftab529\pardirnatural
+
+\f1\fs22 \cf2 \CocoaLigature0 //\cf0 \
+\cf2 //  main.cpp\cf0 \
+\cf2 //  lezione 1\cf0 \
+\cf2 //\cf0 \
+\cf2 //  Created by Andrea on 20/10/15.\cf0 \
+\cf2 //  Copyright \'a9 2015 Andrea. All rights reserved.\cf0 \
+\cf2 //\cf0 \
+\
+\cf3 #include \cf4 <iostream>\cf3 \
+\cf0 \
+\cf5 using\cf0  \cf5 namespace\cf0  \cf6 std\cf0 ;\
+\
+\
+\cf5 int\cf0  main()\{\
+    \cf5 float\cf0  primo, secondo, risultato;\
+    \cf5 char\cf0  operatore;\
+    \cf5 int\cf0  stato=\cf7 0\cf0 ;\
+    risultato = \cf7 0\cf0 ;\
+    \
+    \cf6 cout\cf0  << \cf4 "Specificare il valore del primo operando,"\cf0  << \cf8 endl\cf0  << \cf4 "l'operatore "\cf0 \
+    << \cf4 "e il valore del secondo operando"\cf0  << \cf8 endl\cf0  << \cf8 endl\cf0 ;\
+    \cf6 cin\cf0  >> primo >> operatore >> secondo;\
+    /* sviluppare il controllo della bont\'e0 dell\'92input */\
+    \cf5 switch\cf0 (operatore)\{\
+        \cf5 case\cf0  \cf7 '+'\cf0 : \{\
+                risultato=primo+secondo;\
+            \cf5 break\cf0 ;\
+        \}\
+        \cf5 case\cf0  \cf7 '-'\cf0 : \{\
+            risultato=primo-secondo;\
+            \cf5 break\cf0 ;\
+        \}\
+        \cf5 case\cf0  \cf7 '*'\cf0 : \{\
+            risultato=primo*secondo;\
+            \cf5 break\cf0 ;\
+        \}\
+        \cf5 case\cf0  \cf7 '/'\cf0 : \{\
+            \cf5 if\cf0  (secondo!=\cf7 0\cf0 )\{\
+                risultato=primo/secondo;\
+            \}\cf5 else\cf0 \{\
+                \cf6 cout\cf0  << \cf4 "Errore: divisione per zero."\cf0 ;\
+                stato=\cf7 1\cf0 ;\
+            \}\
+            \cf5 break\cf0 ;\
+        \}\
+        \cf5 default\cf0 : \{\
+            \cf6 cout\cf0  << \cf4 "Errore inserimento operatore"\cf0 ;\
+            stato=\cf7 1\cf0 ;\
+        \}\
+            \
+    \}\
+    \
+    \cf5 if\cf0  (stato==\cf7 0\cf0 )\{\
+        \cf6 cout\cf0  << \cf4 "Il risultato dell'operazione \'cb: "\cf0  << \cf8 endl\cf0 ;\
+        \cf6 cout\cf0  << primo << \cf4 " "\cf0  << operatore << \cf4 " "\cf0  << secondo;\
+        \cf6 cout\cf0  << \cf4 " = "\cf0  << risultato;\
+    \}\
+    \cf5 return\cf0  \cf7 stato\cf0 ;\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\fs24 \cf0 \CocoaLigature1 \
+	\
+ \
+		}

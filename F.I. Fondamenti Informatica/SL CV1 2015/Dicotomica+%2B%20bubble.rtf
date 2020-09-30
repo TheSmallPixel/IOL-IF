@@ -1,0 +1,97 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1348\cocoasubrtf170
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red0\green116\blue0;\red100\green56\blue32;\red196\green26\blue22;
+\red170\green13\blue145;\red28\green0\blue207;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab529
+\pard\tx529\pardeftab529\pardirnatural
+
+\f0\fs22 \cf2 \CocoaLigature0 //\cf0 \
+\cf2 //  main.cpp\cf0 \
+\cf2 //  dicotomica\cf0 \
+\cf2 //\cf0 \
+\cf2 //  Created by Andrea on 10/11/15.\cf0 \
+\cf2 //  Copyright \'a9 2015 Andrea. All rights reserved.\cf0 \
+\cf2 //\cf0 \
+\
+\cf3 #include \cf4 <iostream>\cf3 \
+\cf5 using\cf0  \cf5 namespace\cf0  std;\
+\
+\cf2 /* Scopo: algoritmo di ricerca dicotomica in un vettore ordinato con bubble sort  */\cf0 \
+\
+\cf3 #include \cf4 <stdio.h>\cf3 \
+#include \cf4 <stdbool.h>\cf3 \
+\cf5 void\cf0  riempi(\cf5 int\cf0  vet[], \cf5 int\cf0  num, \cf5 int\cf0  max)\
+\{\
+    \cf5 int\cf0  conta;\
+    srand((\cf5 unsigned\cf0 )time(\cf5 NULL\cf0 ));      \cf2 // inizializza il seme\cf0 \
+    \cf2 // estrai i valori e riempi il vettore\cf0 \
+    \cf5 for\cf0  (conta=\cf6 0\cf0 ; conta<num; conta ++)\
+        vet[conta]=(rand()%max+\cf6 1\cf0 );     \cf2 // valori casuali tra 1 e max\cf0 \
+\}\
+\cf5 void\cf0  visualizza(\cf5 int\cf0  vet[], \cf5 int\cf0  num)\
+\{\
+    \cf5 int\cf0  conta;\
+    printf(\cf4 "\\n"\cf0 );\
+    \cf5 for\cf0  (conta=\cf6 0\cf0 ; conta<num; conta ++)\
+        printf (\cf4 "%4d"\cf0 ,vet[conta]);      \cf2 // visualizza vettore\cf0 \
+\}\
+\cf5 void\cf0  bubbleSort(\cf5 int\cf0  vet[], \cf5 int\cf0  tanti)\
+\{\
+    \cf5 int\cf0  x, y, min;\
+    \cf5 int\cf0  temp;\
+    \cf5 for\cf0  (x=\cf6 0\cf0 ; x<tanti-\cf6 1\cf0 ; x++) \{   \cf2 // ripeti per tutto i numeri\cf0 \
+        \cf5 for\cf0  (y=\cf6 0\cf0 ; y<tanti-\cf6 1\cf0 ; y++)   \cf2 // li confronto tutti a coppie\cf0 \
+            \cf5 if\cf0  (vet[y]>vet[y+\cf6 1\cf0 ]) \{    \cf2 // se ne trovo uno maggiore\cf0 \
+                temp = vet[y];          \cf2 // li scambio tra loro\cf0 \
+                vet[y] = vet[y+\cf6 1\cf0 ];\
+                vet[y+\cf6 1\cf0 ] = temp;\
+            \}\
+    \}\
+\}\
+\cf5 int\cf0  binaria(\cf5 int\cf0  vet[], \cf5 int\cf0  inizio, \cf5 int\cf0  fine, \cf5 int\cf0  numero)\
+\{\
+    \cf5 int\cf0  estrInf=inizio;\
+    \cf5 int\cf0  estrSup=fine-\cf6 1\cf0 ;\
+    \cf5 int\cf0  medio;\
+    \cf5 while\cf0  (estrInf <= estrSup)\
+    \{\
+        medio=(estrInf + estrSup)/\cf6 2\cf0 ;\
+        \cf5 if\cf0 ( numero>vet[medio])\
+            estrInf = medio+\cf6 1\cf0 ;\
+        \cf5 else\cf0 \
+            \cf5 if\cf0 (numero<vet[medio])\
+                estrSup = medio -\cf6 1\cf0 ;\
+            \cf5 else\cf0 \
+                \cf5 return\cf0  (medio);\
+    \}\
+    \cf5 return\cf0  -\cf6 1\cf0 ;\
+\}\
+\
+\
+\cf5 int\cf0  main(\cf5 void\cf0 )\{\
+    \cf5 int\cf0  numPosizioni = \cf6 21\cf0 ;           \cf2 // dimensione del problema\cf0 \
+    \cf5 int\cf0  max          = \cf6 10\cf0 ;           \cf2 // valore massimo del numero da generare\cf0 \
+    \cf5 int\cf0  cerca        =  \cf6 0\cf0 ;           \cf2 // numero da cercare\cf0 \
+    \cf5 int\cf0  trovato      = -\cf6 1\cf0 ;\
+    \
+    \cf5 int\cf0  numeri[numPosizioni];        \cf2 // vettore da elaborare\cf0 \
+    riempi(numeri,numPosizioni,max);\
+    bubbleSort(numeri,numPosizioni);\
+    visualizza(numeri, numPosizioni);\
+    printf(\cf4 "\\nInserisci il numero da ricercare : "\cf0  );\
+    scanf (\cf4 "%d"\cf0 ,&cerca);\
+    trovato=binaria(numeri,\cf6 0\cf0 ,numPosizioni,cerca);\
+    \
+    \cf5 if\cf0  (trovato==-\cf6 1\cf0 )\
+        printf(\cf4 "\\n il numero %d non e' presente nel vettore"\cf0 ,cerca);\
+    \cf5 else\cf0 \
+        printf(\cf4 "\\n il numero %d e' presente in posizione %d"\cf0 , cerca,trovato);\
+    \
+    printf(\cf4 "\\n\\n"\cf0 );\
+    system(\cf4 "PAUSE"\cf0 );\
+    \
+    \cf5 return\cf0  \cf6 0\cf0 ;\
+    \
+\}\
+}
