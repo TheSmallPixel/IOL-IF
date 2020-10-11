@@ -1,0 +1,3 @@
+﻿  main.cpp
+C:\Users\loren\Documents\GitHub\IOL-IF\F.I. Fondamenti Informatica\ES\ES05\ES05\main.h(1,10): warning C4067: token imprevisti dopo una direttiva per il preprocessore. Previsto un carattere di nuova riga
+C:\Users\loren\Documents\GitHub\IOL-IF\F.I. Fondamenti Informatica\ES\ES05\ES05\main.h(4,8): error C4430: identificatore di tipo mancante, verrà utilizzato int. Nota: default-int non è più supportato in C++
