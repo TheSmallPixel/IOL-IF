@@ -7,7 +7,7 @@
 #define COL 3
 using namespace std;
 
-void lookForSella(int array[RIG][COL], int& rig, int& col, int& val) {
+bool lookForSella(int  array[RIG][COL], int& rig, int& col, int& val) {
 
 	for (int y = 0; y < rig; y++) {
 		int minR = INT_MAX;
@@ -30,24 +30,28 @@ void lookForSella(int array[RIG][COL], int& rig, int& col, int& val) {
 			rig = ry;
 			col = rx;
 			val = array[ry][rx];
-			return;
+			return true;
 		}
 	}
 	rig = 0;
 	col = 0;
 	val = -1;
+	return false;
 }
 int main()
 {
-	//const int RIG = 4, COL = 3;
 	int data[RIG][COL] {
 		{33,7,71},
-		{19,12,83},
-		{29,4,15},
+		{19,5,83},
+		{29,8,2},
 		{39,2,9}
 	};
 	int col = COL, rig = RIG, val = 0;
 
-	lookForSella(data, rig, col, val);
-	std::cout << "Trovato una sella a x:" <<col << " y:"<<rig<<" con il valore:"<<val;
+	if (lookForSella(data, rig, col, val)) {
+		cout << "Trovato una sella a x:" << col << " y:" << rig << " con il valore:" << val;
+	}
+	else {
+		cout << "Non ho trovato nessuna sella!";
+	}
 }
