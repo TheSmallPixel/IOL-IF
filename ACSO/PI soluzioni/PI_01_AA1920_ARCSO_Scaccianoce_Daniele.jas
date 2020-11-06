@@ -1,0 +1,195 @@
+// 1° Prova in itinere di Architettura dei Calcolatori e Sistemi Operativi
+// Daniele Scaccianoce 
+
+.main
+
+.var
+c
+d
+u
+e
+flg_magg_cento
+conta_decine
+conta_moltiplicazione
+conta_n
+.end-var
+
+insert_fine_stack: BIPUSH -1			// push -1 che segna la fine del programma.
+
+insert_valori:     
+								
+// INIZIO INPUT VALORI
+
+BIPUSH 78
+BIPUSH 65
+BIPUSH 72
+BIPUSH 1
+
+// FINE INPUT VALORI
+
+BIPUSH 0x0										// inizializzo le variabili dove andrò a salvare le cifre, o il "-", da stampare a video.
+BIPUSH 0x0
+BIPUSH 0x0
+BIPUSH 0x0
+BIPUSH 0x0
+
+ISTORE c
+ISTORE d
+ISTORE u
+ISTORE e
+ISTORE conta_n
+
+intro:    BIPUSH 0x0						    // inizializzo le altre variabili, tra le quali 2 contatori e 1 flag per indicare se si tratta di numero < o > 100. Queste dovranno essere inizializzate per ogni numero presente sulla pila.
+			BIPUSH 0x0
+			BIPUSH 0x0
+			ISTORE flg_magg_cento
+			ISTORE conta_decine
+			ISTORE conta_moltiplicazione
+			
+			IINC conta_n 1					    // incremento di 1 il contatore del programma.
+			BIPUSH 11
+			ILOAD conta_n					    
+			IF_ICMPEQ stampa				// se il contatore arriva all'11esimo giro (quindi sono stati processati già 10 numeri), allora stampo il numero con la seconda cifra più alta, altrimenti vado avanti.
+			
+			DUP
+			BIPUSH -1								
+			IF_ICMPEQ stampa			   // controllo se il valore sulla pila coincide o no con -1, che segna la fine del programma.
+			DUP	
+			
+calc_decine:    BIPUSH 0xA		    				
+					   ISUB											// sottraggo il numero in cima alla pila per 10.
+					   DUP
+					   IFLT ramo_decine						// controllo se il risultato della sottrazione è negativo,  altrimenti incremento il contatore delle decine e ciclo un'altra volta
+					   IINC conta_decine 1
+					   GOTO calc_decine				
+
+calc_centinaia:	BIPUSH 0							
+					    ILOAD flg_magg_cento 				
+					    IF_ICMPEQ ramo_centinaia			// se il numero è maggiore di 100 (controllo il valore degl flg_magg_cento) allora 
+					    BIPUSH 0x31
+					    ISTORE c										// salvo il valore 1, in ASCII, nella variabile "c" delle centinaia.
+					    BIPUSH 0									
+					
+calc_unita:    ILOAD conta_decine     					
+					IADD
+					IINC conta_moltiplicazione 1				// faccio un ciclo, per simulare la moltiplicazione del conta_decine x 10.
+					BIPUSH 0xA
+					ILOAD conta_moltiplicazione
+					IF_ICMPEQ ramo_unita						// quando il contatore arriva a 10 vado nel ramo_unita.
+					GOTO calc_unita
+						
+ramo_unita:	ISUB													// sottraggo al numero in cima allo stack il numero ottenuto dal ciclo precedente.
+					BIPUSH 0x30										
+					IADD
+					ISTORE u											// salvo il risultato nella variabile delle unità "c".
+					GOTO intro										// rinizio il giro per il numero successivo nella pila
+									
+ramo_centinaia:   BIPUSH 0x30
+						   ISTORE c
+					       BIPUSH 0									
+						   GOTO calc_unita
+					  
+ramo_decine: 	   POP																	
+						   ILOAD conta_decine     						
+						   DUP
+						   BIPUSH 0xA     		
+						   ISUB									
+						   DUP
+						    IFLT num_min_100								// se la sottrazione tra il cont_decine e il numero 10 è negativo allora il numero in questione è < 100 e vado al ramo num_min_100, altrimenti sarà un numero > 100 e continuo.
+						   DUP
+						   BIPUSH 0x30										
+						   IADD
+						   DUP
+						   ILOAD d 											
+						   IF_ICMPEQ insert_var_equals_plus 	// se il valore calcolato è uguale al valore della variabile d, precedentemente salvata, esce e salva il valore "-" nella variabile.
+						   ILOAD d
+						   ISUB
+					       IFLT salta											// se il valore calcolato è minore del valore della variabile d, precedentemente salvata, allora salta il numero preso in considerazione e vai avanti con il prossimo.
+						   BIPUSH 0    										// se la decina è maggiore della precedente allora resetto la variabile "e".
+						   ISTORE e
+						   BIPUSH 0x30
+						   IADD
+						   ISTORE d											// salvo il nuovo valore calcolato nella variabile "e".
+						   BIPUSH 1
+						   ISTORE flg_magg_cento						// setto a 1 il flag che mi segnala che il numero è maggiore di 100.
+						   POP
+					       GOTO calc_centinaia						
+				   
+num_min_100: POP
+					   BIPUSH 0x30
+					   IADD
+					   DUP
+					   ILOAD d 
+					   IF_ICMPEQ insert_var_equals   				// se uguale al valore della variabile d, precedentemente salvata, esce e salva nella variabile e il valore "-".
+					   DUP
+					   ILOAD d 
+					   ISUB
+					   IFLT salta_min_100
+					   BIPUSH 0    											    // se la decina è maggiore della precedente allora resetto la variabile e.
+					   ISTORE e
+					   ISTORE d
+					   GOTO calc_centinaia
+
+insert_var_equals:  BIPUSH 0x2D						
+						     ISTORE e
+						     GOTO salta_min_100
+						 
+insert_var_equals_plus:	POP
+							        BIPUSH 0x2D						
+						            ISTORE e
+						            GOTO salta	   
+								
+salta_min_100:	POP
+			            POP
+			            GOTO intro
+			
+salta:	POP
+			POP
+			POP
+			GOTO intro
+				   
+ramo_magg_cento: BIPUSH 0xA
+						      ISUB
+						      BIPUSH 0x30
+						      IADD
+						      OUT
+						      BIPUSH 0
+						      GOTO calc_unita
+						 
+stampa:   POP
+			   ILOAD e									
+			   BIPUSH 0x2D
+			   IF_ICMPEQ ramo_doppioni			// controllo se la variabile "e" è valorizzata, se si stampo a video quest'ultima trascurando le altre variabili (decine, centinaia e unità) 
+			   ILOAD c
+			   DUP
+			   BIPUSH 0x30
+			   ISUB
+			   BIPUSH 0
+			   IF_ICMPEQ num_minore_100			// controllo se il numero è > o < di 100, se > 100 stampo "c", "d", "u". 
+			   OUT
+			   ILOAD d
+			   OUT
+			   ILOAD u
+			   OUT
+			   HALT
+
+ramo_doppioni: ILOAD e						// stampo la variabile "e".
+			   OUT
+			   HALT
+
+num_minore_100: ILOAD d					//  se < 100 stampo "d", "u". 
+						 DUP
+						 BIPUSH 0x30
+					     IF_ICMPEQ stampa_unita
+					     OUT
+					     ILOAD u
+						 OUT
+						 POP
+						 HALT
+stampa_unita: POP
+					ILOAD u 
+					OUT
+					POP
+					HALT
+		   
+.end-main
