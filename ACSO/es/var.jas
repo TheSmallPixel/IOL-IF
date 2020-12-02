@@ -1,0 +1,19 @@
+
+
+.main
+
+.var
+	numero
+.end-var
+	
+	BIPUSH 0x7
+	ISTORE numero
+	BIPUSH 0x3
+	BIPUSH 0x9
+	ILOAD numero
+	BIPUSH 0x30
+	IADD
+	OUT
+	HALT
+	
+.end-main

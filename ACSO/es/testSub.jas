@@ -1,0 +1,13 @@
+//2 numeri da tastiera, Out somma
+.constant
+.end-constant
+.main
+
+	
+	BIPUSH 0x0
+	BIPUSH 0x0
+	BIPUSH 0x1
+	ISUB
+	ISUB
+	HALT
+.end-main

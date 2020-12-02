@@ -1,0 +1,15 @@
+﻿  IF18.cpp
+d:\projects\iol-if\f.i. fondamenti informatica\es\if18\if18.cpp(93): error C2065: 'cout': identificatore non dichiarato
+d:\projects\iol-if\f.i. fondamenti informatica\es\if18\if18.cpp(187): error C2065: 'cout': identificatore non dichiarato
+d:\projects\iol-if\f.i. fondamenti informatica\es\if18\if18.cpp(187): error C2065: 'endl': identificatore non dichiarato
+d:\projects\iol-if\f.i. fondamenti informatica\es\if18\if18.cpp(192): error C2065: 'cin': identificatore non dichiarato
+d:\projects\iol-if\f.i. fondamenti informatica\es\if18\if18.cpp(201): error C2065: 'cout': identificatore non dichiarato
+d:\projects\iol-if\f.i. fondamenti informatica\es\if18\if18.cpp(201): error C2065: 'endl': identificatore non dichiarato
+d:\projects\iol-if\f.i. fondamenti informatica\es\if18\if18.cpp(203): error C2065: 'cout': identificatore non dichiarato
+d:\projects\iol-if\f.i. fondamenti informatica\es\if18\if18.cpp(203): error C2065: 'endl': identificatore non dichiarato
+d:\projects\iol-if\f.i. fondamenti informatica\es\if18\if18.cpp(205): error C2065: 'cout': identificatore non dichiarato
+d:\projects\iol-if\f.i. fondamenti informatica\es\if18\if18.cpp(205): error C2065: 'endl': identificatore non dichiarato
+d:\projects\iol-if\f.i. fondamenti informatica\es\if18\if18.cpp(207): error C2065: 'cout': identificatore non dichiarato
+d:\projects\iol-if\f.i. fondamenti informatica\es\if18\if18.cpp(207): error C2065: 'endl': identificatore non dichiarato
+d:\projects\iol-if\f.i. fondamenti informatica\es\if18\if18.cpp(209): error C2065: 'cout': identificatore non dichiarato
+d:\projects\iol-if\f.i. fondamenti informatica\es\if18\if18.cpp(209): error C2065: 'endl': identificatore non dichiarato

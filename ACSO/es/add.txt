@@ -1,0 +1,11 @@
+
+
+.main
+BIPUSH 0x2
+BIPUSH 0x3
+IADD
+BIPUSH 0x30
+IADD
+OUT
+HALT
+.end-main

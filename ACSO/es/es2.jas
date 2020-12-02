@@ -1,0 +1,13 @@
+//echo
+.main
+get:
+	IN
+	DUP
+	IFEQ invalid
+	OUT
+	GOTO get
+invalid:
+	POP
+	GOTO get
+
+.end-main

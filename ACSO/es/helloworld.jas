@@ -1,0 +1,15 @@
+//hello world
+
+.main
+BIPUSH 0x48
+OUT
+BIPUSH 0x45
+OUT
+BIPUSH 0x4C
+OUT
+BIPUSH 0x4C
+OUT
+BIPUSH 0x4F
+OUT
+HALT
+.end-main

@@ -1,0 +1,59 @@
+// 1° Prova in itinere di Architettura dei Calcolatori e Sistemi Operativi
+// Longiave Lorenzo
+.constant
+.end-constant
+.main
+
+	.var
+		maxDistance
+		a
+		b
+	.end-var
+	
+	BIPUSH 0x0 //Fine lista
+//=========[LIST]========
+	BIPUSH 0x64
+	BIPUSH 0x11
+	BIPUSH 0x6
+	BIPUSH 0x1
+	BIPUSH 0x3
+	BIPUSH 0x79
+	BIPUSH 0x12
+//=======================
+	BIPUSH 0x0
+	ISTORE maxDistance
+	
+loop:
+	
+	DUP 				// Duplico il primo valore
+	IFEQ end 			// Verifico che sia diverso da 0
+	ISTORE b 			// Lo salvo e rimovo dallo stack per verificare il numero dopo 
+						// Qui il primo numero non è presente nello stack
+	DUP 				//Duplico il secondo valore per usarlo al prossimo ciclo
+	DUP 				//Duplico il secondo valore
+	IFEQ end 			//Consumo un valore per verificare che sia != 0
+	ISTORE a
+						//Qui carico i due valori
+	ILOAD b 			
+	ILOAD a					
+	ISUB 				//sottraggo i due valori
+						//Qui ho la sottrazione e una copia del secondo numero
+	DUP					//Duplico il sottrazione 
+						//In ogni caso mi rimangono 2 valori della sottrazione e il secondo numero
+	ILOAD maxDistance 	//carico la distanza massima  di default è 0
+	ISUB 
+						//Qui mi rimane la sottrazione, 1 valore della differenza e il secondo numero
+	IFLT noMax 			//qui verifico se la sottrazione è minore di zero, se lo è non ho trovato un maggiore
+						//Qui mi rimane la differenza e il secondo numero
+	ISTORE maxDistance 	//Salvo il nuovo massimo
+	GOTO loop 			//torno indietro
+	
+noMax:
+	POP 				//rimuovo la differenza dallo stack
+	GOTO loop 			//ritorna nel loop
+	
+end:
+	ILOAD maxDistance
+	
+	HALT
+.end-main

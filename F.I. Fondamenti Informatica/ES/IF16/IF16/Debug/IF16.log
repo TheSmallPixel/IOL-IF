@@ -1,0 +1,4 @@
+﻿  pch.cpp
+  IF16.cpp
+d:\projects\iol-if\f.i. fondamenti informatica\es\if16\if16\if16.cpp(45): warning C4172: verrà restituito l'indirizzo del valore : i temporaneo o della variabile locale
+  IF16.vcxproj -> D:\Projects\IOL-IF\F.I. Fondamenti Informatica\ES\IF16\Debug\IF16.exe
