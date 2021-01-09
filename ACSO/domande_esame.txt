@@ -1,0 +1,93 @@
+
+--------------
+Domanda a piacere
+	Datapath
+Ciascun BUS quanti e read e write può fare contemporaneamente? I BUS sono uguali?
+Chi può scrivere sul BUS A? E chi sul BUS C?
+A cosa server lo shifter?
+Cosa viene utilizzato dal JUMP? Qual è la funzione del JUMP?
+Che relazione c'è tra un'istruzione e quela successiva indicata dal salto? A che distanza si trovano?
+--------------
+Come posso ottimizzare il tempo di ricerca di un dato in memoria?
+Perchè aumentando la memoria migliora il tempo di fetch?
+Perchè la cache è più veloce?
+	Poichè è più alta in grado nella gerarchia di memoria
+Come funziona la memoria ad accesso diretto?
+--------------
+Cosa fa l'istruzione POP?
+SP cosa punta? TOS cosa contiene?
+L'indirizzo dello SP quanto ci mette a tornare?
+	Immediatamente
+Se voglio leggere il dato in cima alla pila come faccio?
+Come faccio a leggere la memoria?
+[ES] Scrivi una microistruzione che cancelli i primi due elementi dalla cima della pila
+[ES] Scrivi due righe di codice per leggere l'elemento in cima
+	Leggo MAR, scrivo in MDR
+Principio di località temporale e spaziale
+Se non ci fosse località spaziale, come progetteresti una memoria? Blocchi grandi o piccoli (MB? GB?)
+	Copiando istruzioni singole non ho necessità di tanto spazio, anche blocchi da 4 parole vanno bene per esempio
+Disegna un latch D
+Cosa succede in un latch SR se metto 0,0? Se metto 0,1? Se metto S a 0? Se metto R a 1?
+--------------
+Quando faccio una lettura al ciclo K, a che ciclo ho il dato?
+Domanda a piacere
+	Come migliorare mic1, sollevando la ALU da alcuni compiti
+Come si può migliorare il processo di lettura/scrittura?
+Quanto passa da quando chiedi alla memoria un dato a quando lo ricevi?
+	1,5 clock, arrotondato a 2 quindi
+Come si può migliorare?
+	Ad esempio con la IFU per recuperare gli operandi
+Quanto è più veloce la cache rispetto alla memoria? 10? 10^2? 10^6?
+Se una memoria ci mette 5 cicli di clock a fornire un dato, come posso gestire al meglio le prestazioni?
+	pipelining, operazioni che possano essere slegate da cicli di rd/wr... Inserisco un bit che mi segnali la fine della lettura del dato
+L'architettura va avanti in base a cosa? Chi comanda e coordina?
+	La memoria di controllo, che dipende dal ciclo di clock
+Come blocco il segnale di clock?
+--------------
+[ES] Disegna un SR
+Qual è l'utilità dei BUS nel microprocessore?
+Come funziona un BUS?
+	Deve avere un protocollo, un collegamento fisico, uno scopo, deve essere definito un elemento master ed uno slave, può essere gestito in due modi (centralizzato o distribuito), deve essere indirizzato
+Un messaggio per l'unità 7 viene visto dall'unità 8?
+	Sì
+Quali sono i vantaggi della IFU?
+La mic1 ha la IFU?
+	No
+Definizione dei principi di località
+Quando faccio un salto nel mic1 quale può essere l'istruzione seguente?
+Qual è il pezzo di circuito responsabile del salto?
+
+
+Scritto (10 punti a domanda)
+Disegna un flip flop D master/slave (o in cascata...)
+Scrivi una istruzione per sommare i primi due elementi dello stack, senza cancellarli ne sovrascriverli
+Data una memoria cache da 256 byte con blocchi di 2 parole da 4 byte, a) calcolare il numero di blocchi b) calcolare il numero di byte per l'indice
+Dichiara una domanda a tua scelta da affrontare all'orale
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

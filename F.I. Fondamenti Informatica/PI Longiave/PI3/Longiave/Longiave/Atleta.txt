@@ -1,0 +1,7 @@
+[Imbarcazione] Poli 5/9 Posti Occupati
+[Atleta]Lorenzo - Piero - Poli - Timoniere
+[Atleta]Rossi - Piero - Poli - Canottiere
+[Atleta]Mario - Piero - Poli - Canottiere
+[Atleta]Giacomo - Piero - Poli - Canottiere
+[Atleta]Lorneza - Piero - Poli - Canottiere
+=========================

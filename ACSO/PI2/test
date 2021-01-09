@@ -1,0 +1,19 @@
+#-- Mic-1 Properties --
+#Sun Jan 03 17:16:00 CET 2021
+res=Y
+cpp=4000
+sbase=20000
+mic=mic1ijvm.mic1
+ijvm=ijvm.conf
+lv=8000
+csize=100
+mac=
+mhi=Y
+sto=Y
+mbase=0
+delay=500
+cbase=10000
+shi=Y
+track=Y
+sp=8010
+ssize=500

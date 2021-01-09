@@ -3,7 +3,9 @@
 
 #include "pch.h"
 #include <iostream>
-
+#include <fstream>
+#include <string>
+using namespace std;
 
 
 struct Nodo {
@@ -181,7 +183,16 @@ public:
 		return DeleteThis();
 	}
 };
-
+ostream& operator<<(ostream &out, Nodo *v1) {
+	Nodo* it = v1;
+	Nodo** i = &it;
+	//out << " topolino" << " test ";
+	do {
+		out << "[" << (*i)->Valore << "]";
+	} while (v1->HasNext(i));
+	return out;
+	//cout << "" <<sadsd << ;
+}
 int main()
 {
 	cout << "Inserire 0 per terminare il programma:" << endl;
@@ -198,14 +209,28 @@ int main()
 			p = p->AddValue(pos);
 		}
 	}
-	cout << endl << "Normal->";
-	testa->FindPrev(testa, testa->nextPtr)->PrintThis();
-	cout << endl << "InverseNormalv2->";
-	testa->InverseV2()->DeleteThis()->Print()->FindPrev(testa, testa->nextPtr)->PrintThis();
-	cout << endl << "InverseNormal->";
-	testa->Inverse()->Print()->DeleteAll();
-	cout << endl << "InversePrint->";
-	testa->InverseRecursive();
-	cout << endl << "Cancella";
-	testa->Print()->RemoveNodeAt(testa, 2)->Print();
+	ofstream out;
+	out.open("test.txt");
+	out << "test";
+	out << testa;
+	out.close();
+
+
+	cout << endl;
+	string line;
+	ifstream myfile("test.txt");
+	if (myfile.is_open())
+	{
+		while (getline(myfile, line))
+		{
+			cout << line << '\n';
+		}
+		myfile.close();
+	}
+	/*cout << endl << "Normal->" << (testa->FindPrev(testa, testa->nextPtr));
+	cout << endl << "InverseNormalv2->" << testa->InverseV2()->DeleteThis()->Print()->FindPrev(testa, testa->nextPtr);
+	cout << endl << "InverseNormal->" << testa->Inverse();
+	cout << endl << "InversePrint->";*/
+	/*testa->InverseRecursive();*/
+	/*cout << endl << "Cancella" << testa->Print()->RemoveNodeAt(testa, 2);*/
 }

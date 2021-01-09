@@ -1,0 +1,67 @@
+//3° Versione 20 linee, versione recursiva a n valori, utilizzo LV improprio
+//l idea era di risettare LV al suo indirizzo di partenza, ma non si posso usare costani diverse da 1 o 0
+//Questo caso sarebbe perfetto avendo 3 registri disponibili
+mmr1	PC = PC + 1; fetch
+mmr2 	H = MBRU
+mmr3	LV = SP - H
+mmr4	TOS = OPC = MDR
+mmr5	MAR = SP = SP - 1; rd
+mmr6	H = TOS											//start
+mmr7	N = MDR - H; if(N) goto mmr8; else goto mmr9	//min
+mmr8	TOS = MDR
+mmr9	H = OPC
+mmr10	N = MDR - H; if(N) goto mmr12; else goto mmr11	//max
+mmr11	OPC = MDR
+mmr12	H = MAR = SP = SP - 1; rd
+mmr13	H = LV - H
+mmr14	Z = H; if(Z) goto mmr15; else goto mmr6			//controllo end	
+mmr15	H = TOS											//finito
+mmr16	Z = OPC - H; if(Z) goto mmr19; else goto mmr17
+mmr17	MDR = TOS; wr					
+mmr18	MAR = SP  = SP + 1			
+mmr19	MDR = OPC; wr;  
+mmr20	LV = 0; goto Main1
+
+//1° Versione 42 linee, versione lineare a 4 valori
+min1	SP = MAR = SP - 1; rd 					//load B
+min2	H = OPC = TOS							//min = A
+min3	H = MDR - H								//H = B - min
+min4	N = H; if(N) goto min5; else goto min6	//if (h<0) => 
+min5	OPC = MDR								//true	(min>B): min = B
+min6	SP = MAR = SP - 1; rd					//false	(min<B): load C
+min7	H = OPC									//H = min
+min8	H = MDR - H								//H = C - min
+min9	N = H; if(N) goto min10; else goto min11//if (h<0) => 
+min10	OPC = MDR								//true	(min>C): min = C
+min11	SP = MAR = SP - 1; rd					//false	(min<B): load D
+min12	H = OPC									//H = min
+min13	H = MDR - H								//H = D - min	
+min14	N = H; if(N) goto min15; else goto min16//if (h<0) => 			
+min15	OPC = MDR								//true	(min>C): min = D
+min16	TOS = OPC								//TOS = write min 
+min17	OPC = MDR;								//max = D
+min18	SP = MAR = SP + 1; rd					//load C
+min19	H = OPC									//H = max
+min20	H = MDR - H								//H = C - max
+min21	N = H; if(N) goto min23; else goto min22//if (h<0) => 					
+min22	OPC = MDR								//false	(max<C): max = C
+min23	SP = MAR = SP + 1; rd					//true	(max>C): load B
+min24	H = OPC									//H = max
+min25	H = MDR - H								//H = B - max
+min26	N = H; if(N) goto min28; else goto min27//if (h<0) => 	
+min27	OPC = MDR								//false	(max<C): max = B
+min28	SP = MAR = SP + 1; rd					//true	(max>C): load A
+min29	H = OPC									//H = max
+min30	H = MDR - H								//H = A - max
+min31	N = H; if(N) goto min33; else goto min32//if (h<0) => 
+min32	OPC = MDR								//false	(max<C): max = A
+min33	SP = SP - 1								//point B
+min34	SP = SP - 1								//point C
+min35	SP = SP - 1								//point D
+min36	H = TOS									//H = min
+min37	H = OPC - H								//H = max - min
+min38	Z = H; if(Z) goto min41; else goto min39//if(H == 0) =>  
+min39	MDR = TOS; wr 							//write min
+min40	MAR = SP  = SP + 1;						//point next
+min41	MDR = OPC; wr							//write max
+min42	goto Main1

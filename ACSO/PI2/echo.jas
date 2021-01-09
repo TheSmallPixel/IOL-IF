@@ -1,0 +1,21 @@
+// 
+//   echo.jas
+//
+//   Author
+//     Dan Stone
+//
+//   Description
+//     Sample assembly program that reads a key press and echoes the result to 
+//     standard output.  
+//
+
+
+.main
+	BIPUSH 0x5
+	BIPUSH 0x5
+	BIPUSH 0x5
+	BIPUSH 0x5
+	MINMAXR 4
+	//MINMAX
+	HALT
+.end-main
