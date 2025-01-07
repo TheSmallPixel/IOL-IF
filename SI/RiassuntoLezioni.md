@@ -1,7 +1,4 @@
-# Appunti Strutturati delle Lezioni
-
-Di seguito, una raccolta di appunti strutturati (in Markdown) relativi alle trascrizioni fornite. Ogni sezione corrisponde a **Lezione X modulo Y** e riassume i punti principali trattati nel contenuto audio.
-
+# Appunti
 ---
 
 ## Lezione 1 modulo 2
