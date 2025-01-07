@@ -1,0 +1,274 @@
+Lezione 3 modulo 1
+In questo modulo e nei successivi due moduli che costituiscono la lezione sul Business Process
+Management introdurremo il concetto appunto di processo aziendale. Per introdurre questo concetto
+partiamo da alcune definizioni prese da dei testi di riferimento abbastanza comuni nella comunità del
+Business Process Management. Nel primo caso il Business Process è definito come una collezione di eventi
+attività e punti di decisione correlati tra di loro in qualche modo collaboranti che coinvolgono un numero di
+attori e di oggetti e che tutti assieme sia gli eventi decisori e gli attori così come gli oggetti tutti insieme
+puntano a ad arrivare, a raggiungere un obiettivo comune che sia di valore almeno per un attore che è il
+customer. Questa definizione è presa dal libro qui indicato e potremmo quasi dire che questa definizione è
+più business oriented, più legata al mondo organizzativo. Per questo motivo è utile anche vedere un altro
+punto di vista e riprendo la definizione data da un altro testo, sempre nell'ambito del business process
+management che si occupa però di definire più l'aspetto tecnologico, più l'aspetto informatico della
+gestione dei processi. In questo caso, infatti, come si può notare, un business process è anche in questo
+caso definito come un insieme di attività, quindi potremmo vederlo un po' come il core della definizione di
+un processo. Un processo è un insieme innanzitutto di attività e queste attività sono svolte in maniera
+coordinata all'interno non solo di un ambiente organizzativo, ma anche di un ambiente tecnico; aspetto
+tecnico che nella definizione di prima era totalmente assente. Quindi, questo per rimarcare il fatto che
+questa definizione è più legata al mondo dei sistemi informativi come li consideriamo in questo corso.
+Queste attività, tutte assieme, puntano a realizzare, quindi a raggiungere un determinato obiettivo di
+business. Questo è un altro elemento comune con l'altra definizione: abbiamo un insieme di attività e
+queste attività, tutte assieme, puntano a raggiungere un un determinato obiettivo che sia utile a livello
+organizzativo, a livello di business. Un altro aspetto che distingue questa definizione da quella precedente è
+che ogni processo aziendale, ogni business process è eseguito e viene utilizzato un termine abbastanza
+particolare, enacted. Infatti in inglese non si dice che si esegue un processo, is not executed but it is
+enacted da una singola organizzazione, quindi un processo è sotto il controllo di una singola organizzazione.
+Però questo processo, per sua natura, potrebbe anche interagire con altri processi gestiti da altre
+organizzazioni. Quindi questo mette in luce il fatto che c'è una certa relazione tra processi eseguiti da
+diverse organizzazioni che in qualche modo può essere coordinata anche questa. Rispetto a questa
+definizione, a questa seconda definizione, la prima mette in luce alcuni aspetti importanti: il primo di tutti è
+il concetto di evento, che nella seconda definizione un po' sfugge, ma che vedremo che nel momento in cui
+vogliamo modellare un processo, il concetto di evento, soprattutto in BPMN è considerato il cosiddetto
+'first class citizen', cioè un concetto primario per la modellazione, appunto, dei processi. E poi l'altro
+aspetto è il discorso del valore che è totalmente assente, vuoi perché l'obiettivo è più di tipo informatico,
+IT, nella seconda definizione. Partendo da queste definizioni è possibile identificare alcuni elementi
+caratteristici di un processo aziendale. Innanzitutto fanno riferimento ad organizzazioni; la cosa importante
+da chiarire è che non è importante la tipologia di organizzazione a cui facciamo riferimento, perché
+qualunque organizzazione può essere definita nei termini dei processi che sono eseguiti al suo interno.
+Quindi con organizzazioni intendiamo aziende, che possono essere aziende di diversi settori merceologici,
+possono essere aziende manifatturiere, aziende di servizi, quali banche, assicurazioni; possono essere
+organizzazioni non profit, quindi dove l'aspetto valore indicato prima non è necessariamente un valore
+economico; possono essere enti pubblici, quindi non necessariamente privati. L'altro aspetto importante e
+basilare, nella definizione di un processo è il concetto di attività, che è anche chiamato Task. Poi vedremo
+che quando modelleremo i processi in BPMN c'è una distinzione fra il termine Task e il concetto di attività,
+ad ogni modo in questa prima battuta noi possiamo definire attività o task come le singole unità di lavoro,
+qualcosa che non può essere ulteriormente scomposto, è un po' l'unità atomica di lavoro di interesse, così
+come è modellata all'interno del nostro processo. È importante un'azione di coordinamento. Un'azione di
+coordinamento, perché può riguardare il coordinamento interno ad un'organizzazione, quindi parliamo di
+un singolo processo aziendale, oppure esterno all'organizzazione, in questo caso noi stiamo parlando di
+
+coordinamento fra processi che appartengono a diverse realtà aziendali. Per questo motivo faremo
+riferimento con i termini di orchestrazione all'azione di coordinamento per attori per i processi che sono
+interni a un'organizzazione; e coreografia all'azione di coordinamento quando abbiamo a che fare con il
+coordinamento fra diversi processi aziendali, appartenenti quindi a diverse organizzazioni. C'è l'importanza,
+appunto anche, dell'evento, che possono essere legati a eventi di tipo temporale, un Time Out oppure una
+determinata data raggiunta, che possono far riferimento a messaggi e vedremo che questo è
+particolarmente utile nello scambio informativo fra diversi processi aziendali di diverse organizzazioni,
+oppure al verificarsi di condizioni che vanno a predicare, i cui termini vanno a predicare sullo stato della mia
+organizzazione. È anche importante definire gli obiettivi all'interno di un'organizzazione, quindi riuscire a
+fornire valore a quelli che sono i partecipanti. L'ultimo aspetto non è particolarmente importante per noi,
+perché ci occuperemo più che altro sulla necessità e sulla complessità nel riuscire a modellare un processo,
+facendo in modo di riuscire a definire qual è l'azione di coordinamento fra le diverse attività, trovare il
+modo di coordinare nella maniera corretta e di rappresentarle attraverso un linguaggio appunto BPMN, che
+poi attraverso alcuni passaggi mi permette anche di eseguire in maniera automatica questa azione di
+coordinamento, o addirittura eseguire in maniera automatica l'intero processo. È anche utile distinguere
+diverse tipologie di processi, che possono essere definiti. Innanzitutto i processi possono essere modellati
+in termini astratti oppure in termini concreti, detti anche eseguibili. Nel nostro caso ci concentreremo più
+che altro sui sui processi astratti, nel senso che vogliamo modellare dei processi che in qualche modo
+riescono a rappresentare come sono coordinate le diverse attività all'interno di un'organizzazione, nel
+momento in cui vogliamo raggiungere un determinato obiettivo. È anche possibile descrivere in maniera
+più dettagliata, quindi in maniera anche più integrata rispetto a quelli che sono gli esecutori del mio
+processo, quando il mio processo viene sostenuto anche da applicazioni. In questo caso è necessario fornire
+una versione che viene detta eseguibile, appunto concreta, perché nel momento in cui io voglio coordinare
+le azioni, queste azioni non si riferiscono ad attori umani, che quindi possono essere anche coordinati da
+attori umani, ma si riferiscono ad attori software, che devono essere coordinati necessariamente da attori
+software. Quindi il coordinatore in qualche modo è un elemento, almeno nella nostra accezione, è un
+elemento software, che viene appunto chiamato orchestratore, il cui compito è quello di dirigere, diciamo
+così, l'orchestra, dire quando un certo attore deve eseguire una determinata attività secondo quello che è il
+modello di processo che è stato definito. In qualche caso l'a attore che esegue è un attore software, in
+questo caso è necessario definire una chiamata software, per questo motivo è necessario entrare nel
+dettaglio di questa chiamata, definire il protocollo, i messaggi in ingresso e i messaggi in uscita, ma può
+anche anche accadere che l'esecutore sia un utente umano; in questo caso è necessario fornire
+un'interfaccia grafica sufficientemente chiara per istruire l'esecuzione dell'attività. Come già detto prima,
+c'è anche la necessità di definire, la possibilità di definire due tipologie di processi, che possono essere
+processi coreografati nel momento in cui il coordinamento è fra processi aziendali appartenenti a diverse
+organizzazioni; in questo caso la coreografia che non approfondiremo in questo corso si occupa di definire
+qual è il protocollo di comunicazione fra i vari attori e questo protocollo di comunicazione viene definito in
+termini dei messaggi che questi attori si scambiano, oppure un processo può far riferimento, ed è quello
+che noi approfondiremo in questo corso, a un coordinatore di tipo orchestrazione. Quindi c'è
+quell'orchestrator, quell' orchestratore che è stato prima definito, prima citato, il cui compito è quello di
+coordinare le attività all'interno della mia organizzazione secondo il modello definito. Poi a seconda di
+quante attività possono essere automatizzate dalla possibilità di avere un coordinatore software, possiamo
+avere un processo che può essere totalmente automatizzato ed è anche quello a cui puntano spesso le
+organizzazioni, quindi dove l'attore umano ha un ruolo solo di gestione ma non di esecuzione e nemmeno
+di coordinamento e fino ad arrivare a processi che invece sono totalmente manuali, in cui anche il
+coordinamento, non solo l'attività sono tutte manuali. È ovvio che in questo corso ci concentreremo su una
+via di mezzo, tendente più sul full automated che non in quello manuale, perché è interesse per noi capire
+come l'IT può essere di supporto nell'esecuzione dei processi. I processi possono anche essere ben
+strutturati ed è il caso dei processi che noi utilizzeremo, quelli abbastanza comuni, quelli che abbiamo in
+
+mente modo intuitivo, cioè un insieme di attività che possono essere in sequenza, più o meno articolate
+con dei cicli, con dei rami di decisione la cui struttura può essere definita a Design Time, quindi nel
+momento in cui io modello il mio processo, quindi sono a tempo di progettazione, io posso identificare tutti
+quegli elementi che costituiscono appunto la struttura del mio processo. Esiste anche però la possibilità di
+definire una classe di processi che viene detta ad hoc e rientrano tutti quei processi che vengono anche
+chiamati Knowledge Intensive; infatti in alcuni casi è difficile identificare una sequenza, o comunque una
+struttura di azioni, in maniera chiara qual è la struttura del coordinamento che io voglio fare, che io voglio
+avere, rispetto alle azioni che devo eseguire e questo, in questa classe di processi ricadono, da qui il nome
+Knowledge Intensive, tutte quelle attività in cui l'attività umana, soprattutto di coordinamento, è
+fondamentale perché si basa su strumenti cognitivi, che al momento, sebbene ci sia un forte sviluppo anche
+dell'intelligenza artificiale e soprattutto nell'aspetto più di Machine Learning l'aspetto appunto cognitivo è
+fondamentalmente di appannaggio dell'essere umano. Ovviamente in questo corso noi ci concentreremo
+principalmente, come detto, sugli aspetti e sui processi più strutturati. Quindi definito cos'è il processo,
+chiarito quali sono le diverse tipologie di processo, a noi effettivamente cosa interessa? Interessa sapere
+quali sono i processi in esecuzione in un'organizzazione. A noi interessa sapere come modellare, come
+definire la struttura di un processo; a noi interessa sapere, all'interno di un'organizzazione, chi è che
+controlla l'esecuzione di un processo. Quali sono i ruoli delle persone all'interno dell'organizzazione che si
+occupano dell'esecuzione delle varie attività che compongono il processo se non del suo coordinamento; a
+noi interessa sapere qual è l'esito del processo e se questo esito è efficace rispetto a quelli che sono gli
+obiettivi aziendali. Ecco, quando si parla di processi all'interno di un'organizzazione le domande sono
+queste. Ce ne sono molte di più, queste sono giusto una semplificazione, quindi il processo in sé è
+importante ma è importante anche capire tutto quello che gira attorno al processo, del perché mi serve,
+come lo descrivo, come lo controllo, come lo eseguo, come cerco di migliorarlo anche, nel tempo. E questo
+introduce il concetto di Business Process Management che punta a dare degli strumenti che permettono di
+fornire delle risposte a domande di questo tipo. Volendo dare una definizione di Business Process
+Management, presa in questo caso da quel libro che, vi ho detto, ha più di una accezione IT che non quella
+business, ma comunque diciamo che non sono lontane tra di loro neanche in questo caso le definizioni, il
+Business Process Management è quella disciplina che include concetti, metodi e tecniche a supporto di
+alcune fasi principali del ciclo di vita del Business Process, che sono la progettazione, l'amministrazione, la
+configurazione, l'esecuzione e l'analisi poi del mio processo. Questa definizione, in qualche modo, definisce,
+appunto, il ciclo di vita di un business process e il Business Process Management è quella disciplina che
+fornisce metodi strumenti e tecniche, a supporto della gestione del ciclo di vita del mio processo, dei miei
+processi, delle molteplici esecuzioni anche del singolo processo. Nello specifico, il ciclo di vita del business
+process, identificato nel libro che vi ho citato in precedenza, prevede quattro macrofasi. La prima è il design
+and Analysis, dove sono presenti delle sotto attività di, innanzitutto di identificazione dei processi e di
+modellazione dei processi e la sotto attività di analisi in cui è presente l'attività di validazione, simulazione e
+verifica dei miei processi. Si passa quindi alla fase di configurazione, in cui devo in qualche modo capire
+come eseguire il mio processo e creare quel sottostrato tecnologico che mi aiuta nell'esecuzione del mio
+processo; poi c'è la fase di Enactment, che è l'esecuzione vera e propria del mio processo; in questo caso io
+parto da un modello di processo astratto, a questo livello, che poi diventa concreto a questo livello, viene
+eseguito una o più volte a seconda della natura del processo, ad esempio se io definisco e strutturo un
+processo, lo modello, un processo del tipo Order to Pay, cioè dal momento in cui ricevo l'ordine al
+momento in cui mi pagano, a fronte della fornitura del bene che è stato ordinato, ecco, quello ha un
+modello e questo modello viene eseguito diverse volte; almeno, un'organizzazione, un'azienda
+manifatturiera, si aspetta di eseguirlo diverse volte. Ecco, ricordiamoci che da un modello di processo
+possono partire, possono essere eseguite tante istanze di questo processo. Quindi c'è un rapporto 1 a n fra
+il modello di processo e le istanze di processo. E solitamente l'istanza di processo viene anche chiamata
+Case. Quindi se trovate il termine Case, identifica appunto un'istanza specifica di un determinato processo.
+Durante l'esecuzione il mio processo, i miei processi possono essere eseguiti diverse volte per diverso
+
+tempo, alcuni processi durano pochi minuti, alcuni processi possono anche durare delle settimane, se non
+dei mesi, se non degli anni, dipende dalla complessità del processo, dalle attività che rientrano appunto in
+questo processo. Di tanto in tanto non è necessario chiudere necessariamente l'operazione di enactment,
+quindi in maniera periodica si analizza l'esecuzione di tutti quei casi, di tutte quelle istanze di processo che
+sono state eseguite e che sono concluse. E quindi si passa alla fase di valutazione. Cioè io cerco di
+confrontare quello che è il modello che io ho descritto e che rappresenta il processo che mi aspettavo di
+eseguire, che credevo essere il modello corretto con quelli che sono stati i comportamenti delle istanze che
+sono state eseguite. Ecco, non sempre queste due cose collimano, per diversi motivi e nella fase di
+valutazione io appunto cerco di capire se ci sono state deviazioni rispetto al modello, se anche non ci
+fossero state delle violazioni, se le performance del mio modello sono state adeguate, oppure anche in caso
+di performance adeguate, se il mio processo ha raggiunto gli obiettivi per i quali è stato è stato progettato.
+Per questo motivo io potrei anche, in un'ottica di miglioramento continuo, far ripartire il ciclo, ridefinire il
+mio processo, in questo caso non si parla più di identificazione, ma di ridesign del mio processo; e si riparte
+con tutte le fasi viste in precedenza. Vediamo ora, molto brevemente, il dettaglio di queste quattro
+macrofasi. Come detto, design and analysis è composto da due passi principali, la progettazione e l'analisi,
+la progettazione implica, e su questo ci sarà la lezione successiva a questa che se ne occupa, di identificare i
+processi; data un'organizzazione, delle attività più critiche e anche più complicate, è quella di capire, far
+emergere qual è la struttura dei processi che sono già in essere all'interno dell'organizzazione. Perché, per
+definizione, una qualunque organizzazione è definita in termini dei propri processi, però non sempre la
+struttura dei processi viene esplicata e l'attività di identificazione è cerca di capire, appunto, di far
+emergere la struttura, appunto di questi processi, attraverso alcune tecniche, che possono essere top down
+o bottom app. L'altro aspetto importante per noi è quello della modellazione, su cui ci soffermeremo
+particolarmente utilizzando un linguaggio, una notazione grafica che appunto è BPMN, che mi dà la
+possibilità di rendere in maniera grafica quella che è la struttura del mio processo. Ricordiamo che
+utilizzeremo BPMN inizialmente per modellare i processi orchestrati, quindi per modellare il coordinamento
+delle varie attività rispetto a quelle azioni che sono svolte all'interno della singola organizzazione. Vedremo
+poi un piccolo assaggio, potremmo dire, di come in realtà questi processi possono dialogare con altri
+processi orchestrati, quindi in un'ottica non proprio di coreografia ma in un'ottica di collaboration, come
+viene detto. Dopo aver modellato il mio processo, quindi definita la sua struttura, il passo successivo è
+analizzare quanto ho prodotto. Quindi, ricordiamoci che siamo ancora in una fase pre-implementativa, io
+non ho ancora implementato nulla, non ho ancora eseguito nulla, mi baso solo sul modello di un processo
+che è su carta. Ecco, nonostante sia su carta, esistono diverse tecniche che mi aiutano a analizzare la bontà
+di questo processo secondo tre prospettive diverse. La prima, che fa capo agli strumenti di validazione, che
+cerca di capire se effettivamente il gol, l'obiettivo che che si proponeva questo processo sarà
+effettivamente raggiunto, quindi qui c'è più un'impronta più organizzativa, che cerca di capire se quelle
+attività sono state strutturate correttamente. Non entriamo troppo nell'ottica di questo aspetto; è più
+interessante per noi l'aspetto di simulazione, perché qui sono presenti degli strumenti informatici che in
+qualche modo riescono a simulare l'esecuzione di una, due, n istanze di quel determinato processo senza
+averlo effettivamente in esecuzione, facendo leva su analisi statistiche, legata al rate di arrivo, per esempio
+degli ordini, al rate di eventi che in qualche modo scatenano l'esecuzione del processo, quindi scatenano la
+creazione di diverse istanze. Siccome ci sono alcune attività che accedono a determinate risorse e queste
+risorse vengono usate in maniera concorrente dalle diverse istanze, grazie all'attività di simulazione io
+posso andare a capire quali potrebbero essere i colli di bottiglia nell'utilizzo di queste risorse, eventuali
+rallentamenti, criticità, soprattutto nel discorso delle performance. In ultimo, c'è uno strumento molto
+formale, che solitamente si appoggia alle reti di Petri per la sua realizzazione, che fa capo all'attività di
+verifica della bontà del mio processo. In questo caso non verifichiamo se il processo raggiunge gli obiettivi,
+per quello c'è l'attività di validazione; in questo caso è più una verifica formale rispetto al fatto che io posso
+andare a capire se effettivamente il mio processo si comporta in maniera corretta, se alcune proprietà sono
+valide. La proprietà di soundness quindi di correttezza, che non è la correttezza, come detto prima, in
+
+termini aziendali, organizzativi, ma è una correttezza rispetto alla possibilità che il mio processo termini e
+termini senza lasciare, diciamo così, attività in sospeso, cioè raggiunga il simbolo, diciamo così, di
+terminazione del processo e nessuna delle attività che sono state coordinate all'interno di questo processo
+sia ancora in esecuzione, quindi lasci, diciamo così, degli strascichi nell'esecuzione, che non possono più
+essere coordinati perché abbiamo raggiunto comunque il termine. Nello specifico, come dirò anche più
+avanti, ci focalizzeremo principalmente su queste due attività. La seconda fase del ciclo di vita è quella di
+configurazione; nella fase di configurazione si passa dalla progettazione del processo, vista in precedenza,
+alla progettazione del sistema di esecuzione del processo, quindi di definizione di quella che è la
+piattaforma tecnologica che mi permette di ospitare il mio processo ed effettivamente di eseguirlo. Qui
+abbiamo diverse alternative. Oggigiorno sono molto diffusi i cosiddetti Process Aware Information Systems,
+cioè quindi quella collezione di applicazioni, sistemi e metodi, che mi permettono di eseguire, di ospitare e
+di eseguire i miei processi. Che possono essere classificate in due grosse classi: I Domain-specific Aware
+information Systems e a questi fanno capo nomi come i CRM, gli ERP, i Supply Chain Management... Sono
+pacchetti applicativi che mi permettono di gestire i processi aziendali, perché includono al loro interno la
+logica di processo; quindi già questi sistemi mi permettono di eseguire dei processi che sono in realtà stati
+codificati in fase di creazione di questi pacchetti applicativi e che possono essere in qualche modo
+customizzati, personalizzati una volta installati, con un grado di personalizzazione che è abbastanza
+variabile. Perché Domain-specific? Perché ognuno di questi pacchetti fa riferimento a una classe di processi,
+che riguarda un certo ambito organizzativo, l'ERP, più l'aspetto, appunto, dei processi primari, o processi
+secondari, il CRM invece riguarda più la relazione con la clientela, l'SCM la relazione con i miei fornitori
+oppure con i fornitori nella mia supply chain. C'è un'altra classe che è quella dei Domain-agnostic Places
+Aware Information System, che comprende un insieme di soluzioni tecnologiche, una fra tutte i BPMS che
+stanno per Business Process Management Systems, che permettono di, dato un modello di processo,
+indipendentemente dal dominio, da cosa significhi questo processo, qual è il dominio all'interno del quale è
+stato definito, mi permette di eseguirlo, di attivare il coordinamento. Qui è importante sottolineare un
+aspetto: quando si parla di un processo abbiamo detto che abbiamo un coordinamento di attività, il
+Business Process Management System, ma in generale il Process Aware Information System, si occupa di
+eseguire e di controllare il coordinamento, considerando gli esecutori delle attività, che essi siano software
+piuttosto che manuali, quindi esseri umani, esterni alla logica di coordinamento. Quindi tutto quello che
+esegue le attività non fa capo al Business Process Management System. Il nostro obiettivo qui è lavorare
+sull'elemento di coordinamento. Infatti non dettaglieremo mai come è fatta un'attività, perché non ci
+interessa. Noi sappiamo che c'è un qualcuno o un qualcosa che esegue una determinata attività. Per questo
+motivo noi saremo solo in grado di gestire la complessità e di controllare l'effettiva esecuzione di quello che
+avviene in ottica di coordinamento. Possiamo anche garantire il fatto che il nostro sistema è perfetto dal
+punto di vista del coordinamento. Se però in un determinato momento il coordinamento, l'orchestratore,
+quindi, dice a un attore esegui una determinata azione e questo attore non la esegue per qualche motivo,
+l'unica cosa che può fare il coordinatore è dire è scaduto magari un timeout, se è stato definito, o rimanere
+in maniera indefinita in attesa. Ma non è compito del coordinatore eseguire l'attività, è importante definire,
+distinguere questi due aspetti. E questo è particolarmente importante quando si parla di enactment,
+perché l'enactment per noi è come controlliamo la singola istanza, quindi il singolo case di un determinato
+modello. I BPMS che abbiamo detto prima, piuttosto che gli ERP e CRM, sono in grado di gestire le diverse
+istanze che fanno capo al medesimo modello. È anche importante, eventualmente, coordinare le diverse
+istanze, perché abbiamo detto che diverse istanze possono anche far capo alle stesse risorse che in questo
+modo sono accedute in maniera concorrente, quindi c'è anche da gestire la concorrenza nell'accesso di
+queste risorse. Mi permette anche di gestire l'eventuale evoluzione e l'adattamento del mio processo.
+Queste sono soluzioni più innovative, che in qualche modo fanno leva su strategie di adattamento, appunto
+e anche se il modello non aveva previsto alcuni comportamenti in casi particolari, riesce a eseguire il
+processo con delle varianti che comunque mi permettono di arrivare in fondo al processo, anche se alcune
+delle ipotesi su cui erano state costruite non risultano più valide nel momento in cui è stato eseguito. Una
+
+cosa importante è che durante l'enactment del mio processo, noi dobbiamo riuscire a raccogliere i log dei
+sistemi coinvolti nell'esecuzione del mio processo. Un log su tutti è quello del BPMS, o comunque del
+Process Aware Information System. I log sono anche quelli dei sistemi a supporto dell'esecuzione delle
+attività che sono coinvolte nel processo. Perché questi log? Perché questi log sono fondamentali nell'ultima
+fase, quella di evaluation, perché andando a lavorare su queste informazioni posso andare ad analizzare
+qual è stato il vero comportamento del mio processo, capire e valutare in particolare due aspetti, che sono
+quelli di Conformance e di Compliance. Con Conformance si intende l'eventuale deviazione o eventuale
+aderenza, se la vediamo dal punto di vista duale, tra il modello di processo che io avevo, mi aspettavo di
+eseguire e che avevo modellato, quindi e l'effettiva esecuzione del mio processo. Quindi questa eventuale
+discrepanza viene valutata andando a lavorare sui log di sistema. Quindi l'eventuale miglioria che posso
+inserire, è capire quelle deviazioni ci sono state perché ho modellato male io il processo, quindi l'esecutore
+ha cercato degli shortcut, dei modi migliori per lavorare, quindi forse dovrei prendere quei comportamenti
+come dei suggerimenti per migliorare il mio processo; oppure quelle modifiche, quelle deviazioni riflettono
+un utilizzo erroneo, comunque poco ortodosso del processo così come l'ho strutturato e in quel caso forse
+è meglio ridefinire il mio processo e mettere delle barriere per evitare che appunto si ripeta un'azione di
+questo tipo, che potrebbe inficiare la bontà dell'esecuzione del mio processo nell'organizzazione. Con
+Compliance invece si intende quell'analisi di aderenza tra il mio processo e le eventuali politiche aziendali,
+norme che possono essere anche legate a leggi e quindi a cui devo aderire necessariamente. Ecco, con la
+compliance non è tanto la struttura ma è più legata all'obiettivo e all'applicazione, appunto, di queste
+norme. Come detto in precedenza, preso a riferimento il ciclo di vita del Business Process, nelle prossime
+lezioni, nei prossimi moduli di questa lezione, ci concentreremo principalmente sull'identificazione e sulla
+modellazione dei processi, utilizzando un linguaggio particolare, nella fase di modellazione, particolare, che
+si chiama BPMN.
+
+

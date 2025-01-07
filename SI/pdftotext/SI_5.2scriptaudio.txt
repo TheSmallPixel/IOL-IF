@@ -1,0 +1,261 @@
+Lezione 5 modulo 2
+In questo modulo, parleremo di componenti tecnologici a livello applicativo. Ci sono diversi tipi di
+componenti tecnologici di questo tipo, ma condividono alcuni aspetti che hanno in comune. Un primo
+aspetto è il fatto che questi componenti sono caratterizzati da una modularità, nel senso che le funzioni che
+vengono fornite, quindi dobbiamo legare me con le funzioni, vengono separate in moduli diversi. Questo
+per poter comporre i componenti in modo diverso a seconda delle esigenze che abbiamo all'interno del
+nostro sistema, quindi poter scegliere le funzioni che sono necessarie per il nostro sistema. Un'altra
+caratteristica che abbiamo visto che è relativa ai componenti tecnologici, in generale, è che avremo
+l'acquisto di questi moduli sul mercato e quindi parleremo di COTS e quindi componenti che possiamo
+acquistare sul mercato oppure costruirli in casa, in casa oppure assegnando il progetto software a dei
+fornitori, e quindi con una scelta tra un approccio di tipo Make (di tipo costruttivo) o di tipo Buy, quindi un
+approccio in cui andiamo a scegliere i componenti sul mercato. In realtà abbiamo appena detto che questi
+componenti sono composti da vari moduli, quindi, quando andremo ad effettuare una scelta di tipo Buy, ci
+potranno essere diverse possibilità di scelta: potremmo comprare tutto il componente da un solo fornitore
+oppure, quando vogliamo scegliere più opzionalità che potrebbero essere appartenenti a moduli diversi,
+potremmo avere più fornitori, scegliendo quelli che vengono chiamati i componenti migliori oppure Best of
+Breed, tra quelli disponibili sul mercato. Quale sarà la differenza tra questi due approcci? Nel secondo caso
+avevo la necessità di integrare poi questi moduli per creare il mio sistema che è un unico sistema integrato
+e che quindi deve avere dei flussi di dati fra questi componenti che dovranno essere gestiti. Quindi,
+rivedremo questi aspetti studiando, per i vari componenti di tipo applicativo, quali sono i moduli che li
+compongono, i principali moduli, e poi, quando avremo completato questa parte, andremo anche a
+discutere che cosa vuol dire scegliere dei componenti e quindi quali sono i criteri per fare una scelta di tipo
+Make oppure di tipo Buy. Cominceremo questo modulo di questa lezione a vedere quelli che sono i
+principali sistemi. I primi due che tratteremo saranno i sistemi ERP e sistemi CRM e cominciamo quindi
+questa lezione trattando i sistemi ERP. ERP sono i componenti software di tipo applicativo più comuni che
+si trovano di varie tipologie che possono essere dedicati a settori particolari di aziende, a piccole aziende,
+tutti però hanno in comune il fatto di avere la caratteristica di gestire informazioni dell'azienda che sono
+informazioni tipiche per l'azienda e quindi danno delle funzionalità di base e possono supportare i processi,
+abbiamo visto che i processi possono essere distinti in processi primari oppure processi di supporto, quindi
+andranno a supportare con le loro funzionalità i diversi processi all'interno dell'azienda. Quindi all'interno
+degli ERP, noi avremo diversi tipi di processi da trattare. Ricordiamo una cosa che abbiamo già visto nelle
+lezioni precedenti e richiamiamo la piramide di Anthony, il fatto che abbiamo diversi livelli, il livello
+operativo, il livello più decisionale con il controllo di tipo manageriale, e richiamiamo anche il fatto che le
+funzionalità possono essere fornite in settori vari dell'azienda, quindi, quello che può capitare quando
+costruiamo dei pacchetti di tipo applicativo, è che si formino dei Silos. Abbiamo già visto il concetto di Silos,
+quindi un insieme di moduli con i propri dati e il problema che abbiamo all'interno del Silos è che ogni
+modulo è specializzato per fornire certe informazioni, certe funzionalità, ma quello che succede è che
+avremo una ridondanza delle informazioni che vengono memorizzate all'interno di ciascun componente,
+quel problema di creare dei flussi informativi tra un componente e l'altro per poter poi dare le funzionalità
+dell'azienda che ovviamente condividono dati fra più settori dell'azienda. I sistemi ERP sono
+sostanzialmente nati per poter risolvere alcuni dei problemi che noi troviamo in quest'ambito, quindi il
+problema del Silos con alcune caratteristiche che sono tipiche di sistemi di questo tipo. Quali sono queste
+caratteristiche? Una prima caratteristica è la modularità. Abbiamo già detto che questa è una caratteristica
+dei sistemi a questo livello, vogliamo realizzare i moduli per separare diverse funzionalità, quindi
+manterremo questo concetto di separazione in moduli per varie funzioni. Ma l'altra caratteristica che tende
+a risolvere il problema dei flussi dei dati è il fatto che dobbiamo evitare di avere dei dati ripetuti in sistemi
+diversi, è quella che viene chiamata unicità dell'informazione. Quindi un approccio di tipo ERP
+sostanzialmente avrà una serie di moduli ma un unico database dal punto di vista logico. Ovviamente dal
+
+punto di vista della realizzazione poi potremmo avere più sistemi che gestiscono i dati, ma dal punto di vista
+logico tutti questi sistemi saranno integrati in un unico database che viene visto come il database a cui
+attingono per leggere i dati, e poi su cui scrivono, tutti i vari moduli che sono all'interno dell'ERP. Quindi
+l'unicità dell'informazione caratterizza i sistemi ERP, nel senso che io so che, se un modulo al giorno ha una
+certa informazione, questa informazione sarà direttamente visibile a tutti gli altri moduli che la potranno
+utilizzare. Quindi l'unicità dell'informazione è una caratteristica del mio sistema ERP che consente a tutti i
+moduli di utilizzare lo stesso database. L'altra caratteristica, che è una caratteristica tipica dei sistemi ERP è
+quella che viene chiamata la prescrittività. Abbiamo detto che avremmo delle funzionalità che vengono
+fornite e sono funzionalità tipiche per le aziende, ad esempio per gestire una vendita oppure per andare a
+ordinare un prodotto oppure per pagare una fattura. Queste funzionalità saranno fornite all'interno di
+processi che costituiranno la serie di azioni da fare all'interno dell'azienda per poter gestire i flussi relativi
+alle operazioni, ad esempio, che portano al pagamento di una fattura dopo la sua approvazione eventuale
+da parte di un responsabile, da parte di chi ha ricevuto la merce. Questi processi sono, all'interno del
+sistema ERP, già codificate, quindi noi, con prescrittività, intendiamo il fatto che i processi sono già
+predefiniti, avremo qualche possibilità di scelta sulle tipologie dei processi da utilizzare, ma
+sostanzialmente noi sceglieremo come configurare poi il nostro sistema sulla base di una serie di processi
+già predefiniti all'interno del sistema, per cui potremo scegliere. Questo cosa vorrà dire? Che in generale
+l'azienda dovrà adattarsi a come i processi sono descritti all'interno del sistema ERP, piuttosto che non
+disegnare, nello sviluppo di un sistema di questo tipo, i propri processi. Quindi quando compriamo un
+sistema di tipo ERP, quindi con un’ottica di tipo Buy, noi troveremo dei moduli, saremo sicuri di avere
+un'unicità di informazione, quindi di non avere problemi di informazioni non aggiornate a causa del non
+allineamento di basi di dati diversi, ma avremo dei processi che sono già fissati, che dovranno essere seguiti
+all'interno dell'organizzazione per utilizzare queste funzionalità. Vediamo ora quali sono i principali
+componenti di un sistema ERP. Parleremo prima di ERP CORE, per dire quelli che sono i componenti che
+tipicamente troviamo in un sistema ERP, poi successivamente parleremo anche di ERP di tipo esteso. Prima
+cosa da esaminare è che, abbiamo detto, possiamo avere delle attività di tipo primario oppure delle attività
+di supporto. All'interno di ERP troveremo in corrispondenza dei moduli di tipo diverso: innanzitutto avremo
+dei moduli settoriali che daranno delle funzioni utili alle attività primarie di una certa azienda. Per queste
+attività primarie, avremo la pianificazione delle risorse, la gestione degli acquisti, la gestione della
+produzione se abbiamo un'azienda di tipo manifatturiero, delle vendite e della logistica in ingresso e in
+uscita, che corrispondono a quelle che sono le attività primarie che avevamo definito nel modello base di
+Porter che abbiamo già esaminato. Per quanto riguarda le attività di supporto dei sistemi ERP, andiamo a
+distinguere fra moduli che sono relativi a sistemi istituzionali, che sono quelli che sostanzialmente
+supportano la parte amministrativa dell'azienda, le risorse umane, la gestione di progetti e della contabilità
+degli investimenti relativi all'attività che vengono promossi in azienda. Poi avremo dei moduli direzionali. I
+moduli direzionali fanno più riferimento a quella che è la parte di supporto alle decisioni che abbiamo visto
+all'interno della piramide di Anthony e quindi le decisioni possono essere decisioni di supporto alla
+pianificazione strategica oppure ad attività di controllo dell'andamento dell'azienda, quindi del budget
+oppure dello svolgimento delle attività, dei costi, delle attività svolte e cruscotti direzionali che andranno a
+visualizzare, in modo sintetico, quelli che sono i principali indicatori di performance che sono stati definiti
+per l'azienda. Quindi vediamo qua che sono indicati in colori diversi, i moduli istituzionali e direzionali sono
+indicati in grigio proprio per richiamare i moduli orizzontali di Porter, mentre i moduli settoriali, indicati
+nella colonna centrale in bianco, sono quelli verticali in Porter. Ovviamente abbiamo detto che questi che
+abbiamo visto qua sono quelli, diciamo, abbastanza generali di un sistema che è orientato alla produzione a
+partire dall'acquisto di materiale che viene usato per la produzione, quindi la costruzione di un prodotto
+fisico. Queste attività chiaramente possono cambiare a seconda del settore. Abbiamo visto che nell'ambito
+del quadro delle varie tecnologie una specializzazione che possiamo avere può essere quella per il settore
+applicativo. Quindi i sistemi ERP possono offrire anche moduli settoriali per settori diversi. Vediamo un paio
+di esempi. Se noi prendiamo come dominio applicativo quello di aziende chimiche o siderurgiche, noi
+
+abbiamo di nuovo una gestione di materiali, ma soprattutto abbiamo un orientamento alla gestione di un
+impianto, quindi troveremo, sia l'acquisto focalizzato a una gestione di materiali per la manutenzione
+dell'impianto, avremo sempre un discorso di gestione di approvvigionamento di materie prime, ma anche
+avremo attività tipiche che sono valutazioni di impianti per produzione specifica di quanto viene prodotto e
+del controllo del processo di produzione. Vediamo qui un modulo, indicato in grigio, che è il Supply Chain
+Management. Quindi la gestione di tutta la catena del valore di come l'azienda si inserisce all'interno della
+catena produttore e fornitore. Questo tipo di moduli in genere non fanno parte di un ERP CORE perché è un
+modulo molto specializzato, che richiede uno sviluppo specifico di alcuni aspetti. Come vedremo, questo
+però potrà essere recuperato se parleremo di sistemi ERP di tipo esteso che forniscono anche altre
+funzionalità. Vediamo come cambia questo insieme di moduli per supporto ad attività primaria se invece
+prendiamo un altro tipo di azienda. Ad esempio prendiamo delle aziende che danno dei servizi, tipo le
+aziende telefoniche che danno servizi telefonici oppure servizi energetici come possono essere i gas,
+l'elettricità. Anche qui abbiamo sostanzialmente una serie di attività di tipo primario che sono orientate a
+sviluppare prodotti di un certo tipo, quindi le offerte che poi vengono di contratto, che vengono fatte ai
+clienti con certe caratteristiche, e sarà necessario poi effettuare le attività di vendita, ma c'è una forte
+attenzione alle attività primarie all'applicazione del servizio, alla fatturazione del servizio e soprattutto alla
+post-vendita per dare una assistenza, sia per pratiche amministrative relative alla fatturazione, sia anche
+per problematiche di tipo tecnico sul servizio erogato. Sempre per il discorso del fatto che abbiamo un
+servizio erogato costitutiva mente a degli utilizzatori, cambiano anche i servizi di supporto. Ad esempio
+quando abbiamo una gestione delle risorse umane, in questo caso possiamo guardare questa parte della
+figura, noi dobbiamo gestire non solo le risorse umane secondo le usuali pratiche amministrative per
+pagare gli stipendi e così via, ma dobbiamo anche gestire la locazione di eventuali problemi che sono stati
+segnalati, quindi la necessità di riparazioni a delle squadre, dovremo pianificare le squadre, dare un
+supporto alle varie tipologie di interventi, sia programmate, sia per risolvere problemi che sono stati
+segnalati, e gestire quindi queste squadre dando loro un supporto, sia fornendo i materiali necessari, sia la
+documentazione tecnica che è necessaria. Quindi vediamo che questa è un'attività di supporto, ma che nel
+caso di un settore di fornitura di servizi di questi tipi, assume delle caratteristiche particolari per la gestione
+delle attività che vengono svolte dalle persone. Vediamo anche qui dei moduli indicati in grigio perché, ad
+esempio per la gestione della rete, avremo un esercizio di manutenzione che è un'attività abbastanza tipica
+della gestione della rete anche in altre aziende, ma poi avremo in questo caso attività che sono tipiche
+proprio del servizio che viene dato, quindi dovremo avere attività di pianificazione e di progettazione nella
+rete, anche qui vengono indicate in grigio perché tipicamente verranno sviluppate con altri componenti che
+non faranno parte di un tipico ERP che non darà supporto ad attività di questo tipo di pianificazione
+specifica per questo dominio e ci saranno altri tipi di software disponibili oppure verranno sviluppati
+dall'azienda stessa. Torniamo all'architettura generale degli ERP. Qui abbiamo visto una focalizzazione sui
+moduli settoriali, ma abbiamo visto che anche ERP può essere in alcuni casi esteso con altri moduli. Quindi
+abbiamo già visto un'architettura base delle ERP CORE, nell'ERP esteso si potranno aggiungere altri moduli.
+Quello che avevamo visto prima era sostanzialmente una divisione di sistemi istituzionali, settoriali e
+direzionali. A sinistra qua vediamo invece il portale aziendale, qui un supporto al portale aziendale che
+andrà a recuperare informazioni dalle informazioni gestite dalle ERP e quindi darà un'interfaccia,
+presentando ad esempio i listini dei prodotti che vengono forniti, servizi ai clienti che possono essere
+utilizzati direttamente dal portale e quindi avremo una integrazione anche di queste funzionalità all'interno
+del sistema di ERP e quindi una loro gestione integrata. Un'altra estensione che possiamo avere è quella
+che abbiamo a destra. Qui vediamo che possiamo avere diversi sistemi di interazione. Un'interazione tipica
+è quella coi clienti e quindi ovviamente anche negli ERP CORE è possibile pensare ad interagire con dei
+clienti perché sarà parte dell'attività dell'azienda, ma quando parleremo di CRM parleremo di funzionalità
+specifiche dedicate alle varie fasi di interazione con i clienti o di potenziali clienti e quindi queste
+funzionalità sono funzionalità di interazione arricchite. Parleremo separatamente delle funzionalità del
+CRM, ma un ERP esteso può dare delle funzionalità estese anche di tipologie tipiche delle funzioni fornite
+
+dal CRM. La stessa cosa può accadere con un modulo che prima avevamo indicato in grigio, il Supply Chain
+Management, quindi interazione con fornitori, con distributori e quindi la gestione delle interazioni nella
+catena del valore e quindi un ERP esteso può contenere funzionalità anche di questo tipo che vanno a
+estendere quelle che sono le funzionalità tipiche delle aziende di tipo amministrativo, di gestione degli
+acquisti, di tipo generale. Possiamo avere anche dei moduli per la gestione del ciclo di vita dei prodotti,
+quindi Product Lifecycle Management che potrà anche questo portare interazioni specifiche per lo sviluppo
+e la gestione del ciclo del prodotto con fornitori o con terzisti. Quindi noi vediamo che quando parliamo di
+ERP esteso uniamo ai moduli caratteristici degli ERP di tipo generico, che possono avere alcuni componenti
+specifici per alcuni settori, alcuni altri moduli che possono anche essere gestiti come componenti separati,
+come possono essere integrati nell'offerta di un certo fornitore di ERP che dà supporto anche ad attività di
+comunicazione tramite portale oppure con sistemi di interazione di tipologie diverse. Vediamo ora come un
+componente di questo tipo si inserisce all'interno di un party level. Abbiamo già visto che possiamo avere
+dei sistemi di tipo gestionale, avevamo già introdotto il fatto che potessero chiamarsi ERP; e in generale
+cosa vedremo in un diagramma che comprende un componente ERP? Delle funzionalità di interfaccia,
+quindi voglio far vedere che tipo di servizi vado a fornire alle varie parti che possono interagire. Abbiamo
+visto che possono essere clienti ma possono anche essere fornitori, terzisti e quindi avremo i nostri diversi
+interlocutori, questo sarà già stato disegnato all'interno dei diagrammi precedenti, in particolare a livello
+organizzativo avremo definito quali sono le interazioni e quindi quali sono le parti che consideriamo in un
+certo scenario. Abbiamo poi all'interno un sistema ERP che viene visto tipicamente come unico, se tutte le
+nostre funzionalità sono date da moduli delle ERP, avremo un unico componente che è l'ERP stesso che
+fornisce queste funzionalità. In un party level generico, potremmo avere anche la decisione di comprare
+componenti da altri fornitori, quindi potranno esserci altri componenti oppure potremmo decidere di
+sviluppare alcuni moduli con una modalità di tipo make e quindi in generale il party level potrà contenere
+anche altri componenti. Se decidiamo però di utilizzare solo un sistema ERP, i componenti obbligatori
+all'interno di un party level saranno il DBMS, abbiamo detto che noi abbiamo una gestione dei dati rivisti
+con una unicità da parte dei vari moduli applicativi e quindi il DBMS è un elemento chiave, quindi avremo
+un'unica base di dati. L'altra cosa da sottolineare è che qualora ci fossero altri moduli applicativi, ad
+esempio supponiamo uno scenario che poi riprenderemo più avanti, usiamo CRM, un CRM ovviamente
+andrà ad interagire con gli ERP perché andrà a scambiare flussi informativi con gli ERP perché acquisirà
+informazioni dall'esterno, dai clienti e, ad esempio, alcune di queste informazioni faranno parte delle
+informazioni che vogliamo memorizzare anche a livello di ERP. Però, quello che non potrà fare un modulo
+separato ERP è accedere direttamente ai dati, questo perché noi vogliamo mantenere la unicità dei dati ma
+anche la consistenza di questi dati, quindi l'unico che potrà agire su questi dati sarà l'ERP tramite DBMS, ma
+questo accesso da parte di altri moduli dovrà essere fatto solo attraverso dei flussi informativi. Quindi sarà
+possibile creare dei flussi informativi fra i vari moduli applicativi, ma, la parte di gestione dei dati degli ERP
+sarà dedicata agli ERP. Vediamo ora quali sono i passaggi principali in quella che viene detta la
+'implementazione' ERP. Qua ci poniamo in un'ipotesi di avere acquisito un componente di ERP con modalità
+buy e quindi vogliamo creare il nostro sistema informativo. Avremo in generale due passaggi da fare: uno è
+quello della utilizzazione di quelli che sono i dati già preconfigurati nel sistema, i processi e l'interfaccia
+utente per quanto riguarda la nostra azienda. In genere questo vuol dire scegliere tra una serie di
+parametri, ad esempio posso scegliere quali sono le lingue che devono essere utilizzate nelle interfacce,
+dovrò decidere quali sono i processi che voglio scegliere fra una serie di processi che saranno possibili per
+realizzare le varie funzionalità. Sceglierò quali saranno alcuni dei dati, dovrò anche inserire delle
+informazioni specifiche relative all'azienda. Quindi tutto questo sarà una parametrizzazione nel nostro
+sistema che ci porta ad avere un'istanza del nostro ERP dedicata alla nostra azienda con l'interfaccia utente
+che sono state scelte e configurate, i processi e i dati. A questo punto è possibile aggiungere anche nuove
+funzionalità con delle attività di sviluppo software e quindi sarà possibile fare un'attività di
+personalizzazione del sistema. Questa personalizzazione può esserci oppure non esserci all'interno di un
+certo progetto, cioè io mi posso accontentare dell'istanza che ho generato con attività di masterizzazione e
+
+utilizzare il sistema senza effettuare particolari personalizzazioni ulteriori, oppure posso decidere di
+sviluppare al suo interno dei moduli software dedicati che mi danno delle funzionalità specifiche che l'ERP
+non mi fornirebbe. Questa attività di personalizzazione, quindi, si configura come una attività vera e propria
+di sviluppo software. Per concludere, vediamo anche alcuni aspetti che sono caratteristici delle ERP nella
+loro evoluzione nel tempo e che ci fanno anche capire come è effettuata questa evoluzione nel tempo, sia
+dal punto di vista del supporto ad applicazioni soprattutto in domini applicativi di tipo diverso e anche
+come l'evoluzione è cambiata nel tempo per quanto riguarda gli aspetti tecnologici. Se noi mettiamo una
+linea temporale, possiamo avere una origine dei sistemi ERP intorno agli anni '80 e le principali fasi che
+abbiamo sono innanzitutto di sviluppo di alcuni sistemi che derivano da quelli che inizialmente erano
+sistemi di supporto alla produzione, quindi Computer Integrated Manifacturing, quindi la gestione di
+informazioni che provengono dalle macchine a controllo numerico della produzione che possono fornire dei
+dati che possono essere utili per la gestione della produzione stessa. Questi sono, diciamo, ‘pre-ERP’ che si
+accompagnavano a sistemi per la gestione delle risorse, Material Resource Planning. In questa fase, quindi,
+abbiamo già l'interazione di varie funzionalità all'interno dell'azienda perché abbiamo la necessità di
+integrare la pianificazione con l'acquisizione dei materiali, con la logistica d'ingresso e queste informazioni
+vengono nei primi ERP che si sviluppano intorno agli anni '90, integrate con informazioni, non più solo
+legate alla produzione stessa, ma anche alla parte amministrativa dell'acquisizione. Quindi tipicamente noi
+abbiamo un'integrazione di moduli, di contabilità e logistica come i primi moduli che ci consentono di
+gestire il dato relativo all'arrivo di materiale, sia dal punto di vista della logistica in magazzino, ma anche dal
+punto di vista dei pagamenti relativi che devono essere effettuati. Poi ovviamente questi moduli si sono
+sviluppati per dare funzionalità tipiche dei sistemi ERP Core. Intorno agli anni 2000 hanno cominciato ad
+esserci specializzazioni di tipo settoriale. Quindi abbiamo visto prima alcuni esempi nel settore delle
+telecomunicazioni, nel settore non solo del manufacturing, dei servizi, della sanità e così via della pubblica
+amministrazione. Abbiamo però un altro aspetto da sottolineare nell’evoluzione dell'ERP: è il fatto che in
+parallelo abbiamo anche un'evoluzione tecnologica. Ovviamente negli anni '80 abbiamo solo l'inizio dei
+sistemi distribuiti, dei personal computer etc. Negli anni '90 abbiamo quindi una diffusione di tipo sistemi di
+tipo client server, quindi tecnologicamente andiamo a sviluppare delle applicazioni che vengono utilizzate a
+livello server e dei client per utilizzare queste applicazioni da fornire agli utilizzatori del sistema. Negli anni
+2000 abbiamo lo sviluppo di client sviluppati come web application. Quindi abbiamo la diffusione di
+Internet e quindi dei browser, quindi interfacce di tipo web, che ci portano ad avere delle applicazioni
+basate su web a supporto degli ERP, quindi la sostituzione di un client dedicato che era tipico degli anni '90
+con interfacce Web-Based che possono dare un supporto alle varie funzionalità in modo generico, non
+devono essere sviluppate ad hoc per ogni singola funzionalità. Intorno agli anni 2010, un'altra evoluzione
+importante è quella dell'utilizzo delle architetture basate su servizi. Questo verrà poi illustrato più in
+dettaglio più avanti, ma ci può portare anche a servizi di tipo Software as a Service (SaaS), quindi io posso
+dare l'intera applicazione come servizio agli utilizzatori, metto un servizio fornito tramite connessioni in
+rete e quindi ho due effetti che sono indotti dall'uso di servizi: il fatto di facilitare l'interazione fra i vari
+moduli all'interno del sistema ERP tramite interfacce e servizi che ne facilitano la composizione e anche lo
+sviluppo, l'adattamento in seguito a modifiche e il fatto di poter fornire i servizi come servizi via rete agli
+utenti che li utilizzeranno. Concludiamo sugli ERP, riassumendo i benefici che sono emersi dalla discussione
+che abbiamo fatto su alcuni punti. Innanzitutto possiamo scegliere dei moduli, quindi la modularità ci
+consente di avere una flessibilità nella composizione dei moduli, questo sia in fase di acquisizione ma anche
+nelle successive manutenzioni, quindi, quando un modulo dovrà essere aggiornato, sarà più facile
+sostituirlo con una nuova versione oppure con un nuovo prodotto perché appunto la struttura tipica è già
+organizzata a moduli. Abbiamo detto anche che avremo in generale una maggiore efficacia del sistema
+perché l'integrazione dei dati ci consentirà di gestire i dati in modo integrato, quindi vedere gli
+aggiornamenti in tempo reale, ci consentirà anche di fare delle operazioni di analisi dei dati, quindi
+abbiamo visto che abbiamo una integrazione di funzionalità di supporto alla decisione e quindi aumentiamo
+l'efficacia del nostro sistema. Anche l'efficienza migliorerà perché noi abbiamo dei processi studiati ad hoc
+
+per le funzionalità che saranno scelti tra quelli che sono i migliori che sono presenti sul mercato per una
+certa tipologia di azienda, quindi avremo i processi di tipo ottimale che potranno essere utilizzati. Non
+avremo la necessità di creare dei flussi di dati fra diversi applicativi perché, essendo i dati integrati, questo
+migliora l'efficienza perché non dovremmo fare scambi di dati ma dovremo solo accedere ai dati. Quindi i
+sistemi ERP si sono notevolmente diffusi nel tempo, evolvendo come abbiamo visto nel tempo con diverse
+caratteristiche, perché consentono anche di sviluppare sistemi molto complessi in tempi e con costi
+relativamente ridotti rispetto a uno sviluppo ad hoc dei sistemi da parte delle aziende. Su questi temi poi
+ritorneremo perché uno dei temi che dobbiamo ancora discutere è quali sono gli aspetti, i criteri
+soprattutto che andremo ad applicare per scegliere se utilizzare un sistema di questo tipo acquistato sul
+mercato e come scegliere tra diversi sistemi di questo tipo presenti sul mercato.
+
+

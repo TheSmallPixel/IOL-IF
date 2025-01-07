@@ -1,0 +1,260 @@
+Lezione 1 modulo 2
+In questo modulo, cominceremo a parlare di sistemi informativi e introdurre alcuni concetti alla base della
+definizione di sistemi informativi e cominceremo a introdurre i principali elementi. Innanzitutto proviamo a
+dare una definizione: ci sono tante definizioni possibili di sistemi informativi ma sicuramente noi abbiamo
+l'esigenza di gestire informazione in un'organizzazione. Per informazione noi andremo poi a dare dettagli su
+una definizione precisa ma consideriamo l'informazione come una risorsa importante ed essenziale per il
+funzionamento di un'organizzazione Perché vogliamo gestire queste informazioni in una organizzazione?
+Perché vogliamo operare all'interno delle organizzazioni e prendere decisioni Consideriamo le informazioni
+una risorsa essenziale per il funzionamento dell'organizzazione in quanto senza informazioni non saremo in
+grado appunto di svolgere queste attività Una prima cosa che va chiarita è che un'organizzazione può
+operare, prendere decisioni con delle informazioni anche senza un sistema informatico, quindi se vogliamo
+visualizzare questo fatto, noi vediamo che il sistema informativo e in generale la gestione di tutte le
+informazioni di un'organizzazione, non necessariamente queste sono informazioni che sono inserite in un
+sistema informatico: possono essere appunti, possono essere conoscenze e dati che le persone che
+lavorano all'interno dell'organizzazione hanno, e quindi vorremmo distinguere fra quello che il sistema
+informativo, quindi tutta la gestione dell'informazione dell'organizzazione, e quello che chiameremo il
+sistema informativo informatizzato. Questo sistema informativo informatizzato sarà basato sull'uso
+dell'Information Technology quindi su una serie di componenti che potranno essere di vario tipo che
+consentiranno appunto la realizzazione di sistemi informativi. Tre componenti possiamo elencare: le
+applicazioni software, la gestione dei dati attraverso dei sistemi dedicati quindi sistemi di gestione di basi di
+dati DBMS, le reti che serviranno a scambiare informazioni con altre organizzazioni; avremo poi
+dell'interfaccia utente, in generale delle piattaforme che saranno alla base di altri componenti che verranno
+sviluppati e così via, quindi avremo in generale dei sistemi che saranno caratterizzati dal fatto di essere in
+parte informatizzati in parte no, però parleremo di un intero sistema informativo considerando sia la parte
+non informatizzata, sia quella informatizzata Quello che ci interesserà in questo corso è soprattutto
+discutere questa parte che è la parte informatizzata; ci interesserà discutere quali sono i suoi componenti
+principali e come sono collegati fra di essi e come possono essere utilizzati ai fini poi appunto di supportare
+l'attività di un'azienda Noi ci occuperemo soprattutto, per quanto riguarda i sistemi informativi
+informatizzati, noi daremo sempre per scontato da ora in poi che parleremo dei sistemi informativi con un
+supporto informatico della loro progettazione Quindi ci interessa quindi ci interesserà capire come
+progettare un sistema, come gestirlo e come controllarlo Tratteremo questi aspetti in diverse parti del
+corso e soprattutto per quanto riguarda la progettazione, ci interesserà identificare quali sono gli elementi
+che compongono il sistema e daremo delle architetture di riferimento che ci consentiranno di descrivere
+poi gli elementi e le relazioni fra di essi. Due elementi fondamentali che vogliamo andare a introdurre prima
+di introdurre poi delle notazioni specifiche oppure delle descrizioni più dettagliate e che sono essenziali un
+sistema informativo, sono i dati, ne ho parlato prima di informazioni abbiamo detto che sono risorse
+essenziali. Un elemento da cui partiremo saranno i dati, fra un attimo vediamo la relazione fra dati e
+informazioni, e poi abbiamo i processi all'interno dell'organizzazione Quindi cominciamo a discutere questi
+due aspetti la relazione fra di essi e poi andremo a vedere le diverse tipologie di sistemi che si potranno
+realizzare Quando parliamo di dati noi possiamo far riferimento a questa che viene chiamata anche la
+piramide della conoscenza, detta anche dalle iniziali degli elementi che troviamo 'dikw', in cui
+sostanzialmente parliamo innanzitutto di dati come di qualcosa all'interno del nostro sistema appunto
+parliamo poi soprattutto in quello informatizzato, in cui avremo la possibilità di rappresentare delle
+informazioni codificate che potranno essere registrate all'interno del sistema, quindi ci interesserà poter
+creare dei dati, poterli modificare, poterli leggere e così via Per quanto riguarda questa piramide noi
+possiamo considerarla come la risorsa grezza che noi andiamo utilizzare all'interno del sistema informativo
+Abbiamo detto però quello che ci interessa è gestire informazioni Qua siamo passati al livello più
+concettuale quindi ci interessa utilizzare i dati all'interno di attività che daranno un significato a queste
+
+informazioni, quindi le informazioni saranno quei dati quella rappresentazione di dati che risulta utile per
+svolgere un'attività. Ad esempio possiamo immaginare come dati una registrazione di una sequenza di
+temperatura all'interno di una stanza che potrà essere registrata con una sequenza numerica; come
+informazione ad esempio potremmo avere delle informazioni che sono tratte da una sequenza di
+registrazione ad esempio che possono avere una cadenza che può essere anche di registrazione di un
+minuto quindi tipica di un sistema di controlli della temperatura. Quando parleremo di informazioni ci
+interesserà ad esempio avere informazioni che diranno se questa ad esempio è una sequenza di
+temperature registrate all'interno di un'ora che ci dirà ad un certo punto se la nostra temperatura può
+essere considerata confortevole e quindi ad esempio parleremo di una media all'interno di un periodo
+predefinito ad esempio l'ora che è quello che utilizzeremo come informazione per poi prendere le decisioni
+successive. Quindi informazioni tipicamente dai dati grezzi estrae qualcosa che è utile poi per poter
+svolgere delle attività o prendere delle decisioni Quando parliamo di conoscenza ovviamente vogliamo
+rappresentare ancora qualcosa che sarà rappresentato come dato, come dato grezzo, ma in realtà che può
+essere utilizzato per prendere delle decisioni che non sono automatiche ma che richiedono una certa forma
+di ragionamento per, ad esempio, poter pianificare delle attività sulla base di quello che può essere anche
+dell'informazione che ho all'interno del mio sistema, oppure possiamo avere delle informazioni che
+vengono dall'esterno del sistema e che messe insieme alle informazioni interne possono essere esaminate
+e fare fornire una base per poi prendere delle decisioni In realtà quando parliamo di gestione di dati in
+questa piramide abbiamo anche la saggezza ma che riteniamo esterna a quello che è automatizzabile il
+nostro sistema, cosa ci interessa appunto è l'automatizzazione ovviamente la saggezza è molto difficile
+automatizzare e invece se guardiamo vari gradi di automatizzazione possiamo immaginare che man mano
+ci andiamo a spostare su una registrazione ad esempio di dati registrati automaticamente da un sistema ad
+esempio può essere un sensore che ci fornisce dei dati grezzi, l'automatizzazione è più facile da realizzare e
+quindi è più tipica di un sistema di gestione di dati Altra cosa che abbiamo già visto che quando andiamo
+verso l'alto in questa piramide, un'altra cosa che possiamo fare è aggregare questi dati quindi abbiamo
+detto ad esempio per un intervallo di tempo prenderò un valore medio è quindi un altro modo per
+spostarsi su questa piramide e derivare altri dati è l'aggregazione quindi posso prendere più dati e
+considerando questi dati insieme creare dei dati più sintetici che ci possono consentire appunto poi di
+lavorare o di prendere decisioni. Quindi tipicamente noi andremo in queste due direzioni quando poi
+andremo a fare ragionamenti successivi: quanto possiamo automatizzare, ci domanderemo quali sono le
+forme di automatizzazione che possiamo avere, e anche come possiamo aggregare dei dati come possiamo
+estrarre della conoscenza dei dati e fornendo appunto ad esempio della conoscenza in una forma più
+sintetica rispetto a quella che può essere presente in un dato grezzo Abbiamo visto quindi in questa
+piramide della conoscenza la prospettiva diciamo di inquadramento di quelli che sono i dati: il sistema
+informativo è il volto soprattutto a gestire informazione e quindi a dare una rappresentazione della realtà
+utile per poter operare nella nostra organizzazione per poter considerare quelle che sono le informazioni
+sul mondo che ci possono essere utili oppure per prendere delle decisioni; e quindi soprattutto noi
+andremo a parlare di informazioni quando avremo delle informazioni tipicamente estratte ma abbastanza
+automaticamente da dei dati grezzi, e di conoscenza quando invece faremo delle operazioni più complesse
+e anche a volte non necessariamente tutte automatizzate L'altro elemento importante all'interno del
+sistema informativo sono i processi. I processi sono una definizione iniziale poi vedremo all'interno del
+corso vari aspetti legati alla rappresentazione dei processi, ma li possiamo considerare delle sequenze di
+attività che vengono svolte in un'organizzazione per ottenere degli obiettivi. Quindi i processi come un
+insieme di attività consentono di realizzare un obiettivo Ad esempio possiamo immaginare che all'interno di
+un'azienda arrivi un ordine di acquisto di un prodotto che l'azienda produce, il nostro obiettivo è fare in
+modo che questo prodotto venga consegnato al cliente e gestendo tutte le fasi intermedie che possono
+riguardare il pagamento, la consegna del prodotto e magari anche l'aggiunta di qualche servizio di supporto
+per il prodotto successivamente alla vendita stessa Premetto quando parliamo di sequenze non sempre le
+attività saranno strettamente in sequenza ma consideriamo questo termine in questo momento in modo
+
+generale: abbiamo degli insiemi di attività che potremo svolgere secondo certe regole, quindi l'altro aspetto
+importante è che all'interno dell'organizzazione noi avremo dei processi che in genere dovranno seguire
+delle regole che sono state definite per svolgere quella tipologia di attività quindi non saranno attività
+svolte liberamente da quelli che sono gli attori quindi impiegati o sistemi all'interno di una certa azienda ma
+dovranno seguire delle regole predefinite. Ho introdotto un altro termine nel parlare coerentemente a
+questa sequenza di attività saranno di tipologie diverse riguardo alla tipologia di attività. Potranno essere
+attività manuali cioè svolte quindi da persone all'interno dell'organizzazione, potranno essere attività di
+tipo automatiche ma quindi tipicamente svolte da sistemi, e ovviamente possiamo avere anche delle
+attività di tipo ibrido e quindi per il nostro sistema saranno supportate da un sistema informativo basato
+sulle tecnologie dell'information technology. Quindi avremo anche diversi attori sostanzialmente che
+potranno svolgere i vari compiti all'interno dell'organizzazione. Vediamo una prima schematizzazione dei
+processi che viene fatta per definire i processi all'interno realizzazione e sarà una schematizzazione che
+potremo utilizzare anche successivamente per dare alcune definizioni che riguardano le tipologie di sistemi
+e vedremo che i processi potranno essere rappresentati con dei modelli, in particolare quello che vedremo
+il modello di Anthony che cerca di classificare i processi secondo le loro tipologie secondo un'enfasi sui
+processi di tipo decisionale e un altro modello che è quello di Porter in cui l'enfasi sarà soprattutto quello di
+distinguere processi che sono di tipo primario in un'azienda quindi essenziali per fare in modo che l'azienda
+svolga i compiti per cui è pensata, e quelli che sono di supporto queste attività. Vediamo adesso appunto
+questi due modelli cercando di capire rispetto ai sistemi informativi come possiamo poi realizzare dei
+sistemi. Abbiamo prima una schematizzazione che vediamo in questo caso che è una divisione dell'azienda
+in livelli in particolare in tre livelli: il livello operazionale, il livello di programmazione e controllo, e la
+pianificazione strategica In genere noi abbiamo come livello operazionale le attività che sono considerate di
+tipo operativo che vengono svolte quotidianamente all'interno dell'azienda per svolgere i compiti che
+vanno svolti per realizzare gli obiettivi dell'azienda Quando abbiamo la programmazione e controllo e noi
+vogliamo programmare questa attività quindi ad esempio assegnare delle risorse per quanto riguarda la
+programmazione per poter poi svolgere attività di tipo operazionale risorse che potranno essere materiali
+oppure potranno essere servizi, potranno essere anche risorse finanziarie e quindi vogliamo programmare
+le risorse poi vogliamo controllare come vengono svolte le attività in funzione di quelli che sono chiamati gli
+obiettivi programmati Tipicamente qui avremo anche dei ruoli di persone addette alle attività di tipo
+operativo tipo impiegati o operai e qui invece avremo, in programmazione e controllo, delle funzioni che
+saranno più di tipo manageriale che andranno a svolgere delle attività di appunto questo tipo per
+consentire un buon funzionamento delle attività operative. A livello di pianificazione strategica noi avremo
+soprattutto la scelta di quelli che sono gli obiettivi aziendali come vedremo il discorso degli obiettivi sarà
+anche quello che potrà guidare la progettazione di nuovi sistemi informativi o più generali di solito si parla
+di progettazione di parti nuova di un sistema informativo oppure di una revisione del sistema informativo
+esistente per aggiungere nuove funzionalità oppure anche per modificare alcune parti per renderle più
+aggiornate In generale gli obiettivi aziendali definiscono delle politiche aziendali che guideranno poi tutto
+quello che viene fatto all'interno dell'azienda Quindi avremo degli obiettivi che mi verranno programmati e
+che imputano le attività successive. Quando parliamo di questo modello per quanto riguarda il modello di
+Anthony, noi soprattutto facciamo riferimento all’utilizzo di questa piramide dei processi che viene
+considerata. Si suppone che questi siano processi nel senso che all'interno di ciascun livello ad esempio il
+livello operazionale, avremo tante attività operative che saranno collegate in qualche modo tra di loro
+Quando parliamo di classificazione di sistema informativo oppure di moduli sistemi informativi usando
+questo modello, in genere quello che andiamo a considerare è soprattutto una suddivisione di ambiti e ci
+interesserà per quando riguarda i sistemi soprattutto essere in grado di capire per un certo ambito
+all'interno del nostro sistema quali sono i suoi moduli operativi, quali saranno i suoi moduli di controllo: in
+genere si pensa a una forma diciamo di tipo gerarchico che guida queste descrizioni per cui potrò andare a
+scomporre man mano diciamo questi processi in una piramide di processi collegati Ovviamente questo può
+avvenire anche al livello di pianificazione strategica se ad esempio sto pianificando un certo settore
+
+dell'azienda ad esempio questo può avvenire per lo sviluppo di un nuovo prodotto e quindi deciderò
+innanzitutto come obiettivo di avere uno sviluppo di un nuovo prodotto con certe caratteristiche e poi
+andrò a svolgere tutte le attività necessarie per programmare in questo sviluppo e successivamente le
+attività di tipo operativo che mi consentiranno effettivamente di arrivare al nuovo prodotto che viene
+definito in dettaglio e può essere messo in produzione. Anthony, nel proporre questo modello che è stato
+proposto negli anni settanta, ha notato che i vari tipi di sistemi che cominciavano emergere, e questa è una
+caratterizzazione che è rimasta nei sistemi tutt'ora, erano sistemi di tipo settoriale ad esempio poteva
+esserci un una attività relativa ad esempio alla gestione delle risorse umane, l'attività relativa allo sviluppo
+di prodotti, un'attività ad esempio legata alla gestione del magazzino (questi tra l'altro erano i primi sistemi
+che possiamo aver trovato: gestione di magazzino e risorse umane in particolare i sistemi di supporto al
+calcolo e al pagamento delle paghe degli stipendi sono i primi sistemi informativi che sono stati sviluppati) e
+ha notato che appunto si creano delle catene di attività che sono legate fra di loro in un certo ambito.
+Quindi lo scopo di Anthony è stato quello di, inizialmente cercare di classificare i sistemi esistenti
+focalizzandosi sul fatto che abbiamo una divisione in ambiti diversi e poi per ogni ambito abbiamo sia una
+parte operativa che una parte di programmazione e controllo eventualmente anche un supporto alla
+pianificazione strategica Vediamo però qui in questo diagramma, abbiamo messo dei sistemi a livello di
+scritta che abbiamo messo qui che possono essere di tipologie molto diverse: gestiscono impiegati rispetto
+allo sviluppo dei prodotti rispetto alla gestione del magazzino. Questo è una prospettiva che era orientata
+soprattutto a partizionare e a vedere i vari livelli Un'altra prospettiva che ci dà più dettaglio sul fatto che i
+processi possono essere di tipo diverso, è invece data da quello che è un modello che è usato anche in
+economia, che il modello di Porter. Il modello di Porter sostanzialmente tende a suddividere quelle che
+possono essere le attività in attività primarie e attività di supporto: attività primarie sono quelle che io
+svolgo per realizzare degli obiettivi aziendali; le attività di supporto sono quelle che io comunque dovrà
+svolgere perché le attività primarie siano possibili, ma non sono caratteristiche dell'attività specifica di
+quell'azienda Ad esempio, la gestione risorse umane che abbiamo visto prima hr per human resource, è
+un'attività tipica di supporto in tutte le aziende che devono gestire le persone che lavorano all'interno
+dell'azienda ad esempio dando lo stipendio a ciascuna di esse ma anche gestendone tutte le fasi di
+selezione, le fasi di pianificazione delle ferie, di gestione di spese di viaggio e così via Quindi noi abbiamo
+delle attività di supporto che sono sostanzialmente tipiche di supporto alle aziende in modo generale e non
+tipiche dell'attività che quella azienda svolge che da Porter sono state classificate in attività infrastrutturali,
+gestione risorse umane, sviluppo della tecnologia e approvvigionamento. Sicuramente a seconda della
+tipologia di aziende, queste potranno essere più o meno complesse, ma quello che caratterizza è che ad
+esempio per le risorse umane, noi potremmo avere dei processi tipici di gestione risorse umane che sono
+abbastanza indipendenti dalla tipologia dell'azienda. Per quanto riguarda invece le attività primarie, noi
+abbiamo dell'attività primarie, ad esempio descritte in questo diagramma che sono tipicamente viste in
+modo sequenziale qui: ad esempio qua immaginiamo di avere un'azienda di tipo manifatturiero per cui
+sono stati realizzati i primi modelli di questo tipo che sono caratterizzate dal fatto che io voglio produrre dei
+prodotti e eventualmente associarvi dei servizi a questo Quindi per poter produrre devo procurarmi il
+materiale primo per produrre, operations e il processo di produzione; avrò poi la logistica in uscita per
+poter immagazzinare prima e poi distribuire quanto è stato prodotto; marketing e le vendite e
+eventualmente i servizi aggiuntivi Questo modello economico perché quello che si vuole calcolare se
+utilizziamo questo modello dal punto di vista economico è il margine dell'azienda: ovviamente io devo fare
+in modo che le attività primarie abbiano un margine che vada ad essere positivo rispetto alle attività
+complessive dell'azienda in modo da essere produttivi. Queste attività primarie sono tipiche abbiamo detto
+di settori: quindi le attività primarie di un settore manifatturiero, tipiche saranno queste, se andiamo nel
+settore per esempio di servizi come possono essere utilities, distribuzione di gas, energia elettrica oppure
+con telecomunicazioni, sarà un'attività chiaramente di tipo diverso Questi due modelli dei processi sono
+due modelli diversi perché qua ci stiamo concentrando sulle attività di tipo soprattutto operativo: quali
+sono le attività che io faccio, come le posso distinguere in due principali tipologie e in sottotipologie per
+
+ogni tipologia che ho definito. Mentre invece prima mi concentravo soprattutto sull'aspetto di tipo
+decisionale. Vediamo quindi come possiamo utilizzare questi modelli che abbiamo appena visto per
+mettere insieme questi due primi elementi che abbiamo visto nei sistemi formativi. Ad esempio, abbiamo le
+nostre attività riferendoci al modello di Anthony di controllo operativo, controllo direzionale, pianificazione
+strategica Vediamo in queste attività che tipi di dati avrò. Allora innanzitutto una prima considerazione che
+posso fare, sono i volumi dei dati: all'interno di attività operative tipicamente avrò dei volumi alti quindi
+tanti dati, mentre quando farò una prima pianificazione strategica avrò tipicamente bassi volumi perché
+vorrò soprattutto utilizzare i dati di tipo sintetico, quindi aggregare i dati disponibili per facilitare la presa di
+decisione. è chiaro anche che a seconda della tipologia di attività, hanno caratteristiche diverse anche per
+altri aspetti: ad esempio se guardiamo alla struttura dei dati, avrò nelle attività operative tanti dati
+elementari e quindi che sono registrazioni di informazioni che sono utili per capire che cosa sta avvenendo
+all'interno dell'azienda che avranno una struttura predefinita quindi sarà sempre la stessa per una certa
+attività Li utilizzerò di continuo e tipicamente sono dati interni. Quando andiamo all'estremo opposto sulla
+pianificazione strategica, abbiamo detto i dati saranno sintetici, la loro struttura dipenderà dalla decisione
+che vorrò prendere quindi sarà tipicamente variabile, non è detto che io abbia una frequenza prefissata per
+prendere decisioni di tipo strategico e poi soprattutto avrò fonti diverse per questi dati quindi avrò sia dati
+interni ma soprattutto anche dati esterni perché devo confrontarmi col mercato perché devo valutare le
+mie decisioni di sviluppo dell'azienda rispetto a quelle che sono le condizioni di mercato Quando siamo
+all'interno delle attività di controllo, che sono quelle tipiche manageriali, anche qui avrò una situazione
+intermedia: avrò dati sintetici; tipicamente avevo dati abbastanza predefiniti perché sto controllando con
+delle attività operative che sono in corso; lo farò periodicamente per un controllo di tipo giornaliero, di tipo
+settimanale, di tipo mensile o annuale e le fonti dei dati che avrò saranno interne per quanto riguarda i dati
+da controllare ma anche esterne per fare delle proiezioni ad esempio su dati che potranno riguardare le
+previsioni per il futuro oppure avrò delle altre informazioni ad esempio sul mercato, prospettive di vendita
+e così via Quindi noi abbiamo dati analitici e dati sintetici, abbiamo già parlato dell'aggregazione, abbiamo
+quantità di tipo diverso quindi da volumi alti andiamo a volumi bassi quando andiamo verso la
+pianificazione strategica e l'altra cosa che vediamo qui è che i nostri processi potranno essere più o meno
+regolari a seconda della loro caratteristica di tipo operativo, noi soprattutto avremo dei processi che
+saranno predefiniti e già nelle regole stabili e le faremo continuamente, utilizzeremo dei dati tipicamente la
+cui struttura è predefinita. Vediamo adesso di mettere in evidenza un'altra prospettiva che ci interessa che
+sono i flussi di dati Abbiamo detto che Anthony tende a separare diciamo le nostre applicazioni
+classificandole a seconda delle tipologie di processi che vengono poi gestiti. In realtà quello che ci
+interesseranno in un sistema informativo soprattutto è gestire quelle che sono i flussi fra i processi e i flussi
+naturali che ovviamente sono quelli che vanno dal livello operativo verso il livello di controllo quindi ad
+esempio un'attività di livello operativo potrà generare delle eccezioni che richiedono un intervento da parte
+di un decisore di tipo manager oppure l'altra cosa che potrebbe succedere e che ci saranno dei flussi
+abbiamo detto di aggregazione dei dati di tipo operativo che potranno essere utilizzati per svolgere attività
+di controllo periodico al di là della singola attività io vedrò tutte le attività di un certo tipo svolte ad
+esempio all'interno di un mese Ma l'altra cosa che studieremo in vari modi è come fare in modo che i
+processi diversi possano condividere delle informazioni: è chiaro che io potrò avere delle richieste da un
+settore o un altro con relative risposte, ma in generale uno degli obiettivi che avremo è di condividere dati
+tra più processi e mantenere la coerenza tra questi dati Tutto questo lo possiamo riassumere andando a
+rivedere alcuni aspetti che abbiamo appena nominato: abbiamo parlato di dati, i processi, il nostro sistema
+informativo abbiamo detto coinvolge delle persone, avremo anche delle regole secondo le quali devono
+essere svolte le attività, avremo una parte relativa alla tecnologia che useremo per supportare processi e
+persone per svolgere le attività e nel fare questo l'altra cosa che dobbiamo sottolineare è che in realtà
+stiamo generando delle informazioni, le quali a loro volta diventeranno al fine del sistema degli eventi. Ad
+esempio potrebbe essere un evento di allarme che mi dice per sto superando una certa soglia limite che ho
+definito per un certo valore oppure il fatto di avere svolto una certa attività e questo mi richiede di
+
+continuare con un'altra attività. Tutto questo a partire dal svolgimento di processi da parte di persone con i
+dati, mi procurerà altri eventi che dovranno essere gestiti e gli eventi come li vedrò? Li vedrò
+sostanzialmente come dati all'interno del nostro sistema che dovranno poi essere gestiti all'interno di
+processi e procedure Quindi avremo un ciclo continuo di produzione di informazioni di loro gestione
+all'interno del sistema informativo In generale e particolare ci interesserà soprattutto seguire appunto i
+flussi di cui abbiamo parlato: flussi che potranno essere di tipo verticale appunto abbiamo visto seguendo la
+piramide di Anthony o anche di tipo orizzontale se pensiamo alla schematizzazione di Porter che ci fa
+vedere processi che si concentrano su aspetti diversi dell'organizzazione ma condividono dell'informazione
+delle attività e quindi è necessario un coordinamento fra le varie attività.
+
+

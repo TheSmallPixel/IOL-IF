@@ -1,0 +1,98 @@
+Lezione 3 modulo 2
+Buongiorno, in questa lezione parliamo dell'identificazione dei processi di un'organizzazione. Abbiamo già
+visto che i processi sono l'insieme delle attività che permettono all’organizzazione di trasformare le proprie
+risorse in un output che possa essere di qualche valore per l'organizzazione e quest'output viene
+trasformato attraverso un insieme di attività. Quindi i processi permettono di conoscere quali sono le
+attività che sono coinvolte ma anche quali sono i ruoli che sono coinvolti in questa trasformazione Quello
+che è quindi importante per l'organizzazione è andare a identificare quali sono i processi che sono coinvolti,
+ma non solo per quanto riguarda la creazione dell'output effettivo, quindi i processi che si interfacciano
+con l'esterno, ma anche tutte le attività che permettono di realizzare questo output, quindi anche tutte le
+attività di Back End. Quindi per identificare i processi esistono diverse tecniche, diverse metodologie che
+oggi andremo a vedere, ma prima di tutto bisogna capire che questa attività è un'attività abbastanza
+complessa perché richiede anche di rappresentare i processi in diversi livelli di dettaglio Se noi andiamo a
+rappresentare i processi, i processi innanzitutto vanno a identificare quelli che sono gli input del processo
+che verranno poi trasformati in un output attraverso appunto il nostro processo. Il processo però in realtà
+può essere a sua volta scomposto prima di tutto in fasi, che sono insieme di passi che devono essere svolti
+durante il processo, ma ogni fase può essere a sua volta suddivisa in attività e ogni attività a sua volta può
+essere scomposta in operazioni. Questa è in qualche modo la struttura gerarchica di un processo Andare a
+descrivere processi al minimo livello di dettaglio è un'operazione molto costosa quindi quando
+un'organizzazione decide di descrivere i suoi processi, di identificare i suoi processi, anche il livello di
+dettaglio fa parte della decisione perché non è detto che andare a descrivere i processi al massimo livello di
+dettaglio dia un beneficio all'organizzazione pari al costo per riuscire ad identificare questo processo,
+questo livello di dettaglio. Gli approcci che vedremo per l'identificazione dei processi sono tre: sono quello
+della Check List, quello della catena del valore e l'approccio analitico. Per quanto riguarda la Check List, la
+Check List consiste prevalentemente nell'andare ad identificare delle aziende, delle organizzazioni simili nel
+mercato che quindi svolgono più o meno lo stesso tipo di lavoro e andare a confrontare i propri processi
+con quelle di queste organizzazioni In realtà per diversi settori organizzativi, ci sono delle Check List di
+riferimento, ad esempio quella che troviamo qui che è il Process Classification Framework dell'American
+Productivity and Quality Center è un tool che può essere utilizzato come riferimento. Anche qui vediamo
+che vengono identificati diversi livelli di dettaglio: al primo livello abbiamo la categoria, poi abbiamo il
+gruppo di processi, i processi, le attività, i task e i sotto-task. Quindi possiamo descrivere i nostri processi
+nel livello di dettaglio che desideriamo in base a quello che ci sembra più conveniente per la nostra
+organizzazione Qui giusto per fare degli esempi, troviamo una Check List di processi che appartengono a un
+settore organizzativo di tipo bancario e in particolare qui abbiamo la categoria Develop Vision and Strategy
+in cui vediamo il processo principale, quindi la classe principale, e poi vediamo tutte le varie sottoclassi, e
+così via, diversi livelli di dettagli, in cui possiamo vedere vari processi e sottoprocessi. In modo simile,
+questo invece è la lista dei processi sempre per il settore bancario per quanto riguarda invece la gestione
+dell'Information Technology. Anche qui i processi e i sottoprocessi a diversi livelli di dettaglio. La Check List
+quindi è un approccio comunque utile e semplice da applicare perché permette semplicemente di
+confrontare i nostri processi con quelli di riferimento per il nostro settore Nonostante questo è comunque
+un approccio abbastanza complesso: prima di tutto perché, prima di poter applicare l'approccio Check List,
+è necessario andare ad identificare tutti i processi al livello di dettaglio che noi desideriamo; dopodiché
+un'altra limitazione della Check List è dovuta al fatto che può essere efficace solamente per settori che sono
+altamente regolamentati. Se noi abbiamo un'organizzazione che non fa parte di settori altamente
+regolamentati, probabilmente non ci sarà una corrispondenza precisa con una Check List che possiamo
+trovare allo stato dell'arte Quindi questi sono le principali limitazioni di questo approccio Nonostante
+questo, è un approccio molto facile da applicare perché appunto possiamo semplicemente fare un
+confronto con quello che è presente sotto dell'arte. Altro approccio che possiamo applicare è quello legato
+alla catena del valore: la catena del valore di Porter permette di identificare quali sono i processi della
+
+nostra organizzazione secondo questo schema: in particolare la catena del valore di Porter va ad
+identificare quelli che sono i processi primari e li divide in cinque categorie, in cinque principali processi che
+sono: la logistica in ingresso, la logistica in uscita, le operazioni, marketing e vendite, e poi i servizi. Allo
+stesso modo, la catena del valore permette anche di identificare tutte quelle che sono invece le attività di
+supporto. Mentre i processi primari sono rivolti all'esterno della nostra organizzazione, i processi di
+supporto sono invece quelli che vanno a supportare le attività interne della nostra organizzazione e questi
+processi di supporto sono quattro in questo caso, quattro categorie. Quindi abbiamo la parte dei processi di
+tipo infrastruttura, abbiamo l'approvvigionamento, le risorse umane e infine lo sviluppo tecnologico Quindi,
+identificati questi processi, è possibile utilizzare la catena del valore come punto di partenza per andare ad
+identificare quelli che sono i processi della nostra organizzazione Questi sono degli esempi e in questo
+esempio vediamo un insieme di processi per le varie categorie che abbiamo visto prima per quanto
+riguarda il front end della nostra organizzazione, quindi l'interazione della nostra organizzazione con
+l'esterno. Quindi ad esempio, per marketing and sales, possiamo trovare la pubblicità, la negoziazione, i
+contratti, la vendita e la fatturazione Allo stesso modo possiamo andare a identificare invece i processi di
+Back End quindi quelli invece che si rivolgono all'interno della nostra organizzazione e anche qui per le varie
+categorie che abbiamo visto, qui vediamo principalmente processi di supporto ma non soltanto, possiamo
+andare a identificare dei processi tipici per la nostra organizzazione. Anche la catena del valore però ha
+delle limitazioni: prima di tutto il problema principale della catena del valore è che le varie categorie che
+abbiamo visto di processi sono orientate alle unità organizzative della nostra organizzazione, quindi quello
+che perdiamo quando andiamo ad avere la catena del valore, ad utilizzare la catena del valore è prima di
+tutto la vista interfunzionale che è tipica dei processi, perché ogni processo che andiamo identificare è
+solamente limitato ad una sola area organizzativa Un'altra limitazione è dovuta al fatto che il numero di
+funzionalità che andiamo ad identificare è limitato ma anche che il livello di dettaglio è molto aggregato,
+quindi poco livello di dettaglio. Infine un'altra limitazione della catena del valore è dovuta al fatto che la
+catena del valore si rivolge principalmente ad organizzazioni di tipo tradizionale, quindi organizzazioni che
+producono prodotti di tipo fisico mentre è poco adatta ad andare a descrivere organizzazioni che invece
+producono servizi L'ultimo approccio che invece andiamo a guardare è l'approccio analitico che è
+sicuramente quello più completo rispetto agli approcci che abbiamo visto ma anche quello più complesso e
+quello più costoso L'approccio analitico è un approccio di tipo top down: nell'approccio analitico si parte
+dall'output o meglio si parte da colui che riceverà un beneficio dal nostro processo, quindi il destinatario Il
+destinatario può essere il nostro cliente ma può essere anche un fornitore o un intermediario. Partendo dal
+destinatario, si vanno poi a identificare quelli che sono gli output che noi forniamo per quel destinatario
+Una volta identificato l'output, si vanno ad identificare invece tutte le attività, quindi il nostro processo, che
+permettono di realizzare quest'output, quindi tutte le attività all'interno della nostra organizzazione che ci
+permettono di creare quel servizio o quel prodotto, ma non solo le attività, ma anche i ruoli coinvolti. Da
+questo poi, possiamo invece identificare anche gli input e le informazioni che sono necessarie per svolgere
+questo processo Questo approccio è molto utile ma anche questo ha delle limitazioni perché prima di tutto
+ci permette solamente di andare identificare i processi primari e non quelli di supporto. Questo perché, se
+partiamo dall'output, gli unici processi della nostra organizzazione che permettono di realizzare un output
+sono quelli che si interfacciano con l'esterno, quelli rivolti effettivamente alla creazione del nostro business,
+non quelli invece rivolto all'interno dell'organizzazione Quindi riusciamo solamente identificare processi
+primari Quindi bisogna effettuare uno sforzo ulteriore per identificare anche quelli di supporto Inoltre,
+come abbiamo detto prima, questo sicuramente è l'approccio più completo ma anche quello più costoso in
+termini sia di tempo che economici Quindi abbiamo visto tutti e tre gli approcci che è possibile utilizzare,
+ovviamente è importante che l'organizzazione, nel momento in cui viene creata o nel momento in cui si
+deve evolvere, una volta identificate le funzionalità che deve offrire all'esterno, vado ad identificare anche
+tutti quei processi che permettono di realizzare quelle funzionalità.
+
+

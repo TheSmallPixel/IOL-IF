@@ -1,0 +1,118 @@
+Lezione 5 modulo 6
+In questo video, descriviamo una delle tecnologie per reti locali più diffuse che è l'Ethernet. Ethernet è un
+protocollo, una tecnologia standardizzata dalla IEEE che è l'organo che si occupa appunto di standardizzare,
+tra le altre cose, la stragrande maggioranza delle tecnologie di reti locali che supportano reti locali. In
+particolare, la tecnologia Ethernet e le tecnologie di reti locali sono standardizzate dalla IEEE nell'ambito del
+working group 802 che appunto è il gruppo di lavoro che si occupa di definire le procedure di
+funzionamento delle reti locali. All'interno di questo gruppo di lavoro, in realtà vengono standardizzati
+anche altre tecnologie per reti locali oltre all'Ethernet, ad esempio il Wifi o altre tecnologie simili. Il gruppo
+di lavoro è diciamo così organizzato che era layer di competenza. Quindi il gruppo di lavoro 802 si suddivide
+nel gruppo di lavoro 802.2, che si occupa di standardizzare quello che si chiama LLC, Logical Link Control,
+quindi lo strato più alto del livello di collegamento, e il gruppo di lavoro 802X, che si occupa invece di
+standardizzare lo stato più basso del livello di collegamento, quindi quello che abbiamo definito Medium
+Access Control. Tutte le tecnologie di reti locali standardizzate dal working group 802 condividono uno
+stesso LLC, mentre si differenziano per le specifiche scelte fatte a livello MAC, quindi Ethernet è
+scandalizzato con il nome 802.3, WiFi è standardizzato con il nome 802.11 e così via. Quindi tutte le
+tecnologie di reti locali hanno una parte in comune che è rappresentata dalle LLC e si differenziano per la
+parte sottostante del livello di Medium Access Control e chiaramente anche per il supporto fisico con cui
+l'informazione viene trasferita. Il supporto fisico, utilizzato dalla versione primordiale, era costituito da un
+cavo coassiale. In realtà, le versioni primordiali dell'Ethernet usavano due tipi diversi di cavi coassiali: uno
+detto Thick Ethernet, quindi un cavo coassiale spesso, e uno detto Thin Ethernet, quindi cavo coassiale più
+sottile. Entrambe le configurazioni supportavano 10 megabit al secondo di velocità di trasmissione
+dell'informazione e si differenziavano sostanzialmente per il diametro massimo della rete, quindi per la
+dimensione massima della rete in termini di lunghezza coperta da una trasmissione fisica. L'Ethernet
+10Base5 era in grado di garantire e realizzare reti con una lunghezza massima fino a 500 metri, mentre il
+10Base2 era in grado di realizzare reti con una lunghezza massima di 200 metri. La scrittura XBaseY è una
+scrittura abbastanza ricorrente quando si parla di tecnologie di trasmissioni per reti locali ed è un modo
+compatto per esprimere le caratteristiche fisiche del mezzo trasmissivo e della tecnologia di rete locale
+utilizzata. La X rappresenta il bit rate supportato da quel mezzo trasmissivo, da quella configurazione di
+rete, mentre la Y rappresenta la dimensione massima, il diametro massimo del segmento di rete locale che
+può essere realizzato usando quel tipo di tecnologia. La parola chiave Base indica invece il modo con cui
+l'informazione è inviata sul canale fisico. Ethernet, a partire dalla tecnologia con BUS condiviso, evolve e
+evolve molto velocemente e nei primi anni '90 quello che succede è che la tecnologia con un unico canale
+BUS fisico viene sostituita con tipologie diverse basate su un concetto di centro stella, per cui il BUS fisico, il
+cavo coassiale, viene sostituito da un dispositivo, che generalmente definito HUB o Repiter, che in buona
+sostanza fa le veci del canale a BUS. Il dispositivo HUB, in buona sostanza, ha un certo numero di porte,
+ciascuna delle quali è collegata a tutti i dispositivi che fanno parte della rete locale e il dispositivo HUB si
+limita a ritrasmettere su tutte le porte ogni singolo bit che riceve da una qualunque porta d'ingresso.
+Quindi, in buona sostanza, il canale coassiale a BUS condiviso viene sostituito da un dispositivo che emula il
+funzionamento a BUS, pur non essendo un canale fisico di tipo a BUS. Quello che cambia è che, a partire
+sempre dalla prima metà degli anni '90, cambiano i supporti fisici usati per trasferire informazioni. I
+supporti fisici usati a partire dai primi anni '90, non sono più cavi coassiali, molto costosi generalmente, ma
+generalmente doppini in rame. Ethernet, configurato in questo modo, quindi con centro stella e con
+connessioni che sfruttano doppini in rame, prende il nome di 10BaseT, dove la T sta per Twisted pair, che
+sono appunto i doppini in rame. A fine anni '90, Ethernet diventa sempre più veloce, quindi i bit rate
+crescono da 10 megabit al secondo fino a 100 megabit al secondo. Questa versione dell'Ethernet prende il
+nome di Fast Ethernet. In aggiunta ai doppini per definire i collegamenti tra i dispositivi HUB o tra i diversi
+HUB di architettura di rete locale, vengono usate a partire dalla fine degli anni '90 anche le fibre ottiche. Le
+architetture Ethernet che sfruttano fibre ottiche generalmente sono identificabili perché nella dicitura
+
+XBaseY hanno la Y uguale a FX. Nei primi anni 2000, il rate di trasmissione continua a crescere, viene
+portato da 100 megabit al secondo a un gigabit al secondo e ulteriormente, nella seconda metà degli anni
+2000, fino a 10 gigabit al secondo. Quello che cambia è ovviamente la bontà e la qualità dei mezzi
+trasmissivi usati per trasferire le informazioni, per cui, oltre a utilizzi di doppini di diverso tipo, si usano fibre
+ottiche di tipo monomodali o multimodali che garantiscono appunto di arrivare a velocità di gigabit al
+secondo. La slide mostra alcune delle tipologie di doppini telefonici usati per quello che si chiama cablaggio
+strutturato di reti locali. Queste tipologie sono categorizzate, quindi vanno dalla categoria 1 fino alla
+categoria 7, e, in buona sostanza, si differenziano per la banda passante. Come vedremo i video futuri, sul
+livello fisico un collegamento fisico, appunto è caratterizzato da una banda che è direttamente
+proporzionale al bit rate con cui si può trasmettere informazioni su quel collegamento fisico. Ad esempio,
+Fast Ethernet di Ethernet a 100 megabit al secondo è implementata con doppini di categoria 5 che hanno
+una banda di 100 megahertz, gigabit Ethernet è implementata invece con doppini di categoria 5 e che
+hanno anch'essi una banda di 100 megahertz, ma consentono di arrivare a bit rate, appunto, intorno al
+gigabit al secondo. Dal punto di vista protocollare, come anticipato all'inizio, la tecnologia ethernet,
+standardizzata poi in 802.3, comprende in realtà tre livelli distinti: il primo livello, che quello che abbiamo
+chiamato Logical Link Control, che è il livello superiore del livello di collegamento, un livello intermedio che
+il cosiddetto Medium Access Control, che si occupa invece di funzionalità di livello più vicino al livello fisico,
+e poi il livello fisico che definisce quindi il supporto fisico appunto su cui l'informazione deve essere
+veicolata. Generalmente, al livello LLC, le funzioni servizi offerti sono unicamente funzioni di multiplexing,
+quindi di multiplazione di diversi protocolli di livello superiore che usano, attraverso Services Access Point,
+la tecnologia 802.3, quindi l'Ethernet. Dal punto di vista invece del Medium Access Control, i servizi offerti
+sono servizi di filtraggio e di accesso multiplo, mentre, dal punto di vista di livello fisico, vengono definite
+tutte quelle procedure per inviare fisicamente i bit sul canale trasmissivo. La slide qui in basso mostra il
+formato di una trama 802.3: la trama parte a livello fisico con un preambolo di 7 byte, che sostanzialmente
+serve per consentire al trasmettitore ricevitore di sincronizzarsi quindi di fare in modo di essere in grado di
+ricevere al ricevitore i bit che vengono inviati dal trasmettitore stesso, torneremo sul concetto di
+preambolo quando vedremo il livello fisico. Segue poi un byte di Start Frame Delimeter, quindi un byte che
+serve appunto per il framing, per identificare l'inizio di una trama 802.3 e poi segue il contenuto della trama
+della PDU di livello 2, della PDU di livello 802.3, di livello Ethernet. I primi due campi dei byte sono campi di
+indirizzamento, Destination Address e Source Address, che contengono appunto gli indirizzi MAC, quindi gli
+indirizzi fisici di destinazione e sorgente rispettivamente. Segue un campo di lunghezza lenght, che serve
+per appunto indicare la lunghezza complessiva della trama 802.3 e gli ultimi due campi qui in fondo sono
+dei campi di padding, che servono per diciamo riempire la trama di bit danni nel caso in cui la lunghezza
+della trama non sia un multiplo di un numero voluto e l'ultimo campo è il campo di Frame Check Sequence
+che fa il paio con il Checksum che abbiamo studiato in video sul TCP ad esempio, quindi è un campo di byte
+che servono sostanzialmente per scoprire se tutti i bit della trama ricevuta sono stati ricevuti correttamente
+oppure se ce n'è qualcuno errato. In realtà, a livello di rete locale, esistono due, diciamo così, dialetti di
+quello che abbiamo chiamato fino adesso Ethernet: esiste la 802.3 che è la versione standardizzata da EIII,
+ed esiste in alcune realizzazioni di reti locali anche la versione pre standard, quella che abbiamo definito
+Ethernet all'inizio di questo video. La differenza non è sostanziale, nel senso che l'unica differenza che
+esiste tra le due versioni della tecnologia di rete locale è che in Ethernet scompare la LLC, il che vuol dire
+che nella tecnologia Ethernet non esiste più la differenza tra LLC e MAC ma i due livelli, come si mostra
+nella slide, sono di fatto realizzati insieme, sono messi insieme. Dal punto di vista sintattico, la slide mostra
+il formato della trama Ethernet. Visivamente, la trama Ethernet è molto simile alla trama 802.3, esiste
+sempre un campo di preambolo, esattamente come la trama 802.3 a livello fisico, esiste sempre un campo
+di Frame Delimiter, di delimitatore di trama, esattamente come la trama 802.3, e anche la trama Ethernet
+ha i due campi di indirizzamento: indirizzo di sorgente e indirizzo di destinazione. Anche la trama Ethernet
+ha la parte dati, payload, la PDU di livello superiore e anche la trama Ethernet ha il campo di Frame Check
+Sequence, quindi il campo che serve sostanzialmente per misurare la bontà dei bit ricevuti. Quello che
+
+cambia tra le due versioni è che, al posto del campo di lunghezza, all'interno delle trame Ethernet viene
+codificato il cosiddetto campo di tipo. Il campo di tipo serve nelle trame Ethernet per fare la multiplazione
+perché, come abbiamo visto nella slide precedente, Ethernet non supporta il livello LLC che nello standard
+802.3 è quello che si occupa della multiplicazione, quindi deve essere direttamente il livello Ethernet
+indiviso, che indica dentro il campo di type un identificativo che serve per indirizzare il protocollo di livello
+superiore che sta usando come Ethernet come tecnologia di livello locale. Come visto, sia le trame Ethernet
+che le trame 802.3 usano all'interno del loro header indirizzi Mac. Questi indirizzi MAC che abbiamo già in
+realtà usato e visto in altri video, sono degli indirizzi di 6 byte che come gli indirizzi ip hanno una struttura
+gerarchica nel senso che i primi tre byte di questi indirizzi identificano il costruttore della scheda di rete a
+cui l'indirizzo è assegnato, mentre secondo i tre byte identificano la scheda di rete specifica. Questi 48 bit,
+questi sei byte, sono quelli appunto inseriti nei campi di destination address e source address delle trame
+802.3, delle trame Ethernet. Esattamente come per gli indirizzi ip, anche indirizzi MAC hanno il corrispettivo
+broadcast, il che vuol dire che anche per gli indirizzi MAC viene definito un indirizzo canonico nell'indirizzo
+di default che viene usato quando la trama di livello 2, Ethernet 0 802.3 non è unica, quindi non è
+indirizzata a un'unica stazione destinataria, ma deve andare a tutte le stazioni che hanno un interfaccia di
+rete collegata alla rete locale. Questo indirizzo broadcast convenzionalmente è l'indirizzo che ha tutte f in
+esadecimale.
+
+

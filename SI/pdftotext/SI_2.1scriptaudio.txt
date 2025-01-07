@@ -1,0 +1,210 @@
+Lezione 2 modulo 1
+Questa è la prima lezione di una serie di lezioni dedicate ad introdurre il linguaggio Archimate. Archimate è
+un linguaggio grafico per la definizione di diagrammi che sono in grado di rappresentare Architecture
+Enterprise. Il linguaggio Archimate è stato proposto e viene manutenuto da TheOpenGroup, un consorzio di
+organizzazioni e di aziende che operano nel mondo IT; tra i vari obiettivi di questo consorzio c'è anche
+quello di definire approcci comuni per la definizione e la gestione delle cosiddette Enterprise Architecture.
+Infatti uno dei capitoli di TheOpen Group è quello che definisce il framework TOGAF, uno dei framework
+più comuni nel mondo dell'Enterprise Architecture; al momento è stata rilasciata la versione 3.2 della
+specifica Archimate. In questo corso ci occuperemo della versione 3.1 che comunque non si discosta per gli
+elementi che approfondiamo all'interno di questi moduli da quella che è la specifica attualmente rilasciata
+e che è in fase di adozione finale. Come detto, Archimate è un linguaggio grafico che permette di
+rappresentare attraverso dei simboli gli elementi che costituiscono un'Enterprise Architecture. Al tempo
+stesso Archimate, però, sebbene sia un linguaggio grafico, ha una semantica ben definita per tutti quegli
+elementi che lo compongono. E questa semantica è descritta all'interno della specifica Archimate che si può
+trovare all'indirizzo indicato in questa slide; ovviamente le specifiche sono spesso noiose da leggere,
+comunque non facilmente comprensibili da chi si sta approcciando per la prima volta a un determinato
+linguaggio quale ad esempio Archimate, per questo motivo vi voglio suggerire in questa sede alcuni libri,
+alcuni testi che possono essere utili per un primo approccio al linguaggio. Innanzitutto la prima sorgente di
+informazioni che vi suggerisco è quella data dal libro scritto da Gerben Wierda che si chiama 'Mastering
+ArchiMate e che ha il pregio di essere disponibile in maniera gratuita per il suo primo capitolo, che in realtà
+è il capitolo che viene seguito, viene descritto all'interno di questa serie di lezioni. Quindi il mio invito
+(ovviamente per chi vuole, può anche acquistare il testo sia in formato PDF, quindi ebook, sia in formato
+cartaceo normale) è quello di andare sul sito dell'editore e registrarsi almeno per riuscire a scaricarsi questa
+prima introduzione gratuita dell'Archimate. Ecco, qui c'è una piccola nota che indica il fatto di prestare
+attenzione a quelli che sono i colori utilizzati. Come vedremo fra poco, Archimate è un linguaggio che ha
+diversi simboli e per definizione è detto colorless. Questo significa che il colore dato ai vari elementi in sé
+non ha nessun significato, non c'è una semantica associata; è anche vero però che è ormai di uso comune
+utilizzare tre colori, il giallo il verde e il blu per indicare alcuni aspetti del nostro linguaggio e quindi dei
+diagrammi che rappresentiamo attraverso questo linguaggio. Ecco, il modo in cui vengono utilizzati questi
+colori in queste lezioni e anche nella maggior parte dei testi di riferimento che utilizzeremo è diverso da
+quello adottato all'interno di questo libro. Il vantaggio però di questo libro è che entra molto nella
+descrizione della semantica degli esempi nelle implicazioni di alcune scelte, nella rappresentazione di alcuni
+ambiti che lo rende molto interessante e molto utile per comprendere davvero le potenzialità del
+linguaggio, sebbene utilizzi appunto questo difetto, almeno dal nostro punto di vista utilizzi i colori in
+maniera, diciamo, alternativa. Un altro libro interessante, che copre non solo gli aspetti di Archimate ma li
+lega molto in profondità con tutti gli aspetti dell'Enterprise Architecture in generale è quello scritto e edito
+da Marc Lankhorst, che è anche uno dei massimi esperti del mondo dell'Enterprise Architecture, che si
+intitola 'Enterprise Architecture at Work': vi consiglio anche di spendere un'ora del vostro tempo per
+guardare il video suggerito in questa slide, dove viene introdotto TOGAF da un lato ma anche l'importanza
+di una modellazione utilizzando Archimate dell Enterprise Architecture è un video abbastanza interessante,
+non bisogna avere una piena conoscenza di Archimate magari al termine di tutte le lezioni che vedremo. Vi
+suggerisco comunque di darci un'occhiata per approfondire un po' e sedimentare meglio i concetti che
+vedremo in queste lezioni. in ultimo vi consiglio la visione di questo gitbook, un libro che viene editato
+attraverso i contributi volontari da parte di diversi scrittori da tutto il mondo, da parte di esperti o anche
+practitioner nel mondo dell'Enterprese Architecture, al momento non è ancora completo ma soprattutto
+molti dei contributi sono relativi alla parte più strategica e motivazionale, lasciando scoperta quella parte di
+Archimate che è più affrontata in questo corso. Ad ogni modo lo segnalo, più che altro perché magari nel
+momento in cui visionerete questo video ci sono stati dei contributi anche per quanto riguarda il business
+
+layer, l'application layer, il technology layer che invece sono gli elementi più legati a quelli che sono i
+contenuti di questo corso. Però non è l'unico linguaggio grafico che si incontra nel mondo dell'informatica,
+nel mondo dell'ingegneria informatica, in particolare; non è neanche l'unico linguaggio grafico che si
+incontra quando si vuole descrivere qualcosa legato ai sistemi informativi che sappiamo benissimo, è un
+dominio un po' a cavallo con il mondo gestionale organizzativo, tra il mondo gestionale e organizzativo e il
+mondo informatico. Ecco, l'obiettivo di Archimate è fornire un linguaggio che permetta una, passate il
+termine, mediazione culturale fra quelle che sono le competenze, quelli che sono i linguaggi, quelli che
+sono gli approcci definiti dal mondo gestionale che di solito viene posizionato in alto, che definisce la
+strategia aziendale e gli aspetti organizzativi della mia organizzazione e gli aspetti più informatici, più legati
+alla tecnologia, che invece di solito si posizionano verso il basso in questa gerarchia. Non che uno sia più
+importante dell'altro, perché, come si è visto, oramai questi due mondi si influenzano a vicenda, a volte
+delle trasformazioni nel mondo dei sistemi informativi avvengono per via del Technology Push, nuove
+tecnologie che spingono alla definizione di nuove strategie aziendali, piuttosto che di demand pool: io
+implemento una nuova tecnologia perché il mercato in qualche modo me lo chiede. Ecco, di solito questi
+due mondi fanno fatica a comprendersi. Uno degli obiettivi principali dell'Enterprise Architecture è appunto
+quello di fornire degli strumenti che aiutino questi due mondi a collaborare effettivamente fra di loro,
+fornendo quindi, nel caso di Archimate, un linguaggio comprensibile sia per chi non mastica di tecnologia,
+sia per chi non mastica di aspetti organizzativi. È importante però anche sottolineare che il nostro accenno
+in questo corso, che riguarda un corso di laurea in ingegneria informatica, sarà dato maggiormente al punto
+di vista più tecnologico, più informatico appunto, che cerca di vedere, di catturare quali sono le esigenze
+che vengono al mondo gestionale e cerca di rappresentarle nella maniera corretta, o meglio di
+rappresentare come il mondo IT riesce a sostenere quelle che sono le esigenze che provengono dal mondo
+più business. Entrando più nel dettaglio, Archimate è una notazione abbastanza ricca che copre, come
+abbiamo detto, i diversi aspetti che riguardano l'Enterprise Architecture. È composto da un core, che è
+l'elemento che considereremo appunto in questo corso, di cui vi darò i dettagli nella prossima slide e che
+copre i dominii, applicat i domini più importanti quando si guarda a un Enterprise Architecture, quindi la
+definizione, possiamo dire, di un sistema informativo dal punto di vista organizzativo, applicativo e
+tecnologico. Attorno a questo, nel tempo è stato esteso Archimate anche per coprire, attraverso quindi una
+notazione grafica, altri aspetti che riguardano l'adozione del framework TOGAF che riguarda, attraverso il
+ciclo di vita ADM, anche la definizione di quelle che sono le strategie che riguardano l'organizzazione e
+anche l'adozione di soluzioni IT per l'organizzazione, che riguardano anche le modalità con cui le scelte di
+tipo tecnologico, ma anche le scelte di tipo organizzativo che hanno un impatto sulla tecnologia sono
+adottate e quindi riguardano la parte più implementativa di migrazione della situazione is is, la situazione to
+be e in maniera totalmente trasversale rispetto a questi ambiti c'è anche la possibilità di definire quelle che
+sono le intenzioni, i goal, tutti gli aspetti motivazionali che in qualche modo hanno guidato la transizione
+dall'is is al to be e che possono essere comunque diagrammati utilizzando Archimate. Noi ci occupiamo, in
+questo corso, della parte più core che può essere rappresentata attraverso questa matrice. Innanzitutto è
+utile ricordare che quando si parla di Enterprise Architecture si parla della descrizione dell'architettura,
+diciamo, dei nostri sistemi informativi, rispetto a tre di vista, tre layer che sono il business layer,
+l'application layer e il technology layer. Ecco, indipendentemente poi da quello che è il framework utilizzato
+per la rappresentazione e la gestione dell'Enterprise Architecture che può essere TOGAF, può essere
+Zachman, possono essere altri, si vede che solitamente i domini presi a riferimento per la rappresentazione
+dell'Enterprise Architecture fanno solitamente capo a queste tre macroclassi, un livello più di business dove
+l'obiettivo è quello di rappresentare i servizi che vengono offerti all'utenza finale, solitamente alla clientela.
+L'application layer che rappresenta lo strato, potremmo dire software, cioè tutte quelle applicazioni che
+sostengono i processi aziendali che sono rivolti alla clientela fino al livello sotto, che è il technology layer
+che è quello più infrastrutturale che definisce quali sono il livello fisico, quindi le macchine, o anche il livello
+virtuale, oggigiorno, con il cloud, le Virtual Machine, oppure i servizi software di sistema, dai sistemi
+operativi a, per esempio, sistemi di clustering, di orchestrazione, quale per esempio Kubernetes. Nelle
+
+soluzioni più innovative che permettono, che ospitano quelle applicazioni che fanno capo, appunto,
+all'application layer, nello specifico, vedremo che faremo un accenno al business layer che è quello che
+dovrebbe rappresentare, in qualche modo, almeno per noi, le esigenze del business. Non approfondiremo
+troppo questo aspetto perché, appunto, esula un po' da quelli che sono gli obiettivi di questo corso. Ci
+concentreremo maggiormente sull'application layer e, sul Technology layer, sulla possibilità di vedere come
+organizzare le applicazioni, come integrarle fra di loro, come posso deploiare queste applicazioni su
+soluzioni che possono essere one tier, two tier, a seconda della tipologia di deployment delle architetture
+che sono state scelte. Indipendentemente da quelli che sono i livelli, ognuno di questi livelli è descritto
+attraverso tre aspetti, e questa è una particolarità di Archimate. In altre parole, vedremo che tutti i simboli
+che noi inseriamo all'interno dei nostri diagrammi possono essere classificati in elementi attivi, elementi
+comportamentali ed elementi passivi. Quindi qualunque elemento noi andremo a mettere può essere uno
+di questi tre, è importante appunto ricordarsi di questi tre elementi. Vediamo di approfondire il discorso
+degli aspetti presentando questo esempio. Riguarda l'Enterprise Architecture, ma che utilizza gli elementi di
+Archimate innanzitutto in giallo. Vediamo un possibile diagramma scritto in Archimate. Ecco, tutta quella
+parte in grigio, questi rettangoli servono solo per la spiegazione, non fanno parte del linguaggio. Qui
+vediamo un elemento attivo e io so che questo elemento è attivo perché tutti gli elementi attivi sono
+rappresentati da rettangoli con angoli a 90°, quindi ricordiamoci sempre che tutte quelle volte che troviamo
+una struttura, una forma di questo tipo, sappiamo associarla direttamente a un elemento attivo. Al
+contrario, gli elementi comportamentali sono sempre dei rettangoli, però vedete che hanno degli angoli
+arrotondati. Ecco, tutte quelle volte che si incontra un elemento con angoli arrotondati, quello è un
+elemento di tipo comportamentale. Infine, anche se abbiamo dei rettangoli con degli angoli a 90°, quindi
+potremmo dire un elemento attivo, la presenza di questa banda indica il fatto che non stiamo parlando di
+elemento attivo ma di un elemento di tipo passivo. Quindi, la forma già mi indica quell'elemento, a che
+aspetto fa riferimento, ed è importante sapere qual è l'aspetto, perché Archimate, in qualche modo, mi
+permette di costruire delle frasi; io riesco a scrivere in un linguaggio grafico quelle che sono delle frasi, o
+almeno intuitivamente, possono rappresentare delle frasi, in linguaggio naturale, dove è possibile definire
+un soggetto, che esegue un'azione, nei confronti di un determinato oggetto. Quindi il soggetto è definito
+dall'elemento attivo, in questo caso John, esegue un'azione, legge, su un oggetto che è il libro. Per chi ha
+già visto UML, riscontrerà in questo primo esempio alcuni elementi di UML, ad esempio il fatto di avere
+delle icone in questa zona che indicano un elemento associato a uno stereotipo, è esattamente la stessa
+cosa. Molti degli elementi che troveremo in Archimate sono ispirati a UML, anzi lo stesso Archimate si ispira
+a UML, però non bisogna leggerlo come se fosse UML. In questo caso noi stiamo dicendo che è un attore,
+questo significato dello stereotipo, John, e l'attore è un particolare elemento attivo, così come vedremo
+essere il ruolo un elemento attivo, legge, e questo simbolo indica un processo, che può essere più o meno
+articolato, un elemento, un business object, in questo caso, che è chiamato il libro. Questo è un primo
+esempio di come posso andare a strutturare un diagramma in Archimate. Mi sono concentrato, fino ad ora,
+a rappresentare quello che è il lessico del linguaggio, sappiamo però che un linguaggio è composto
+innanzitutto dal lessico, cioè dall'insieme dei simboli che costituiscono il linguaggio; qui ne abbiamo visto
+qualcuno, una minima parte in realtà, rispetto a quella che è la ricchezza dal punto di vista dei simboli
+all'interno di Archimate, però un linguaggio è definito, oltre che dal lessico, anche dalla sintassi, dalle
+regole, dalla grammatica e dalla semantica. Cosa significa? Quello che ognuno di questi simboli è e cosa
+significa metterli assieme. Ecco, rispetto alla sintassi, che è un elemento fondamentale che deve essere in
+qualche modo acquisito, grazie a queste lezioni, una delle prime regole che viene esposta è che,
+ricordiamoci sempre che un elemento attivo può essere collegato solo a un elemento comportamentale o a
+un altro elemento attivo. Un elemento comportamentale può essere collegato o a un elemento
+comportamentale, o a un elemento attivo, o a un elemento passivo. In ultimo, un elemento passivo può
+essere collegato solo a un elemento comportamentale. Adesso dimentichiamo il verso delle frecce, non è
+così importante, però, di fondo, la cosa importante è che non bisogna mai avere un diagramma dove
+l'elemento attivo è direttamente collegato all'elemento comportamentale. Ecco, questo è già una prima
+
+regola che ci si deve ricordare. Questo diagramma, oltre che contenere appunto tutti questi simboli qui
+rappresentati in giallo, contiene anche le relazioni, cioè tutti gli elementi che in qualche modo permettono
+di collegare i diversi simboli in maniera più o meno articolata. Qui vediamo due possibili relazioni, vediamo
+che le frecce, in questo caso una determinata forma, in quest'altro caso un'altra forma, perché hanno due
+significati diversi, giusto per fare un cenno, in questo caso stiamo parlando del cosiddetto assegnamento, in
+questo caso invece stiamo parlando dell'accesso. Hanno due significati diversi perché appunto devono
+rappresentare due situazioni diverse. Un altro elemento importante che va sottolineato quando si
+costruisce un diagramma Archimate, è l'ispirazione rispetto ai principi della service orientation. Questo cosa
+significa? Anche qui, dimentichiamoci per un attimo i colori, non associamoli a quello che abbiamo visto
+prima. Qui possiamo ritrovare l'aspetto infrastrutturale, il layer infrastrutturale, il layer applicativo e il layer
+di business. Questi sono i tre domini che abbiamo visto prima compongono il nostro diagramma Archimate,
+sono alla base dell' Archimate core framework. Ecco, una buona strutturazione dell'intera Enterprise
+Architecture prevede che ognuno di questi livelli venga ulteriormente suddiviso in due sottolivelli, c'è un
+livello che definisce il servizio, cioè l'interfaccia verso il livello successivo, quindi ho il business service,
+l'application service, l'infrastructure service, che sono gli elementi, rappresentano gli elementi visibili
+rispetto a chi userà quei servizi. Ricordiamoci che i servizi di business sono disponibili ai miei clienti, al mio
+customer, ai miei utenti finali, quindi vuol dire che il customer interagirà direttamente coi servizi di
+business. Però, come avviene sempre nel mondo dei servizi o quando io fruisco di qualunque servizio, il
+concetto di servizio porta con sé anche il concetto di linea di visibilità. In altre parole, noi possiamo sempre
+identificare quella che è l'interfaccia nell'accesso del servizio che qui è identificato appunto dal concetto di
+servizio in sé, da quella che è l'implementazione di un servizio. Ecco, sono concetti per chi ha una base di
+programmazione orientata agli oggetti, abbastanza comuni, la distinzione fra quella che è l'interfaccia
+dall'implementazione, che si ha in una buona programmazione appunto, ad oggetti. La stessa cosa
+dobbiamo prevederla qui: noi dobbiamo sempre pensare a ogni livello come scomposto da due sottolivelli,
+una parte che descrive i servizi offerti al livello superiore e una parte descritta da quelli che sono gli
+elementi che permettono l'offerta attraverso quel servizio. Nel caso del business process, questi può usare,
+spesso se non sempre, servizi di tipo applicativo. Quindi, così come il customer utilizza i servizi di business, il
+business process, quindi l'implementazione del livello di business, usa i servizi di tipo applicativo, senza
+conoscerne la complessità, complessità dal punto di vista implementativo, che è definita dalla sua
+strutturazione in componenti legata a quegli elementi che metto dietro la linea di visibilità, all'interno del
+livello, appunto, applicativo. In maniera ricorsiva, cosa ho? Che i componenti a livello applicativo utilizzano i
+servizi infrastrutturali senza conoscerne necessariamente la complessità che vi sta dietro. Io faccio il deploy
+delle macchine sulle macchine della mia applicazione, però non so poi come vengono, non è necessario che
+io sappia come viene gestita poi tutta l'infrastruttura che ci sta dietro. Ecco, questo è il modo in cui,
+soprattutto in questo corso, struttureremo il nostro diagramma. Un piccolo inciso rispetto a questo:
+un'Enterprise Architecture, nella realtà, permette di descrivere, di essere descritta, attraverso tanti
+diagrammi; difficilmente, vista anche la complessità di un'Enterprise Architecture, esiste un unico
+diagramma che rappresenti tutti i componenti che fanno capo appunto all'architettura, ma esistono tanti
+diagrammi, ognuno in grado di catturare diversi aspetti, diversi concern, per utilizzare il termine corretto,
+dei vari stakeholder che gravitano attorno, appunto, alla mia organizzazione. Per la gestione,
+manutenzione, implementazione ed evoluzione del mio sistema IT. Ecco, per semplicità noi faremo degli
+esempi abbastanza contenuti, che comunque possono essere rappresentati con un unico diagramma che
+viene appunto detto layer diagram, perché mi permette di catturare tutti i vari livelli. La cosa importante è
+ricordarsi che ogni livello deve essere suddiviso in sottolivelli, in questi due sottolivelli, almeno in questi due
+sottolivelli. Prima di chiudere, un piccolo accenno a quelli che sono gli strumenti che possono essere utili
+nella modellazione utilizzando Archimate. In particolare utilizzeremo Archi tool, che è lo strumento,
+potremmo dire, ufficiale di OpenGroup per la modellazione utilizzando Archimate; è uno strumento
+liberamente scaricabile, il sito è qui indicato, è uno strumento che è disponibile su tutte le piattaforme,
+Linux, Mac, Windows, quindi è facilmente installabile su qualunque dispositivo. Ha anche una versione auto
+
+contenuta, Quindi se utilizzate dei PC su cui non avete accesso secondo amministratore potete comunque
+installarlo senza problemi. C'è anche la possibilità di usare altri tool, Signavio, ad esempio, è uno dei tool
+che vi viene suggerito anche per le modellazioni BPMN, ha tutta un'area che permette anche di fare dei
+modelli in Archimate. In questo caso voi potete utilizzare appunto lo stesso strumento che usate per altri
+modelli che vedete in questo corso, per lo stesso obiettivo, ricordandovi che Signavio è un prodotto
+commerciale, però nella sua versione accademica vi permette, previa registrazione utilizzando la mail del
+Politecnico, vi permette di accedere all'interfaccia web per la modellazione in modalità gratuita, sebbene
+limitata in alcune delle funzionalità. Per chi vuole usare altri strumenti, cito per esempio lo Stencils, messo
+a disposizione per Visio.
+
+

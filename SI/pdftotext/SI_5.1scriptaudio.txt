@@ -1,0 +1,108 @@
+Lezione 5 modulo 1
+Lo scopo di questo modulo è cominciare a presentare quali possono essere vari tipi di componenti di tipo
+tecnologico che si trovano all'interno del sistema informativo. Innanzitutto, una cosa che va sottolineata è
+che noi potremmo avere diversi tipi di domini applicativi. Quindi potremmo avere dei componenti di tipo
+tecnologico che sono specifici per un certo dominio, ad esempio, moduli per supporto a sistemi sanitari
+oppure trasporti oppure per la gestione di servizi di telecomunicazioni, questi sono tutti i domini applicativi.
+Quindi quello che vedremo all'interno del corso saranno dei moduli in generale di tipo tecnologico non
+dedicati ad un certo dominio applicativo, ma bisogna tenere presente che alcuni componenti potranno
+essere più o meno specializzati per certi domini applicativi. Un altro aspetto che è importante introdurre è
+che i componenti tecnologici non saranno tutti dello stesso tipo. Distingueremo tre grandi categorie:
+avremo dei componenti tecnologici di livello applicativo, dei componenti di livello piattaforma e avremo poi
+dei componenti a livello di infrastruttura fisica. I domini applicativi potranno essere di tipo diverso e quindi
+potrò avere dei componenti di livello applicativo specializzati per un certo dominio oppure di tipo generico.
+In genere, noi consideriamo questo come un'architettura a strati, nel senso che il livello applicativo si
+appoggerà su dei componenti di piattaforma che a loro volta saranno eseguiti su una certa infrastruttura
+fisica. Quello che vogliamo cominciare a introdurre in questo breve modulo introduttivo sono i principali
+elementi che noi possiamo trovare all'interno di questi livelli applicativo e piattaforma e poi l'infrastruttura
+fisica verrà vista più in dettaglio nel seguito. Se cominciamo a considerare i modelli a livello applicativo, noi
+avremo alcuni sistemi che saranno abbastanza caratteristici dei sistemi informativi per la gestione delle
+informazioni delle aziende che vengono utilizzati con delle sigle. Nel seguito alcuni di questi li vedremo più
+in dettaglio. Il primo è ERP, Enterprise Resource Planning. Questo in genere è un componente che consente
+di gestire informazioni di un'azienda. In italiano, spesso viene ripreso col termine "applicativo tipo
+gestionale" che ci consente di gestire le informazioni all'interno dell'azienda. Come vedremo, ERP potrà
+essere composto da moduli di tipo diverso che potranno più o meno essere specializzati per certi domini
+applicativi. Un altro tipo di sistema che vedremo è il CRM, Customer Relationship Management, che ha lo
+scopo di fornire delle funzionalità per la gestione dei clienti. Questi sono due tipici sistemi che si trovano
+nelle aziende che possono essere utilizzati per gestire le informazioni aziendali e in particolare gestire la
+relazione con il cliente. Un altro tipo di sistemi che vengono tipicamente utilizzati sono i sistemi che
+consentono di analizzare le informazioni e tra questi noi vedremo i Datawarehouse (DW) e in generale
+parleremo di sistemi di Business Intelligence. Se facciamo riferimento alla nostra piramide di Anthony che
+abbiamo visto inizialmente, questi sono sistemi che sono tipici del supporto agli aspetti decisionali, ci
+consentono di analizzare dei dati, aggregarli, vederli secondo varie dimensioni di analisi e riuscire a estrarre
+conoscenza dai dati, mentre i sistemi di tipo ERP e CRM sono più rivolti al livello operativo dell'azienda
+come loro natura di base, quindi alla gestione in modo efficiente di transazioni rivolte alla gestione delle
+informazioni delle aziende, alla gestione dei clienti. Ovviamente, anche questi potranno contenere dei
+moduli di analisi dei dati specifici per le esigenze dei dati che vengono trattati. Quello che abbiamo nelle
+DW dei sistemi di Business Intelligence sono dei sistemi dedicati proprio all'analisi dei dati. Ci sono altre
+tipologie di sistemi che sono sistemi dedicati a particolari funzionalità e che noi non vedremo in dettaglio
+nel corso, ma giusto per parlarne in generale perché saranno tutti componenti che potrei avere a
+disposizione per realizzare un sistema, abbiamo dei moduli di E-Business (EB) dedicati soprattutto alla
+gestione di eventi online, quindi business, e-commerce, quindi la possibilità di dare un supporto alla
+commercializzazione di prodotti o di servizi. Abbiamo dei moduli legati alla pianificazione, quindi Advanced
+Planning and Scheduling (APS) e altri sistemi dedicati invece alla produzione, alla gestione della fabbrica e
+quindi MES, Manufacturing Execution System. Ci sono quindi dei moduli specializzati per certe tipologie di
+aziende per fornire funzionalità dedicate a queste aziende. Perché si parla di questi moduli a livello
+applicativo come componenti? Perché quello che noi potremmo trovare saranno sul mercato i cosiddetti
+COTS, che sono i Commercial, a volte viene detto anche Component, Off The Shelf, cioè potrò acquisire
+questi sistemi come un componente che viene acquisito da un fornitore, specializzato in produzione di
+
+sistemi ERP oppure CRM o DW. Questo ci porterà, quando faremo una progettazione del sistema
+informativo, ad una scelta che viene riassunta con il termine Make or Buy. Vorremmo comprare un modulo
+già pronto che può soddisfare le nostre esigenze oppure progettare un nuovo sistema soft per le nostre
+esigenze? Quindi, una delle cose che faremo durante il corso è cercare di capire quali sono i criteri per
+scegliere se sviluppare un nuovo sistema oppure comprarne uno già disponibile. Il vantaggio di sistemi già
+disponibili è il fatto che abbiano già studiato delle funzionalità che possono essere utilizzate da parte di più
+aziende, quindi abbiamo dei sistemi già completi che possono dare delle funzionalità soddisfacenti per una
+certa tipologia di aziende, ma è chiaro che lo fanno in un modo standard, perché devono coprire le esigenze
+di una tipica azienda che opera nel settore. Quando vorremo sistemi più personalizzati, più adatti alla
+singola azienda, considereremo anche l'opzione di costruire il nostro proprio sistema. Quindi, a livello
+applicativo, noi andremo a cercare dei sistemi che coprano delle funzionalità necessarie per l'azienda,
+possibilmente scegliendo fra componenti già disponibili sul mercato o comunque valutandoli nella scelta.
+Uno schema riassuntivo complessivo è quello che vediamo in questa figura. Quindi troviamo i nostri domini
+applicativi che appunto sono trasversali, possiamo avere sistemi dedicati. Abbiamo il livello applicativo.
+Dedichiamoci adesso ad esaminare il livello di piattaforma. Il livello di piattaforma lo vediamo articolato in
+più parti. Abbiamo delle piattaforme che sono di supporto a quelle che sono le funzionalità fornite dai
+moduli di livello applicativo. Un elemento l'abbiamo già incontrato, il DBMS, che è un componente che è
+dedicato alla funzione di gestire dei dati. Come c'è il DBMS, possiamo anche avere la gestione di processi,
+BPM, abbiamo visto BPM, Business Process Management, che ci consente di rappresentare processi con
+una notazione, BPMS è un sistema per la gestione di processi, rappresentato, ad esempio, utilizzando
+BPMN, per poterli eseguire automaticamente con le interazioni da parte dei vari ruoli per svolgere i vari
+compiti. Quindi, questi sistemi orientati alle funzioni, consentono di automatizzare o di supportare l'accesso
+ai dati, la gestione dei processi e abbiamo anche altri moduli funzionali di questo tipo: la gestione di
+interfaccia utente, User Interface System, oppure dei motori a regole per avere la gestione di sequenze di
+azioni da fare all'interno di un certo sistema secondo degli schemi a regole. Abbiamo anche però altri tipi di
+piattaforme per quelle di gestione funzionale. Se noi andiamo sul lato sinistro di questa figura, abbiamo dei
+vari aspetti che vogliamo considerare. Gli aspetti, come vedete, sono messi in modo trasversale perché
+riguardano un po' tutti i componenti a livelli di piattaforma. Quello su cui noi porremo la nostra attenzione
+sarà soprattutto la sicurezza. Quindi, come a livello di piattaforma posso dare delle garanzie di vari aspetti
+legati alla sicurezza, ma possiamo anche avere moduli dedicati alla Safety, all'Availability o alla Performance
+del sistema. Abbiamo poi alcuni moduli che vengono utilizzati nei sistemi, soprattutto per supporto agli
+aspetti di comunicazione, comunicazione di base, la gestione delle componenti all'interno al sistema, ma
+anche varie tecnologie per segnalare eventi, per gestire messaggi, per gestire il supporto alle transazioni o
+per gestire le interazioni all'applicazione tramite una interfaccia a BUS che consente di istradare i vari
+messaggi in modo che possano essere ricevuti i vari componenti applicativi che dovranno utilizzare questi
+messaggi. Quindi, a livello di piattaforma, noi andremo soprattutto a concentrarci su quelli che sono i
+componenti necessari per la gestione dell'integrazione di varie applicazioni, perché quello che si vede già da
+questa figura è che io, ad esempio in un mio sistema party level, potrei trovarmi sia un CRM che un ERP che
+riguarderanno la gestione di dati, ad esempio di clienti. I clienti che gestisco all'interno degli ERP saranno gli
+stessi clienti con cui noi andiamo ad interagire tramite un sistema CRM, quindi è necessario che i dati degli
+ERP e del CRM rimangano allineati e che questi si scambino delle informazioni. Quindi il nostro problema
+sarà soprattutto quello di fare in modo che i vari moduli applicativi che io avrò scelto all'interno del mio
+party level siano collegati fra di loro tramite delle tecnologie di piattaforma che consentano appunto lo
+scambio di messaggi, che abbiamo visto prima, e vedremo che potremmo avere diverse scelte
+tecnologiche. Quindi la interazione di applicazioni tramite componenti e piattaforma, per noi saranno
+aspetti importanti da trattare. Vedremo anche alcuni aspetti relativi alla sicurezza, in quanto la sicurezza è
+uno degli aspetti critici di un sistema informativo. Infine, per il momento, faremo solo un cenno, ma l'altro
+livello che noi andiamo a considerare, il livello tecnologico, è il fatto che noi avremo delle macchine che
+utilizzeremo per poter memorizzare i nostri dati, per fare le nostre elaborazioni, avremo dei collegamenti in
+
+rete, quindi avremo un’infrastruttura fisica a disposizione. Le nostre applicazioni, i nostri componenti
+platform vivranno su queste macchine fisiche. Le macchine fisiche potranno, come vedremo, anche essere
+virtualizzate oppure potranno essere gestite tramite delle forme di outsourcing quali può essere il cloud
+computing. Quindi quello che ci interessa poi andare ad esaminare è sapere quali sono le alternative che io
+posso avere, a livello di architettura fisica, per poter gestire sopra l'architettura fisica i vari componenti
+tecnologici che abbiamo appena visto. Nei prossimi moduli, andremo ad illustrare alcuni di questi
+componenti, sia applicativi che di piattaforma, sia alcune tipiche architetture fisiche, più in dettaglio.
+
+

@@ -1,0 +1,207 @@
+Lezione 2.2
+In questa lezione cercheremo di prendere familiarità con lo strumento Archi, il software che utilizzeremo
+per la realizzazione di diagrammi utilizzando Archimate come linguaggio di modellazione. Archi è un
+software che è sviluppato su piattaforma Eclipse, Chi di voi ha familiarità con Eclipse noterà una certa
+somiglianza con alcuni degli strumenti che sono visualizzati in in questa schermata. Innanzitutto l'ambiente
+per la modellazione con Archimate è definito da tre/quattro aree fondamentali: allora, c'è questa prima
+parte sulla sinistra dove vengono raccolti i modelli e tutti i componenti che appartengono ai modelli,
+vedremo qui in mezzo il cosiddetto Canvas cioè l'area in cui è possibile disegnare il proprio diagramma, a
+destra invece c'è la cosiddetta palette, cioè l'insieme di tutti gli strumenti che permettono di definire il
+modello che si sta appunto realizzando. Qui sotto poi è possibile, selezionando uno qualunque degli
+elementi nel Canvas, andare a visualizzare quelle che sono le proprietà dell'elemento, che è visualizzato in
+quel momento. Cominciamo con un piccolo esempio di modellazione che non ha però nessun senso dal
+punto di vista Archimate, serve solo per capire gli elementi che possono essere utilizzati all'interno di
+questo strumento. Utilizzando il comando File/New/Empty Model è possibile creare un nuovo modello;
+una scorciatoia per creare un nuovo modello è possibile utilizzando sempre l'area, appunto, del modello,
+cliccando però questa volta il tasto destro in quest'area e cliccando su Empty Model si ottiene esattamente
+la stessa cosa; notate che c'è la possibilità anche di aprire un modello preesistente, nel momento in cui
+questo modello è stato già generato, così come al solito dal menù file è possibile fare appunto la stessa
+operazione così come andare ad aprire modelli precedentemente aperti, più tutte le operazioni di Import e
+Export. In particolare è utile quella di Export nel momento in cui si vuole esportare secondo un'immagine
+PNG. Allora, abbiamo creato quindi, non tanto il nostro nuovo modello ma l'ambiente per la realizzazione
+del nostro modello. È possibile dare un nome al nostro modello sempre con il mondo contestuale, attivabile
+attraverso il tasto destro e lo chiameremo modello esempio, in questo caso; non corrisponde
+necessariamente al file che viene creato: infatti notate che nel momento in cui ho modificato anche solo il
+nome di questo raccoglitore è apparso un asterisco, che indica appunto che il modello su cui sto lavorando
+ha subito delle modifiche dall'ultimo salvataggio; è quindi possibile salvarlo attraverso il classico comando
+Control S, oppure il Command S in ambiente Mac. Quindi, volendo salvare attraverso, appunto, il solito
+Control S, noi abbiamo la possibilità di memorizzare il nostro modello e lo chiamo, appunto, modello
+esempio. L'estensione del modello è Archimate, è l'estensione tipica di questo tipo di file; salvo e, da
+questo momento in poi, salverà su questo file tutto il contenitore, tutti gli elementi che sono contenuti nel
+modello. Come è possibile notare, quando io apro un modello si apre una gerarchia di cartelle; le prime
+sette cartelle rappresentano gli elementi attivi, passivi o comportamentali che fanno capo ai dominii che
+raccontano il nostro modello e qui troviamo, in particolare, i tre dominii che interessano noi, che sono
+quello business, quello applicativo e quello tecnologico. Poi accanto a quello tecnologico si parla anche di
+fisico, perché nella versione 3 di Archimate è stato introdotto come sottofamiglia degli elementi tecnologici
+anche gli elementi fisici, che in questa sede non approfondiamo. Poi ci sono anche gli altri modelli, che sono
+quelli dei dominii, che sono quelli della strategia di motivazione di implementazione e poi una collezione di
+altri elementi, che costituiscono i diagrammi di Archimate, che rientrano all'interno della famiglia 'Other'.
+Poi c'è un'ottava cartella, che è quella di Relation; tutte le relazioni, quindi tutte le connessioni fra i vari
+modelli, andranno a inserirsi all'interno di questa cartella. In realtà noi non opereremo quasi mai su queste
+cartelle, ma vedremo che queste cartelle verranno alimentate automaticamente da Archi, ogni qual volta
+noi andremo a inserire dei nuovi elementi all'interno del Canvas. Ho introdotto appunto Il concetto di
+Canvas, perché, come potete notare, nel momento in cui io ho creato il mio primo modello, questo modello
+di esempio, viene aperto in automatico un diagramma, in questo caso vuoto, che rappresenta la cosiddetta
+Default View. Tutti i miei diagrammi rientrano sotto la cartella Views. Si utilizza il termine View perché, se
+utilizziamo la terminologia utilizzata solitamente nella definizione di architettura e software, la View è la
+cosiddetta istanziazione di un viewpoint. In altre parole, ogni View racconta un diagramma e questo
+diagramma è il modo con cui io posso andare a specificare quelli che sono gli interessi di un determinato
+
+stakeholder. Come già accennato nella lezione precedente, una modellazione attraverso Archimate, una
+modellazione di un Enterprise Architecture ma anche di una qualunque software architecture, non prevede
+la presenza di un unico diagramma ma la presenza di tanti diagrammi, ognuno dei quali va a catturare un
+punto di vista che si istanzia appunto in una vista, del sistema che si sta modellando. Nel nostro caso noi ci
+concentreremo principalmente su una vista, che è la Layered View, che in qualche caso ha anche senso
+distinguere nei vari dominii; quindi, sebbene la Layered View è in grado di raccogliere e di organizzare a
+seconda quella organizzazione a livelli discussa, il dominio di business, il dominio applicativo, il dominio
+tecnologico, è anche possibile pensare di avere questi tre dominii su tre diagrammi diversi e un diagramma
+che in qualche modo li va a raccogliere tutti assieme. Ad ogni modo adesso racconterò alcuni esempi molto
+semplici, per capire come avviene il meccanismo, poi, di connessione fra le diverse viste. In questo caso io
+vado a costruire la cosiddetta vista, che chiamerò, per comodità, la Business View. Quindi, attraverso
+l'operazione di renaming, chiamo questa vista Business View; è un nome come un altro, adesso la chiamo
+Business View per comodità, vediamo che viene cambiato il nome appunto del mio diagramma nel Canvas,
+mi sottolinea questo asterisco il fatto che io non ho ancora salvato e quindi ci sono delle modifiche, delle
+modifiche in sospeso, in questo caso ho cliccato su Command S e automaticamente me l'ha salvato con il
+nome del del file che è stato definito prima, qui sotto non ho nulla, sto selezionando solo il diagramma;
+cliccando sull'area del Canvas si nota che viene popolata La palette, se non è già stata popolata in qualche
+caso, perché dipende poi da come è stato aperta. Senza entrare adesso nel discorso della palette,
+concentriamoci un attimo su quelle che sono le proprietà. Le proprietà, quando si parla di Canvas mi
+permettono di definire il cosiddetto viewpoint: come ho detto, ogni diagramma racconta una vista, una
+vista è collegata a un viewpoint. Ecco, ci sono i viewpoint standard, definiti all'interno di Archimate. Non mi
+voglio soffermare troppo su questo aspetto, consiglio a chi vuole approfondire la modellazione secondo i
+classici approcci nella definizione di architetture e software, di guardarsi l'iso corrispondente; nel nostro
+caso abbiamo detto che noi lavoreremo principalmente sulla Layered, anche se in realtà teniamoci per il
+momento ancora sul None, cioè non specifichiamo esattamente quale viewpoint perché in questo modo
+abbiamo più libertà nell'utilizzo dei simboli. Questo perché? Perché se notate, la paletta è abbastanza ricca
+di elementi che costituiscono tutti gli elementi inseribili all'interno della mia del mio diagramma e ogni
+qualvolta io vado a selezionare una determinata vista, notate che la palette cambia in quantità di elementi;
+non vengono cambiati gli elementi ma è solo un sottoinsieme degli elementi che appartengono ad
+Archimate che è possibile inserire all'interno del mio diagramma. Questo perché una viewpoint definisce
+anche quali sono gli elementi che si possono... quali sono i domini o anche il dominio, quali sono gli aspetti
+o l'aspetto che può essere inserito all'interno del mio diagramma. Nel caso del Layered torniamo su una
+situazione abbastanza ricca, che comprende tutti gli elementi che costituiscono appunto Archimate,
+almeno per quanto ci riguarda. Prima di creare il nostro primo diagramma, diamo uno sguardo a questo
+punto alla palette: la palette vedete che è divisa in tante sezioni, che raggruppa in maniera omogenea tutti
+quegli elementi che costituiscono il linguaggio Archimate; all'inizio abbiamo l'elenco delle relazioni, poi
+alcuni elementi standard di raggruppamento, poi abbiamo, salto a quello che interessa a noi, in giallo tutti
+gli elementi che costituiscono il dominio di business, in azzurro tutti quegli elementi che costituiscono il
+dominio applicativo e poi il dominio tecnologico in verde. Sotto, in verde, ci sono altri quattro elementi che
+costituiscono il sottodominio fisico del dominio tecnologico, che come detto noi non vedremo. Poi abbiamo
+tutta quella parte di elementi legati alla motivation piuttosto che alla migration e implementation. Detto
+questo, una nota a margine, molto probabilmente, a voi, nel momento in cui create per la prima volta il
+vostro diagramma, aprite per la prima volta Archi, non apparirà la palette allo stesso modo, ma apparirà
+una versione della palette un po' più condensata, che è rappresentata, se cliccate col tasto destro nell'area
+della palette selezionando Layout, da quella che è la cosiddetta Icons only, praticamente questa. Per chi è
+già più avvezzo ad Archimate, questa è una versione compatta molto utile, perché in un'unica videata,
+senza andare su e giù, si possono andare a pescare quelli che sono gli elementi utili. Nella realtà,
+soprattutto all'inizio, conviene utilizzare come layout la lista, in maniera tale da conoscere esattamente per
+ogni elemento il suo significato, per cominciare a prendere dimestichezza con i vari elementi. Quello che
+
+voglio fare come esempio è andare a riprendere quell'esempio che non c'entra nulla con Archimate, che
+riguardava il "John legge un libro", mi serve giusto per farvi capire quali sono i meccanismi che si utilizzano
+per realizzare un diagramma, senza perderci però nella semantica del linguaggio stesso. Quindi, abbiamo
+detto che c'è John che è un business actor, clicco su business actor, posso trascinare col drag and drop nel
+mio Canvas e rilasciare, in questo modo io ho che il mio attore, in questo caso l'elemento attore, è stato
+creato all'interno del mio diagramma; mi è data la possibilità da subito di andare a rinominare l'elemento,
+clicco ovunque tranne che sull'elemento, in maniera tale da confermare e ottengo che John è il mio attore,
+se rimango fermo col mouse mi dice appunto che tipo di elemento è, mi dice che è un attore, cliccando
+appunto su John se notate nella parte sottostante, ci sono tutte le proprietà che fanno capo al all'elemento
+che ho selezionato; quindi ho la possibilità di dargli un nome, adesso vediamo proprio gli elementi base
+delle proprietà aggiuntive, una cosa che potrebbe essere utile e che appare abbastanza spesso_si possono
+cambiare i colori anche, se non vi conviene_ è andare a definire la modalità di visualizzazione attraverso il
+sottomenù Figure: posso visualizzarlo visualizzando lo stereotipo, l'icona stereotipo come decoration
+dell'elemento, oppure mettere la decoration in primo piano, quindi visualizzare solo l'icona. Per mia,
+diciamo, comodità, io di solito preferisco tenere sempre una visualizzazione di questo tipo, che rende a mio
+avviso il modello più leggibile. Quello che notiamo anche è che, una volta che ho inserito questo elemento,
+automaticamente la cartella business è stata arricchita con l'elemento John, quindi mi ritrovo che qui
+dentro verrà popolato con tutti gli elementi che vado a inserire all'interno del mio, attenzione: all'interno di
+qualunque diagramma del mio modello. Perché? Perché nel momento in cui io vado a creare una nuova
+vista, New Archimate View, chiamo questa Archimate View altra Business View, per comodità, nel
+momento in cui io vado a trascinare per esempio un nuovo attore, chiamo Alice, vedete che questa cartella
+presenta entrambi gli attori, sia quello del primo diagramma, che vedo qui, che di questo diagramma.
+Questo cosa vuol dire? Vuol dire anche che io posso, in questo secondo diagramma, in cui è presente Alice,
+trascinare John, questo per dire che lo stesso elemento può appartenere a tanti diagrammi diversi.
+Sottolineo questo aspetto, che potrebbe essere anche considerato come un aspetto banale, solo per dire
+che nel momento in cui io cancello, abbiamo visto come inserire un elemento, io cancello un elemento,
+cliccando col tasto destro sull'elemento che si vuole cancellare, notate che appaiono due possibilità: Delete
+from View e Delete from Model. Delete from View indica il fatto che questo elemento io lo cancello
+unicamente da questa vista lasciandolo nell'altra vista, lasciandolo eventualmente nelle altre viste dove è
+inserito; mentre se faccio Delete from Model lo cancello dal modello e quindi da tutte le viste in cui è stato
+inserito. In questo caso faccio Delete from View, a riconferma del fatto che non l'ho cancellato nel modello,
+passando all'altra vista, io ritrovo ancora John. Adesso vediamo, per curiosità, cosa succede nel momento in
+cui io cancello Alice; non lo cancello dal modello perché abbiamo capito che lo cancellerebbe
+eventualmente da tutte le viste, in questo caso solo da questa perché è inserito qua; ma lo cancello dalla
+vista: cancellarlo dalla vista, notate che lo fa sparire da questo diagramma, ma non lo fa sparire dal
+modello, sebbene non esista in nessuna delle viste che costituiscono il mio modello. Questo è sottolineato
+anche dal fatto che, se notate, il nome dell'elemento è scritto in corsivo. Gli elementi del modello scritto in
+corsivo indicano elementi che sono stati definiti ma non sono mai stati utilizzati. Non significa
+necessariamente un errore: significa magari che sono in fase di realizzazione, l'ho definito poi l'ho voluto
+spostare in un'altra vista e quindi non l'ho ancora fatto, in questo momento è in standby potremmo dire.
+Però è un modo anche per visualizzare tutti quegli elementi che potrebbero anche essere candidati a essere
+utilizzati perché sono dei rimasugli dovuti a varie modifiche. Per far questo è sufficiente fare un Delete
+direttamente dall'albero, in questo caso è come se facessi quel Delete from Model selezionato, cliccando
+col tasto destro sull'elemento nel momento in cui appartiene al diagramma; mi chiede conferma rispetto a
+prima dove non me l'ha chiesta perché cancellarlo dalla vista non è così impattante come in questo caso,
+confermo e quindi io mi ritrovo ancora nella situazione iniziale. Tornando al nostro modello abbiamo detto
+che John eh legge un libro, avevamo detto che la lettura è l'elemento comportamentale definito dal
+processo, che io posso trascinare appunto nel mio modello, quindi ho "John legge", concludiamo con gli
+elementi con il business object: "legge un libro" e qui ho esattamente i tre elementi che avevo anche nel
+
+diagramma di esempio; quello che mancano sono le relazioni. Le relazioni sono diverse, vedete che qui
+esistono diverse tipologie di relazioni, sono dalla Composition, Aggregation, Assignment e così via fino all'
+Association. Vedremo che non è un ordine casuale: anche se non appaiono in un ordine alfabetico
+appaiono in un ordine, viene detto, di forza; la relazione di composizione è considerata più forte dalla
+relazione di aggregazione, di assignment, di realizzazione, fino ad arrivare alla relazione più debole, che è la
+relazione di associazione. Vediamo che questo concetto di forza ci può essere utile nel momento in cui
+andiamo a definire le cosiddette relazioni derivate. Poi in fondo c'è non una vera e propria relazione, ma un
+elemento che mi permette di connettere diverse relazioni dello stesso tipo, la cosiddetta Junction e in cima
+non c'è una vera e propria relazione ma uno strumento che mi permette di semplificare la definizione delle
+relazioni. Ecco, una cosa che bisogna imparare in Archimate è capire quando deve essere applicata una
+relazione, se può essere applicata la relazione. Per esempio la relazione composizione non può essere
+applicata fra tutti gli elementi, così come quella di assignment: ci sono alcuni casi in cui è possibile così
+come qualche caso in cui non è possibile. Soprattutto all'inizio potrebbe essere utile utilizzare appunto il
+Magic Connector che in qualche modo mi supporta nella definizione delle relazioni. Infatti se io clicco su
+Magic Connector, il cursore viene, diciamo, sostituito da questa bacchetta magica, clicco su John, clicco e
+rilascio, non tengo premuto, clicco e rilascio su Reads: quello che appare è un menu contestuale dove io
+posso selezionare una tra alcune delle delle relazioni presenti nel menu delle relazioni e sono tutte e solo le
+relazioni che posso definire; quindi vuol dire che la composition, l' aggregation, per fare due esempi, non
+hanno senso in questo caso. Al contrario ha senso innanzitutto la Sign to poi la Serve poi la Trigger, cioè in
+qualche modo Archi mi suggerisce quella che con più probabilità è la relazione che devo definire fra John e
+reads, che appunto è la Sign to. Vedete che c'è un livello di separazione, perché? Perché io ho selezionato
+prima John e poi Reads quindi ho dato un verso alla mia relazione, secondo quel verso questo è l'elenco
+delle relazioni ammissibili, secondo, una, diciamo, un ordine di fattibilità. Però quello che mi suggerisce nel
+sottomenu, nel secondo sottomenu, è se per caso il verso corretto che volevo dare da reads a John, allora
+molto probabilmente era un Served by, vedete il tempo passivo: Triggered by, Flows from, Associated from.
+In questo caso era proprio voluto da John Reads per dire Assign to e lui me lo visualizza. Faccio la stessa
+cosa fra Reads e Book, notate che gli elementi sono diversi, notate che il sottomenu è molto più scarno
+perché fra un elemento comportamentale e un elemento passivo può esserci solo una relazione
+principalmente di accesso o di associazione, in questo caso di accesso, ho definito la mia relazione e qui ci
+siamo. Adesso per curiosità proviamo a cliccare e a definire una relazione fra John e Book: vedete che mi dà
+la possibilità di definire un accesso, io ho detto all'inizio guardate che non è possibile definire connessioni
+dirette fra un elemento attivo e un elemento passivo, bisogna sempre passare da un elemento
+comportamentale: questo è vero fino a un certo punto, nel 99% dei casi, perché è possibile comunque
+creare delle scorciatoie attraverso quelle relazioni che ho accennato prima, che sono le relazioni derivate;
+torniamo quindi alla nostra situazione iniziale, possiamo nello stesso diagramma anche inserire altri
+elementi che non appartengono al dominio di business, certo questo è un controsenso rispetto al nome che
+avevo dato, Business View, ma come detto era solo un esempio per farvi capire un po' come funzionava il
+tutto. Notate che metto degli elementi a livello applicativo e l'elemento a livello di business, posso creare
+delle relazioni non solo all'interno dello stesso dominio ma anche fra dominii diversi, che posso cliccare e
+collegare per esempio un application component con un attore, in questo caso sto dicendo che questo
+attore sta utilizzando, è servito da questo application component, non è proprio corretto dal punto di vista
+di Archimate però è giusto per farvi vedere un po' come è possibile lavorare con con lo strumento. Lo
+stesso discorso fatto rispetto alla cancellazione di elementi, visto per, diciamo, gli elementi
+comportamentali attivi e passivi, vale anche per le relazioni. Infatti, se notate, il menu delle relazioni,
+scusate, la cartella delle relazioni, viene man mano arricchita da tutte le relazioni presenti. Posso anche
+decidere di cancellare una relazione dalla vista, in questo caso notate che era l'unica relazione fra Reads e
+Book di tipo Access, non è Access in generale, ma proprio questa Access, che non viene visualizzata da
+nessuna parte e che per questo motivo adesso viene messa in corsivo. Posso riprendere la mia relazione e
+rimetterla all'interno del mio diagramma, vedete non c'è stato bisogno di cliccare da nessuna parte, è stato
+
+sufficiente trascinarla nel Canvas e automaticamente mi ha ricreato la mia relazione. Credo che questa
+prima introduzione sia completa nel definire quelli che sono gli elementi principali che ci aiutano a capire
+come funziona lo strumento Archi e quindi a riuscire a generare dei modelli sin da subito. Ricordo che non
+era l'intenzione, quella di questa lezione, di andare a capire linguaggio, sintassi, lessico, sintassi e semantica
+di Archimate, ma semplicemente capire come lavorare con lo strumento. Quindi, qualunque esempio fatto
+in questa sede non ha nessuna rilevanza dal punto di vista della semantica del modello.
+
+

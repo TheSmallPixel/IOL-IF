@@ -1,0 +1,141 @@
+Lezione 1 modulo 3
+In questo modulo parliamo di tipologie sistemi informativi soprattutto; vogliamo vedere quali sono le
+tipologie di sistemi informativi informatizzati. Abbiamo già visto come riferimento possibile la piramide di
+Anthony con i suoi tre livelli. Abbiamo detto che questi possono poi essere suddivisi in vari sottosistemi che
+fanno parte del sistema informativo. Ma un aspetto che è importante per quanto riguarda le tipologie di
+sistemi informativi, perché qua abbiamo, abbiamo detto, un livello operativo in cui si svolgono le attività
+che sono le attività svolte in continuo dall'azienda per realizzare i suoi obiettivi secondo delle regole che
+sono predefinite come l'informazione che sono ben codificate, e, a fronte di questo, noi andremo ad avere
+dei sistemi che chiameremo operazionali e quindi tenderanno a controllare quelli che sono i processi svolti
+a livello operativo per dare un supporto a chi svolge. Per esempio, sistemi di supporto a un'attività di
+vendita, a un'attività di ritiro del contante da una banca, alla registrazione di un atto in un’anagrafe e così
+via. A livelli superiori avevamo detto che abbiamo livelli di controllo di tipo manageriale, programmazione
+controllo e poi abbiamo dei processi di tipo strategico. Qua l'obiettivo di un sistema è di supportare delle
+prese di decisione: quindi parleremo di sistemi di tipo decisionale o detti anche informazionali. Le
+caratteristiche le abbiamo già un po' viste: sono il fatto di non avere delle procedure sempre del tutto
+predefinite a priori, dei dati che possono essere interni o esterni e anche delle tempistiche di esecuzioni di
+queste attività che possono dipendere dagli eventi che accadono e quindi non necessariamente di tipo
+regolari Vediamo quindi quali sono le caratteristiche di questi sistemi, innanzitutto dal punto di vista delle
+informazioni e dal punto di vista delle decisioni. Qua abbiamo una distinzione fra una strutturazione di
+informazioni che può essere alta pure bassa e una strutturazione delle decisioni che può essere alta oppure
+bassa dove per alta intendiamo il fatto di avere delle regole ben definite che governano le attività che
+vanno svolte e probabilmente anche i dati relativi sono ben strutturati. È chiaro che più l'informazione è
+strutturata e la decisione è strutturata, più sarà facile informatizzare nel nostro sistema quindi dare un
+supporto: questo vuol dire avere in alcuni casi una completa automazione di certi passi di un processo ma
+in generale abbiamo un supporto informatico che copre tutto il processo È chiaro che quando o altre
+situazioni in cui la strutturazione informazione è alta, quindi parto da informazioni che sono ben
+organizzate che hanno una struttura definita a priori, ma la decisione da prendere non è detto che lo sia
+altrettanto. Quindi quali sono i passi che devo fare, le attività che devo fare, per prendere decisione non
+seguirà delle regole del tutto definite a priori, in genere quello che potrò fare sarà soprattutto una
+informatizzazione di tipo parziale, quindi darò supporto a certe attività e per altre attività renderò
+semplicemente disponibile l'informazione Questo per quanto riguarda diciamo le decisioni. Se andiamo
+rispetto a una strutturazione di informazione bassa, vorrà dire che avrò delle informazioni che saranno dei
+documenti testuali, potranno essere delle immagini. È chiaro che un sistema informativo in questo caso,
+soprattutto servirà a facilitare il ritrovamento, la memorizzazione di documenti, la creazione di documenti,
+ma la gestione dei documenti in quanto tali È chiaro che ci sono dei sistemi attualmente che cercano di
+informatizzare anche alcune decisioni a partire da documenti, quindi andiamo verso questa direzione per
+cercare di dare anche dei documenti con bassa struttura, la possibilità di avere delle informazioni
+strutturate che vengono derivate quindi una comprensione del contenuto del documento, in modo da
+poter supportare le decisioni, in modo completo oppure ovviamente anche in modo parziale Quindi c'è
+un'attenzione attualmente soprattutto per il fatto che ci sono tanti dati disponibili e tanti documenti
+disponibili, a cercare di estrarre automaticamente con tecniche ad esempio di intelligenza artificiale, di data
+mining eccetera dell'informazione anche a partire dai documenti. Quindi abbiamo un primo inquadramento
+di quello che vogliamo poter fare: possiamo semplicemente registrare le nostre informazioni, possiamo
+supportare alcune attività ma non tutte perché abbiamo informazioni ben strutturate ma i meccanismi di
+decisione non sono tutti predefiniti a priori oppure possiamo cercare di avere il tutto completamente o
+sostanzialmente automatizzato. Vediamo le tipologie di sistemi che possiamo avere: spesso viene utilizzata
+questa definizione OL (on line) e poi abbiamo P che sta per Processing e T sta per Transaction da cui
+deriviamo la sigla OLTP oppure OLAP per analytical. Prima premessa quando parliamo di transazioni noi
+
+parliamo di un elemento essenziale del sistema informativo: noi tipicamente vogliamo registrare le
+operazioni di tipo operativo che vengono svolte, dobbiamo dare un supporto a queste operazioni al fine
+ultimo, e ricordarsi che operazioni sono state svolte e ricordarsi l'effetto di queste operazioni. Quindi nel
+caso in cui ad esempio ad uno sportello bancario il cliente va ritirare del denaro, io voglio ricordarvi della
+transazione di ritiro del denaro in un certo posto, da una certa data, da parte di una certa persona. Quindi
+una tipica operazione, attività svolta a livello operativo che viene svolta abitualmente all'interno
+dell'organizzazione Quando noi abbiamo l'operazione invece di elaborazione di tipo analitico, noi vogliamo
+tipicamente dare un supporto alle decisioni. Quindi siamo nell'ambito dei sistemi informazionali e quindi la
+funzione principale distingue diciamo queste due tipologie di sistemi che hanno caratteristiche di
+elaborazione anche tecnologicamente di tipo diverso, saranno sulla tipologia di funzioni che andiamo a
+supportare: in un caso dalle OLTP abbiamo le operazioni tipiche giornaliere che vengono svolte mentre
+invece nell'OLAP vogliamo supportare decisioni, quindi vogliamo consentire l'analisi dei dati. Ovviamente
+alcuni degli aspetti che abbiamo visto finora su cui ci siamo concentrati per vedere i vari aspetti dei sistemi
+informativi, vanno a cambiare nei due sistemi: gli utenti, chi utilizzerà questi sistemi? Nel caso delle OLTP,
+abbiamo tipicamente dagli utenti di tipo operativo che svolgono le attività dell'organizzazione, nell' OLAP
+tipicamente qualcuno che sta analizzando l'andamento dell'azienda quindi a livello manageriale oppure a
+livello di decisione strategica per cercare di capire come nell'informazione a disposizione possono essere
+utilizzate per supportare le decisioni. Tipicamente quando vogliamo andare a progettare questi sistemi
+quando abbiamo sistema OLTP, noi vogliamo progettare un'applicazione che consente di svolgere certe
+attività, mentre invece quando abbiamo un'analisi supportato dal sistema di tipo OLAP, noi vogliamo
+facilitare il decisore ad analizzare i dati in un modo non necessariamente predefinito quindi sarà orientata a
+dare delle funzionalità possibili di analisi rispetto a varie tematiche che sono state identificate come
+importanti per poter prendere delle decisioni Quindi ci concentreremo soprattutto sul dare delle
+funzionalità di analisi su certi soggetti che saranno identificati per l'analisi stessa. Sui dati abbiamo già detto
+che tipicamente i dati nel sistema OLTP saranno tipicamente strutturati quindi avranno la struttura
+regolare, tipicamente sono dati dettagliati spesso li esprimeremo in tabelle relazionali all'interno di DBMS,
+avranno una struttura appunto di tipo regolare che sarà rappresentata dallo schema della base di dati Un
+altro aspetto importante dei dati nell'OLTP è il fatto che utilizzeremo i valori di correnti dei dati. Cosa si
+intende per questo? Per esempio, quando un cliente va a prelevare del denaro in banca quello che si andrà
+a vedere è come dato corrente è il suo saldo sul conto disponibile e quindi andrò a vedere qual è il valore in
+quel momento del saldo del conto Questo è un dato corrente quindi dato in quel momento. Quando
+prendo decisioni invece spesso mi interessa andare avanti o indietro nel tempo: tipicamente utilizzo dati
+storici, voglio vedere andamenti, andamenti in periodi anche lunghi, posso anche fare proiezioni per il
+futuro e quindi generale non avrò una visione solo corrente delle informazioni ma avrò una visione che è sia
+nel passato che anche nel futuro Abbiamo detto tipicamente che vogliamo avere i dati sintetici quindi
+aggregheremo dei dati lungo varie dimensioni quindi considereremo varie prospettive nell'analisi dei dati e
+tipicamente i dati saranno di tipo diverso: proverranno da varie fonti sia fonti interne sia fonti esterne.
+Anche sull'utilizzo abbiamo già detto nell'OLTP tipicamente avremo sistemi di tipo ripetitivo quindi seguo
+sempre le stesse regole, i modi di procedere per fare una certa attività, mentre invece nell'analisi dei dati
+andrò soprattutto a fare attività qua denominati di tipo casuale, intendendo con questo il fatto che non è
+predefinito a priori qual è la sequenza di attività da svolgere. Quando c’è dei dati, tipicamente quando
+faccio transazioni voglio registrarle, quindi un'operazione importante nel sistema OLTP è la scrittura
+Quando vado ad analizzare i dati, vado soprattutto a leggere i dati. Quindi vorrò andare ad analizzare grandi
+quantità di dati con dietro un accesso diciamo che viene indicato come sequenziale quindi prenderò
+sequenze dei dati che voglio andare considerare ma non vado a modificarli. Ovviamente dal punto di vista
+tecnologico questo farà una notevole differenza perché io qua vorrò essere anche veloce ad accedere ai
+dati e quindi avrò tipicamente l'uso di indici per reperire i dati che mi interessano in lettura e poi per poterli
+scrivere, mentre invece nel sistema OLAP dove andrò a esaminare grandi quantità di dati per aggregarle per
+leggerle e da questo estrarre appunto della conoscenza, io tipicamente andrò a fare operazioni che sono di
+
+tipo più oneroso anche computazionalmente. Che tipo di attività svolgo nei due casi? Nel caso delle OLTP,
+farò singole transazioni: voglio registrare una vendita, voglio registrare un prelievo, voglio andare a fare
+quindi qualcosa che è abbastanza puntuale come attività; mentre invece le sistema OLAP, potrò andare a
+vedere grandi quantità di dati e quindi tipicamente avrò interrogazioni che sono anche complesse e che
+coinvolgono dati che sono anche su periodi lunghi di tempo e quindi spesso molto voluminosi. Ultime cose,
+come andrò a valutare se un sistema funzionerà bene oppure no dal punto di vista delle performance? Per
+quanto riguarda le transazioni, quello che mi interessa soprattutto è quello che viene chiamato
+'throughput', cioè quante transazioni riesco a fare nell'unità di tempo quindi quanto sono veloce nel gestire
+le singole transazioni con le risorse che abbiamo a disposizione del sistema. In OLAP, stiamo dando un
+supporto a decisioni secondo interrogazioni complesse su tanti dati, leggendo grandi quantità di dati, e
+senza avere una struttura predefinita di quelle che saranno le possibili elaborazioni o interrogazioni di
+questi dati, quindi un elemento diventa critico è quanto il sistema ci impiegherà a dare una risposta
+all'utente. Si accettano in genere tempi di risposta più lunghi rispetto al tipico sistema transazionale, ma
+quello che si andrà a misurare per verificare se il tempo di risposta è adeguato rispetto a quelle che sono le
+esigenze dell'utente che sta facendo comunque un'analisi che è complessa. Per concludere quindi, abbiamo
+visto vari aspetti Vediamo un ultimo aspetto che per noi diventerà importante nel corso: quand'è che
+progetto un sistema informativo. Io lo posso fare perché l'organizzazione ha nuove esigenze quindi nuove
+funzionalità da fornire, nuovi obiettivi strategici, nuovi tipi di servizi eccetera e quindi sarà l'organizzazione
+che deciderà a un certo punto di fare un nuovo sistema, ci interesserà progettarlo, decidere come gestirlo e
+come controllarlo. In questo caso parleremo dei requisiti che vengono definiti dall'azienda e vogliamo
+capire qual è la tecnologia che meglio supporta questi requisiti Un'altra situazione che spesso avviene in
+questo ambito è la disponibilità, quindi parto dalla tecnologia, disponibilità di nuovi strumenti tecnologici,
+nuovi apparecchi oppure nuove tecnologie che possono migliorare quello che supporta l'organizzazione e
+mi chiedo come poter utilizzare queste tecnologie per ottenere meglio gli obiettivi che si è definita
+l'organizzazione. Si parla in questo caso di Technology Push. Ovviamente ci saranno progetti di entrambi
+tipi e poi ci saranno tanti fattori che potranno portare a decidere di fare un progetto o meno e di come
+farlo eccetera, che potranno essere anche fattori di tipo ambientale, quindi non tutti i sistemi saranno
+uguali in tutti i posti, in tutte le situazioni, anche potranno esserci importanti fattori culturali
+sull'accettabilità di certi tipi di sistemi in posti diversi, la struttura dell'organizzazione potrà essere diversa, i
+processi di business anche nell'ambito di uno stesso settore, abbiamo visto che possiamo classificarli, ma gli
+stessi processi potranno essere abbastanza diversi all'interno delle diverse organizzazioni, quindi il fatto di
+voler fare un certo sistema può portare a modificare questi processi in modo più o meno profondo; quindi
+anche questo è un aspetto che andrà considerato. Ovviamente alcune decisioni sono di tipo strategico,
+politico oppure di tipo manageriale e quindi la decisione di cambiare un sistema ad esempio di tipo
+operativo dovrà partire anche da degli obiettivi che sono presi a più alto livello sia di controllo del sistema
+ma anche a livello di tipo strategico Quindi quello che ci interesserà rappresentare, questo lo faremo nel
+corso della serie di lezioni che seguiranno, è come rappresentare una organizzazione, come rappresentiamo
+aspetti legati alla tecnologia dell'informazione, i loro legami e quindi poi potremo parlare effettivamente di
+quelli che sono i diversi processi che ci possono portare a sviluppare un sistema e a prendere decisioni per
+dare una certa struttura al nostro sistema informativo basato sull'Information Technology.
+
+

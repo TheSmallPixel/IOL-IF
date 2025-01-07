@@ -1,0 +1,116 @@
+Lezione 3 modulo 3
+In questo modulo, andiamo a introdurre una notazione per poter descrivere dei processi. La notazione
+viene chiamata BPMN: BP per Business Process. Siamo in genere all'interno dell'esigenza di descrivere dei
+processi di business in un'organizzazione anche se poi questa notazione può essere utilizzata anche
+all'interno di sistemi più orientati a una gestione dei processi dal punto di vista tecnologico. Quindi
+partiremo comunque all'interno di questa descrizione con esempi di questa notazione che soprattutto
+fanno riferimento a processi di business M per modeling, N per notation. Notation nel senso che la
+rappresentazione che utilizzeremo è soprattutto una rappresentazione di tipo grafico anche se poi può
+essere trasformata in una rappresentazione se realizzata ad esempio in xml Quello che ci interessa
+rappresentare appunto sono dei processi, quindi nelle sequenze di attività che tipicamente hanno uno
+scopo: quindi hanno un inizio e vogliono raggiungere una fine che viene definita all'interno del processo che
+in generale è orientata ad ottenere un certo risultato, un certo obiettivo. Sono state definite varie notazioni
+per rappresentare i processi in particolare però vediamo questa notazione perché è stata adottata
+all'interno della realizzazione e standardizzazione chiamato OMG come standard in notazione per
+rappresentare i processi e quindi questo ha portato a una sua considerevole diffusione e per questo
+esistono anche diversi strumenti per l'editing grafico dei diagrammi che andiamo a vedere. In questa
+lezione, vogliamo cominciare ad introdurre i principali concetti di BPMN e cominciare ad imparare a leggere
+i primi diagrammi utilizzando questa notazione. Abbiamo detto che il BPMN è una notazione grafica, quindi
+avremo degli elementi grafici che utilizzeremo all'interno della produzione di diagrammi. Quindi un
+processo verrà rappresentato all'interno di un diagramma o di un insieme di diagrammi collegati Abbiamo
+visto che un processo è un insieme di attività che vengono collegate. Quindi il primo elemento che ci
+interesserà rappresentare è quello dell'attività che è l'elemento principale di un processo L'attività sarà
+rappresentata con un rettangolo coi bordi arrotondati e all'interno dell'attività avrò un’etichetta che sarà il
+nome dell'attività In genere, un'attività è qualcosa che viene fatto, quindi tipicamente questo nome sarà un
+verbo oppure più spesso verbo più un oggetto dell'azione. Essendo una notazione grafica, i nomi sono
+essenziali per capire cosa stiamo facendo all'interno del processo perché ci dicono quale relazione viene
+svolta. Questa viene chiamata attività oppure la chiameremo anche task e quindi il nostro processo avrà un
+insieme di attività che verranno inserite in un diagramma. Un altro elemento che è essenziale per noi è
+quello che viene chiamato l'ordine delle attività che è un flusso di controllo: flusso di controllo lo
+indicheremo con una freccia, lo chiameremo anche flow e ci dice qual è l'ordine fra attività Quindi, se
+vogliamo fare un esempio, se ho due attività A e B in sequenza, verranno collegate in questo modo. Ci
+saranno altri elementi essenziali per il processo, per poter rappresentare un processo in modo chiaro.
+Avremo vari simboli che andremo ad introdurre man mano, ma quello che ci interessa rappresentare
+sicuramente in tutti i processi sono l'inizio e la fine L'inizio e la fine vengono rappresentati da dei simboli
+che sono rappresentativi di eventi: avrò un evento iniziale che è quello che fa partire il processo e un
+evento finale per ne dichiara la conclusione Vedremo che questi eventi potranno essere articolati in vario
+modo In questo momento, introduciamo l'evento generico d'inizio che è semplicemente un cerchio e
+l'evento di fine che è sempre un cerchio ma con i bordi indicati più spessi. Anche per gli eventi di inizio e
+della fine, potrà esserci un'etichetta per dire qual è l'evento iniziale, quindi dare un nome al motivo che
+scatena il processo, che inizia il processo, e soprattutto per l'evento di fine qual è lo stato raggiunto alla fine
+del processo perché vedremo che il processo avrà in genere un obiettivo però questo obiettivo potrà essere
+raggiunto oppure meno all'interno del processo e quindi ci interesserà mettere anche qui delle etichette
+Quindi un nostro primo processo sarà di questo tipo. Anche l'evento è collegato con un simbolo di flusso
+alle attività, l'evento iniziale sarà prima delle attività e l'evento finale concluderà il nostro processo Un'altra
+cosa che notiamo è che in genere i processi BPMN li rappresenteremo, ove possibile, da sinistra a destra
+secondo un'idea di sequenza temporale delle attività, anche se c'è una cosa da sottolineare: questo
+collegamento fra A e B vuol dire che, finito A può iniziare B, ma non necessariamente nello stesso momento
+in cui è finito A. Quindi potrà esserci una distanza temporale fra un evento che è la fine di A e un altro
+
+evento che è l'inizio di B Quindi qui abbiamo un processo di tipo elementare. Ovviamente all'interno del
+processo, soprattutto nel momento in cui andiamo a descrivere il processo che è in dettaglio quindi faremo
+le nostre viste private sui processi, quindi vedremo come il processo è organizzato all'interno di
+un'organizzazione, dovremo anche descrivere i percorsi possibili, non sempre avremo una sequenza, ma
+potremmo avere delle attività che vengono svolte ad esempio in alternativa oppure in parallelo. Per fare
+questo, il BPMN ci dà una notazione che quella dei gateway. Il nostro gateway generico sarà di questo tipo:
+rappresentato come un rombo e qui dobbiamo cominciare anche ad introdurre un concetto che è quello
+appunto del percorso all'interno di un processo. Cominciamo a farlo con un particolare gateway che è
+quello XOR, per cui vado a creare dei percorsi alternativi all'interno del processo Questo cosa vorrà dire:
+che arriverò con il flusso del processo a un punto in cui voglio mettere in alternativa due percorsi. Lo XOR è
+caratterizzato appunto dalla X perché abbiamo detto sarà un OR esclusivo quindi X sta per Exclusive. Quindi
+vorrà dire che io prenderò un percorso piuttosto che un altro all'interno del processo. In genere, questo
+percorso viene anche etichettato con una condizione, quindi avrò delle condizioni associate che le
+chiamiamo qua condizione 1 e condizione 2, associate ai rami del processo. Queste condizioni dovranno
+essere condizioni esclusive: quindi tipicamente se qua ho una condizione 1, la condizione 2 sarà la
+negazione alla condizione 1. Un'altra cosa che potrà accadere all'interno di un processo è che ci sarà un
+percorso tipico che io vado a prendere e questo potrà essere indicato ad esempio con un trattino di questo
+tipo che ci dice qual è il percorso tipico. Cosa abbiamo fatto con questa operazione? Abbiamo fatto quella
+che viene chiamata l'operazione di split: abbiamo diviso il nostro percorso del processo che abbiamo
+iniziato come percorso sequenziale dividendolo in due rami. In genere c'è una corrispondente operazione
+all'interno del processo di join: l'operazione di join sostanzialmente riceve, sempre usando adesso ci siamo
+messi nelle ipotesi di avere un gateway di tipo XOR, usando quindi il nostro simbolo con la X, abbiamo due
+flussi che entrano del gateway e quindi poi abbiamo il nostro percorso che prosegue. Come vengono
+utilizzati questi gateway di split e di join? Sostanzialmente all'interno di un processo potremmo avere
+qualcosa di questo tipo: avremo un'attività, dopo A andremo a verificare una condizione, ad esempio c1, e
+se si è verificata c1 andremo ad eseguire B altrimenti andremo ad eseguire C e successivamente possiamo
+riprendere il nostro processo ed eseguire D. Quindi i percorsi possibili all'interno di questo processo
+saranno ABD oppure ACD Questo ci consente di realizzare appunto delle alternative ma non solo: un altro
+uso dei gateway di tipo XOR, ci consente di realizzare dei cicli. Vediamo qua un esempio di processi, in cui
+utilizziamo il gateway di tipo or esclusivo per realizzare dei cicli. Vediamo quindi un concetto di ciclo oppure
+come verrà chiamato anche successivamente di loop. Anticipo che questo è uno dei possibili modi di
+rappresentare un ciclo. Allora in questo processo, vediamo che abbiamo un evento iniziale, riceviamo
+l'ordine, poi andiamo avanti perché in realtà qua abbiamo una riunione di due percorsi ma questo ci viene
+dal futuro quindi andiamo avanti tranquillamente, inserisco i dettagli dell'ordine, verifico la correttezza. A
+questo punto, posso testare la condizione che mi dice se l'ordine è corretto o no: se è corretto, vado avanti
+col flusso normale e verifico le disponibilità, stimo i tempi di consegna, invio la notifica e finisco questa
+parte del processo; se non è corretto, qua abbiamo un'alternativa che ci porta in un ciclo, quindi vediamo
+qua questo ciclo in cui testiamo appunto la condizione per cui noi entriamo all'interno del ciclo, quindi
+questo è un ciclo a condizione finale, gli diamo una richiesta dell'aggiornamento, riceviamo
+l'aggiornamento e quindi riprendiamo il processo da questo punto in cui andiamo ad inserire nuovi dettagli
+dell'ordine, verifichiamo la correttezza e andremo avanti in questo ciclo finché l'ordine non risulta corretto
+Vediamo quindi questo come uso del gateway di tipo XOR che utilizziamo qui per fare lo split del flusso che,
+da un lato va avanti come flusso di un processo normale, dall'altra parte ritorna indietro ma è un ritornare
+indietro di tipo concettuale, in realtà sto svolgendo un ciclo che mi porta ad avere un ordine corretto. I
+gateway sono di diversi tipi e l'altro gateway di tipo fondamentale per l'esecuzione dei processi è il gateway
+di tipo AND. Il simbolo è sempre il rombo ma in questo caso avremo un simbolo di più: il nostro end
+gateway avrà come significato quello dello svolgimento di attività in parallelo. Sarà un parallelo di tipo
+concettuale nel senso che nel momento in cui andrò a svolgere due attività A e B in parallelo, poi in genere
+avremo come abbiamo visto prima per lo XOR, anche per l'AND, oltre allo split, anche un join in cui il nostro
+
+flusso si ricongiungerà per andare avanti nel processo e ad esempio fare un'attività di tipo C e così via
+Questo vorrà dire che a questo punto del processo, eseguirò sia l'attività A che l'attività B e il parallelo vuol
+dire che non mi interessa la linea di esecuzione di queste attività: se volessi dire che viene prima A e poi B,
+farei una sequenza fra A e B o viceversa se viene prima B e poi A. Il parallelo vorrà dire che A e B potranno
+essere svolte contemporaneamente ma anche in qualunque ordine fra di loro, quindi se rappresentiamo su
+un asse temporale l'attività A e l'attività B potranno essere svolte nello stesso momento ma in realtà potrò
+anche avere altre possibilità: svolgere A e poi cominciare a eseguire B o viceversa, potrà essere svolta prima
+B e poi potrà cominciare A e non è nemmeno necessario che queste si sovrappongono, per cui potrei avere
+svolto A o B oppure anche B e poi A. Quindi quello che ci dice il parallelo è sostanzialmente che entrambe le
+attività verranno svolte ma non ci interessa l'ordine in cui vengono svolte Il flusso potrà riprendere solo
+quando entrambe, A e B, sono terminate quindi questo gateway di tipo join aspetterà il termine di
+entrambe le attività A e B Abbiamo anche qui un semplice esempio di processo in cui inizia il processo,
+viene ricevuto l'ordine, in parallelo preparerò la spedizione e invierò la fattura Il processo termina solo
+quando entrambe queste attività sono concluse e possiamo arrivare all'evento di terminazione del
+processo.
+
+

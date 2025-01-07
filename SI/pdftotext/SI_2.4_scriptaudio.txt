@@ -1,0 +1,216 @@
+Lezione 2.4
+In questa lezione vedremo alcuni piccoli esempi di utilizzo di Archimate per la modellazione del business
+layer. Utilizzeremo appunto il tool Archi, che è già stato presentato. In alto a sinistra, qui, troviamo il testo
+di questo esercizio e cominceremo con l'applicazione del pattern base che abbiamo descritto nell'ultima
+lezione; in particolare, l'esercizio si riferisce a una società chiamata Speedy che è una società di consegna a
+domicilio, che vuole offrire al suo top management un nuovo servizio per creare dei report sull'andamento
+dei processi aziendali, che riguardano appunto gli specifici manager. Va detto che la società già offre servizi
+di questo tipo, ma i report che sono prodotti non sono di tipo personalizzato, quindi questo nuovo servizio
+vuole offrire un servizio personalizzato, appunto, di realizzazione dei report aziendali. Questo tipo di
+personalizzazione viene offerta grazie alla presenza di un data analyst, che è disponibile al manager per
+capire quali sono i requisiti e sviluppare quindi il report che poi viene consegnato al manager. Questo è il
+caso d'uso che adesso noi andiamo a considerare e vediamo di realizzarlo, di descriverlo attraverso
+Archimate. Il modo migliore per cominciare è quello di partire dal pattern di base, quindi all'inizio
+metteremo, abbiamo detto, il business actor, il business service e la business interface, quali elementi che
+appartengono al gruppo di elementi che sta sopra la linea di visibilità. Vi ricordo che la business interface è
+assegnata al business service e il business service serve, appunto, l'attore. Sotto abbiamo il processo, il
+nostro business process, che realizza il servizio e abbiamo anche un ruolo che ha il compito di
+supervisionare la responsabilità su questo processo ed è visibile attraverso una determinata interfaccia.
+Abbiamo quindi il business object, che è quell'elemento che viene acceduto dal business service; qui
+abbiamo riprodotto i pattern di base. Soprattutto all'inizio conviene partire da questo, non è detto che poi
+la struttura del diagramma segua esattamente questa struttura composta da sei elementi, ma potrebbero
+essercene anche di più così come di meno, dipende dal caso; però soprattutto all'inizio conviene partire da
+questo.
+Innanzitutto la domanda da chiedersi è qual è il servizio che si vuole offrire? Il servizio che si vuole offrire è
+un servizio di creazione di un nuovo report. Quindi potremmo chiamarlo Customized Reporting Service. Un
+consiglio: cercate sempre, anche se dovrebbe essere evidente, leggendo l'icona, la decorazione della
+struttura, del costrutto che andiamo a inserire nel nostro diagramma, comunque di inserire anche
+nell'etichetta dell'elemento il nome che evoca la tipologia, appunto, di elemento, in questo caso il service.
+Abbiamo detto che offriamo questo servizio. A chi lo offriamo? Lo offriamo al top manager, quindi in
+questo caso l'utilizzatore non è un customer, non è un cliente dell'azienda, ma è un attore interno. Non
+cambia assolutamente nulla, è una situazione normalissima perché comunque è un utilizzatore di un
+servizio a livello business che io metto a disposizione e al momento non è descritto qual è il processo in
+dettaglio. Però abbiamo detto che è utile associare al servizio anche il processo che lo implementa.
+Potremmo chiamarlo Customize Reporting Process, Reporting Creation Process, potremmo chiamarlo... Va
+abbastanza a preferenze; vedete che l'intero nome non appare, conviene sempre avere piena visibilità
+dell'etichetta; per un'ottima visibilità si dovrebbe anche fare in modo che tutte le entità abbiano tutte la
+stessa misura. Per questo motivo Archi mette a disposizione una funzionalità, che vedete: match eight,
+match with, match size, permette di raggrupparle tutte alla stessa dimensione. In questo caso però va a
+prendere la dimensione più piccola; ecco adesso non entro troppo nel dettaglio però cercate il più possibile
+di avere le dimensioni corrette, le dimensioni identiche, per quanto possibile. Quindi io creo il mio
+processo, che offre questo servizio, che quindi viene utilizzato dal top manager. Qual è l'entità che in
+qualche modo è responsabile della creazione del processo? Abbiamo detto che c'è un data analyst, questo
+data analyst è quindi l'elemento che mi offre questa supervisione, il ruolo; che viene offerto attraverso
+un'interfaccia, non è specificato qui esattamente qual è questa interfaccia, non si parla in maniera specifica,
+potremmo immaginare che a una scrivania, a un ufficio, viene messo a disposizione questo servizio, che
+può essere usato dal mio manager. E che tipo di oggetto utilizza? in realtà qua non è descritto, potremmo
+anche evitare e non definire nulla a livello di business object. Quindi questo è l'esempio in cui noi non
+andiamo a inserire il business object. Perché? Perché non è rilevante, o meglio non è ancora specificato,
+
+quindi a questo livello di dettaglio potremmo anche evitare di inserire il nostro business object. C'è un
+aspetto però da sottolineare all'interno del testo e nello specifico quando dice la compagnia già offre un
+servizio di questo tipo, però in questo caso noi stiamo offrendo un servizio di tipo customizzato, quindi vuol
+dire che il nostro Customized Reporting Creation Process potrebbe appartenere a un gruppo di processi che
+offre servizio appunto di costruzione del servizio di costruzione di Report, che in questo diagramma non è
+necessario far vedere, ma vista la specifica del testo, probabilmente potrebbe anche essere utile far
+emergere il fatto che esiste una funzione aziendale, reporting function, possiamo chiamarla così, a cui
+questo elemento appartiene. Quindi, qui io sto dicendo esiste questa funzione aziendale tra le altre, i
+diversi processi che vengono offerti da questa funzione aziendale, che ricordo, le funzioni sono
+un'aggregazione, o meglio un'unione omogenea di oggetti di tipo comportamentale, in questo caso di
+processi, c'è anche questo. Gli altri non sono visibili, non li sto definendo perché non sono rilevanti, quello
+che sto dicendo è che però esiste questa funzione aziendale, a cui appartiene a anche questo processo. In
+questo modo noi abbiamo raccontato, abbiamo descritto in maniera più formale, quello che in maniera
+informale è descritto all'interno del testo di questo esercizio. Piccola nota: se io sposto l'elemento fuori
+dall'elemento contenuto, la relazione che prima era nascosta, adesso è esplicita e evidente. Poi vado a
+definire il secondo passaggio, sempre di tipo composition, quindi data availability check, secondo step; il
+terzo step è quello di tool development e il quarto step è quello di report delivery. Abbiamo i nostri passi,
+però al momento ho solo raggruppato questi passi all'interno dell'elemento contenitore che è il processo
+generale; per questo motivo è necessario anche definire la sequenza corretta fra le varie attività. Quindi
+utilizzando la relazione di tipo trigger, io definisco il Control Flow, che in linea generale definisce
+l'andamento del mio processo. Il resto del mio diagramma rimane praticamente identico, perché è l'unico
+elemento diverso che sono andato a inserire all'interno di questo esercizio. Passiamo a un altro esempio. In
+questo caso abbiamo sempre Speedy, la nostra solita società, che però in questo caso offre il medesimo
+servizio via web, attraverso un'interfaccia web, che permette in maniera del tutto autonoma, quindi non
+più con il supporto del data analyst, attraverso alcuni passaggi, alcuni step, di crearsi il proprio report.
+Rispetto a prima noi cos'è che abbiamo? Abbiamo sempre una struttura dove il top manager, anzi io adesso
+stavo aggiungendo il top manager ma non è la cosa corretta: la cosa corretta è, visto che il top manager ce
+l'ho, lo posso andare a pescare dalla libreria di elementi che sono già stati definiti; non vado a pescare dalla
+libreria il servizio Customize Reporting Service, perché quello là è un servizio manuale. Noi adesso stiamo
+parlando di un altro servizio, che è un servizio automatizzato, quindi Self Service Customized Report
+Service, possiamo chiamarlo; allarghiamo un minimo così almeno leggiamo il titolo per intero. A differenza
+di prima l'interfaccia con cui accedo a questo servizio, abbiamo detto, è un sito web, un'applicazione web,
+quindi dico che il sito web è assegnato al Self Service, al servizio, questo servizio serve il top manager;
+dietro le quinte ho un processo che possiamo chiamare Self Service Customized Report Process; vedete che
+definisco anche i passi. Quindi, a questo punto, già che ci sono, allargo la dimensione del servizio,
+dell'immagine, qui sussiste una realize; non ha senso mettere nessun ruolo, perché servizi automatizzati
+vengono rappresentati utilizzando lo stesso pattern, però rispetto a prima questo pattern non presenta
+nessun ruolo. A questo punto io quello che devo fare è semplicemente aggiungere sempre con gli
+annidamenti che abbiamo visto, select area, posso andare a aggiungere il secondo passaggio, che è analyze
+product e l'ultimo è il create report. Adesso non cerchiamo di verificare la fattibilità e la correttezza e poi la
+semantica dell'esempio: sono solo un esempio per capire appunto come utilizzare Archi. Come prima i
+trigger, per definire quello che è il Control Flow, che definisce il mio processo e in questo caso, potremmo
+anche arricchirlo con qualche dato. Nello specifico noi cosa potremmo dire? Che per eseguire questa
+operazione, Select Area, sono una Delivery Company, voglio vedere per esempio qual è l'andamento nelle
+operazioni di consegna in diverse aree geografiche, potrei immaginare di avere all'interno del mio sistema
+informativo l'elenco delle aree, geographical area; ed è il set di dati che accedo per questa attività. Ho
+bisogno anche dell'elenco dei prodotti su cui fare la mia analisi; anche qui, products. A livello business
+cerchiamo unicamente di tenere la relazione di tipo accesses, non stiamo a specificare se è in lettura,
+scrittura e quant'altro... E in ultimo abbiamo, visto che sto creando, vado ad arricchire quello che è il report.
+
+Potevo fare lo stesso lavoro anche nell'esercizio precedente, l'ho fatto qui, giusto per far vedere un
+esempio diverso. Quello che posso far vedere, anche, è dire che quella funzione aziendale che avevamo
+prima, reporting function, adesso non solo contiene quel Customized Process di prima, ma contiene anche
+questo processo che ho appena creato. Quindi, se guardo nella sua interezza tutti i diagrammi che sono
+stati creati, vedo appunto che prima la reporting function conteneva questo processo, adesso la reporting
+function contiene quest'altro processo. Potrei anche, in un altro diagramma, è solo per esempio, andare a
+prendere reporting function, allargarlo, andare a prendere il mio processo e andare a prendere l'altro
+processo. Vedete? In automatico mi viene detto guarda che uno compone l'altro. Potrei anche annidarli e
+questa è un'altra prospettiva che dò rispetto alla mia architettura a livello business. Continuiamo con un
+altro esempio, andando a prendere un esempio totalmente diverso, che riguarda una compagnia di
+assicurazioni. In questo caso la compagnia di assicurazioni vuole offrire un nuovo servizio di assicurazioni
+per piccoli oggetti dal valore inferiore rispetto ai 2000 dollari, che può essere gestito completamente
+online, solo però da quei clienti che sono considerati affidabili. Il nuovo processo, che sottende questo
+servizio, inizia quando la nuova richiesta di assicurazione viene ricevuta dal sistema. Allora le credenziali
+del cliente che si è loggato e che ha fatto richiesta, in qualche modo vengono verificate per vedere se è
+considerato "reliable" oppure no, esiste, immaginiamo, un meccanismo automatizzato che mi permette di
+farlo. A questo punto il customer può fare l'upload della foto dell'item, dell'oggetto che vuole assicurare
+con i suoi dettagli e immaginiamo che esista dietro le quinte un valutatore che deve stimare quello che è il
+prezzo del premio assicurativo. Se il prezzo del bene, se il prezzo è considerato minore dei 2000 $, allora è
+quindi considerato questo small object, il sistema invia un contratto al cliente e aspetta la copia firmata. Se
+invece il prezzo è superiore ai 2000 $ il sistema manda semplicemente un messaggio dicendo: <<guardate
+che le condizioni di questo servizio non sono rispettate perché assicuriamo con questo tipologia di servizio
+solo beni di piccolo valore.>> Allora in questo caso noi cosa abbiamo? Abbiamo che il mio customer è il
+destinatario del mio servizio. Il mio servizio, lo possiamo chiamare Insurance Service, ok? Questo insurance
+service è offerto attraverso, abbiamo detto, un'interfaccia web, quindi la parte visibile del mio diagramma,
+a livello business, l'abbiamo definita. Il dietro le quinte è un po' più articolato rispetto agli esempi
+precedenti: abbiamo sempre il nostro processo, Insurance Process, capite che la maggior parte di questo
+esempio verte sulla specifica del processo, per questo motivo già preparo una zona ampia per ospitare il
+tutto, questo processo realizza questo servizio, è un sistema totalmente automatizzato, quindi, almeno lato
+customer, quindi non c'è bisogno del ruolo che ha la supervisione di tutto il processo. Al contrario,
+immagineremo, vedremo anzi, più che immagineremo, vedremo che sarà compito del sistema quello di
+assicurarsi che il Control Flow venga rispettato. Rispetto ai casi precedenti, qui c'è da notare, ci sono da
+notare due cose: la prima è che è evidente il perché il mio processo inizia; viene descritto in maniera chiara
+il fatto che il mio processo inizia a causa dell'arrivo di una nuova richiesta. Questo è il tipico esempio che
+evidenzia la necessità di inserire un business event; un business event quale elemento scatenante del mio
+processo. Quindi, l'evento new insurance request, può essere considerato come il trigger di tutto il mio
+processo. Prima non era stato definito in maniera chiara quindi non era necessario, qui è definito quindi
+significa che quello che devo modellare deve tener conto anche di questo aspetto. Poi ho tutte le attività,
+sempre come composition, la prima attività check customer ability; e li unisco attraverso un trigger. Perché
+metto questo evento fuori dal processo? Semplicemente perché non è un'azione che fa il processo ma è un
+qualcosa che avviene e che fa nascere il processo; per questo motivo non lo inserisco, non lo annido
+all'interno del processo. Il processo in realtà ha come dominio, come prima attività che gestisce. questa del
+check. E rispetto all'altro caso, secondo aspetto peculiare di questo esercizio, è che io ho comportamenti
+diversi a seconda di alcune variabili; nello specifico, potrebbe accadere che il mio customer non è reliable,
+oppure il customer è stato definito come reliable, a seconda di quell'analisi che abbiamo detto può essere
+fatta. Questo cosa significa? Significa che qui ha un ruolo, il junction come elemento di specifica di una
+decisione. Junction che può avere and or not come semantica, dove l'or lo devo leggere come xor. Quindi,
+arrivati qui, possono accadere due cose: sono reliable, non sono reliable. Immaginiamo: non sono reliable,
+customer not reliable, passiamo un attimo questo, ci sta, oppure customer reliable. Ecco, qui, diciamo che
+
+non è proprio corretto quello che abbiamo fatto, semplicemente perché conviene sempre indicare come
+etichetta di un'attività, di un elemento comportamentale, un verbo. E qui non ho il verbo, soprattutto per i
+processi, qua ho il check, quindi, verifica: customer not reliable, customer reliable, in realtà sono due stati.
+In realtà questo customer reliable non ha molto senso, ha più senso dire ok, visto che l'ho considerato
+reliable posso chiedere l'upload photo and detail. Sul customer non reliable il testo non specifica nulla, se
+non è affidabile cosa fa? Non è scritto. Quello che potremmo dire inform that is not reliable. Come già
+detto, l'intenzione, in un diagramma di questo tipo, quando si parla di processi, è di non dettagliare il
+processo, ma dare un'idea generale di come accade il processo. Poi quello che bisogna fare è prendere
+questo scheletro di processo, mapparlo, per esempio in BPMN, con un linguaggio più adeguato, però essere
+certi che almeno il flusso, almeno l'idea generale venga rispettata. Possiamo vederlo come un insieme di
+requisiti, in qualche modo. Questo ramo poi alla fine muore perché non è reliable, non vado più avanti, non
+esiste un altro aspetto, appunto, non esiste il fatto di un oggetto, di un costrutto grafico che mi dice <<il
+processo è terminato>>, non ho più nessun'altra attività, quindi è terminato. Poi abbiamo un'altra attività
+che è quella di, abbiamo detto, dopo aver fatto l'upload, estimate price; viene stimato il valore o Value,
+dell'oggetto che è stato che è stato notificato e descritto, quindi possono accadere, anche qui, due cose: o
+la valutazione è superiore ai 2000 dollari, quindi siamo ancora nel caso di prima, considerare il junction
+come xor, o la valutazione superiore ai 2000 $ e allora abbiamo detto che in tal caso dobbiamo send service
+conditions, perché non è coperto da questo tipo di servizio, devo cliccare su junction poi su trigger. Oppure,
+se invece il valore inferiore 2000 dollari, devo inviare il contratto e devo attendere che il contratto venga
+firmato. Aggiungiamo i trigger che mancano e qui abbiamo praticamente concluso, se non per un ultimo
+aspetto abbastanza importante, che è l'aspetto che riguarda quell' impiegato che ha il compito di stimare il
+prezzo. Qui è chiaro, nel testo, che io devo evidenziare il fatto che questa attività, di estimate price, è sotto
+la responsabilità di un attore ben preciso, o meglio, di un ruolo ben preciso, che è il valutatore. Quindi è un
+mio impiegato che nel suo ruolo di valutatore, stima il prezzo del bene. Notate quindi che io ho un'attività
+dell'intero processo, che è sotto la responsabilità di questo attore. Questo non significa che il mio processo
+non è automatizzato; o meglio: è comunque automatizzato nei confronti del customer, perché il custom
+non vede nient'altro che un sito web. Se dietro c'è un'attività di tipo umano, questa comunque è nascosta
+agli occhi del mio customer. Prendiamo a questo punto l'ultimo esempio: si tratta ancora dell'esempio del
+customer dell'insurance company, con lo stesso tipo di servizio, con lo stesso tipo di attività, l'unica cosa
+che distingue questo esempio è che non c'è più l'azione in cui io devo scrivere il contratto e inviarlo, ma
+questo contratto lo devo far firmare a un legale rappresentante, cioè attraverso uno scambio di documenti
+via email, il customer legale rappresentante della mia società, della società di insurance company, in
+qualche modo producono il contratto, quindi non devo aspettare il contratto che a un certo punto arrivi,
+ma devo specificare meglio questa fase, dicendo appunto che il contratto viene definito attraverso uno
+scambio documentale fatto via email. Adesso, per semplicità io quello che posso fare è prendere pari pari
+quello che è stato fatto prima, perché per la maggior parte il diagramma non cambia, perché ho sempre
+tutto via customer, l'insurance service, tutto via website, questo è l'evento che fa scatenare il mio processo,
+il processo resta praticamente lo stesso, se non per l'ultima fase. Ho sempre l'evaluator che fa la sua
+attività; l'ultima fase non è Send Contract e Wait for Sign a Contract, posso cancellarli, attenzione, dalla mia
+vista, non dall'intero modello perché nell'altro diagramma deve comunque apparire, aggiungo il mio nuovo
+processo e lo chiamo Sign Contract; questa attività però è un'attività abbastanza particolare, perché?
+Innanzitutto questa è un'attività che è sotto la supervisione, almeno lato compagnia, del rappresentante
+legale. Quindi io lo assegno, immaginiamo più che un ruolo, è proprio un attore, in questo caso; quindi
+posso usare sia ruolo che attore da assegnare a un'attività ed quello che ho appena fatto. Però l'altra
+peculiarità è che questo servizio, questa questa attività, non viene fatta con il sito web, ma viene fatta
+attraverso un lavoro di email. Quindi vuol dire che il legale rappresentante, in qualche modo, è visibile
+attraverso un'interfaccia che è la mia email interface. Quindi, ho l'operatore di composizione e qui nascono
+i dubbi, perché? Perché io potrei dire che questo servizio è visibile anche attraverso questa interfaccia. In
+questo caso mi trovo nella situazione in cui, ed è ammissibile, un attore accede a un servizio accessibile
+
+attraverso due interfacce; è possibilissimo avere un servizio che viene esposto attraverso più interfacce. Qui
+in realtà, siamo in una situazione particolare, in cui non è che tutto il servizio è accessibile attraverso queste
+due interfacce, ma tutto il servizio tranne un'attività, è via website e tutto il servizio tranne una sola
+attività, che è quella di Send Contract, attraverso l'email. Quindi potrebbe anche essere utile, per rimarcare
+questo aspetto, ipotizzare di avere un sottoservizio del mio insurance service, sempre con la relazione di
+annidamento di composizione, che chiamo Contract Signing Service. Magari è un servizio che poi viene
+riusato anche per altri servizi all'interno della mia organizzazione. E posso specificare guarda che questo
+servizio è accessibile, solo questa porzione del mio servizio, è accessibile attraverso l'email. Posso dire
+anche un'altra cosa: questo servizio è realizzato da questo processo, quindi, rispetto a prima, (rendiamolo
+un po' più leggibile) dico che l'intero processo realizza l'insurance service e in particolare questo processo
+realizza una sottoparte del servizio che è il Contract Signing Service. In questo modo io cosa ho? Ho una
+specifica più di dettaglio di un sottoinsieme di elementi che fanno capo al servizio generale. Con questo
+metterò a disposizione i modelli Archi che avete appena visto, vi invito a fare altri esempi ispirandovi a
+questi e a utilizzare comunque anche le sessioni live poi per approfondire altre questioni legate alla
+modellazione con Archimate.
+
+

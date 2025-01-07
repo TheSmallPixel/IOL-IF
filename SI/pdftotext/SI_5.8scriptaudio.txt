@@ -1,0 +1,48 @@
+Lezione 5 modulo 8
+In questo video, introduciamo brevemente il concetto di Rete Locale Virtuale o VLAN. La tecnologia VILAN
+consente di creare delle reti locali logicamente separate a partire da un'unica architettura fisica di rete
+locale commutata oppure no. Di fatto, quello che viene fatto usando VLAN è sostanzialmente di separare a
+livello logico stazioni collegate a una certa rete locale fisica, sulla base ad esempio dell'appartenenza, sulla
+base delle opportunità dovute per esempio a motivi legati alla sicurezza, alla segregazione di traffico e
+quant'altro. In realtà, è possibile definire reti virtuali separate a partire da un'unica struttura fisica in
+maniera semplice se la struttura fisica è ad esempio a centro stella, cioè se la struttura fisica è costituita da
+un unico bridge con diverse porte collegati a diverse stazioni e, se le diverse stazioni sono in qualche modo
+da separare, la separazione può avvenire a livello di porta al bridge, per cui banalmente se all'interno della
+rete locale del Politecnico io voglio separare ad esempio il traffico generato e diretto agli studenti, generato
+e diretto ai professori e generato e diretto agli amministrativi, in buona sostanza, posso farlo banalmente
+andando a imporre delle regole nello switch che separano a livello di porta il traffico che deve andare solo
+verso gli studenti, solo verso i professori e solo verso il personale amministrativo. La cosa si complica un po'
+se la struttura fisica della rete locale non è un centro stella, in buona sostanza non è una stella, ma è una
+struttura ad albero in cui ad esempio le diverse classi di stazioni sono collegate a diversi switch del livello
+più basso dell'albero stesso. Per cui uno studente, un traffico viola, una stazione viola è collegata a questa
+porta di questo switch, un'altra stazione viola è collegata a quest'altra porta di questo switch e a livello di
+switch superiore, diciamo così, di fatto le stazioni viola sono raggiungibili attraverso diverse porte. In
+questo caso quello che si fa, quello che si può fare per realizzare delle reti virtuali su una rete fisica di
+questo tipo è usare un protocollo che stiamo 802.1q anche detto LAN tagging per cui, in buona sostanza,
+vengono tagliate cioè viene assegnata un'etichetta alle trame che appartengono a stazioni di diverso tipo,
+quindi alle stazioni che appartengono alla categoria studente verrà assegnato un'etichetta di un certo tipo
+all'interno del loro trame e così via per quanto riguarda le stazioni che appartengono alla classe professori e
+alla classe personale amministrativo. Queste etichette sono incapsulate dentro le trame di livello 2, quindi
+l'informazione che viene inserita dentro le trame Ethernet o 802.3 a seconda della tecnologia che si sta
+usando. Dal punto di vista dei dispositivi di livello superiore, quindi dal punto di vista di un router di bordo
+Autonomous System ad esempio, le reti virtuali locali equivalgono di fatto a diverse reti locali fisiche, quindi
+è come se esistessero, collegate al router Autonomous System del Politecnico, tre reti locali fisiche separate
+ciascuno dei quali per servire gli studenti, i professori e il personale tecnico amministrativo. Dal punto di
+vista architetturale, il protocollo 802.1q, il protocollo che si occupa del tagging delle trame, definisce un
+livello intermedio tra LLC e il livello di accesso Ethernet, il livello azzurro nella slide che si occupa di inserire
+all'interno delle trame 802.3 o Ethernet i tag, quindi le label delle stringhe di bit di 2 byte in buona sostanza
+che servono appunto per identificare le diverse classi delle trame della rete virtuale che si vuole definire. I
+tag, inseriti dentro le trame, in realtà consentono di veicolare anche informazione aggiuntiva al di là della
+classe. Nella slide è mostrato un formato tipo per un taglio 802.1q, per cui in buona sostanza questo tag
+802.1q contiene un campo di priorità che serve per identificare appunto la priorità del traffico trasportato
+dalla trama, quindi traffico background, best effort o quant'altro, un flag di un bit che serve ad indicare la
+possibilità o l'opportunità di trovare la trama in caso in cui gli switch siano in qualche modo in congestione
+oppure no, e l'ultimo campo che è l'identificativo VLAN che serve appunto per identificare le diverse classi
+di VLAN che devono essere definite. Quindi in quest'ultimo campo, per rifarci all'esempio di prima,
+andremo a codificare un numero che corrisponde o agli studenti del Politecnico, ai professori del
+Politecnico o al personale tecnico amministrativo del Politecnico. L'inoltro, al livello degli switch che
+supportano tagging si basa non più solo sugli indirizzi MAC di destinazione ma sui tag quindi lo switch deve
+essere in grado di leggere se vogliamo anche il protocollo 802.1q, quindi i bit aggiunti dal protocollo 802.1q
+per codificare le diverse classi della rete virtuale locale.
+
+

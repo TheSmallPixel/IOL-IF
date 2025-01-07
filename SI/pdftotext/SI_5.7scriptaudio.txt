@@ -1,0 +1,157 @@
+Lezione 5 modulo 7
+In questo modulo, parleremo di CRM, la gestione della relazione con il cliente. In questo caso abbiamo una
+focalizzazione soprattutto su un insieme di funzionalità che sono quelle relative al contatto con il cliente.
+Questo contatto può avvenire in due direzioni: verso il cliente che chiama un'azienda per esempio per
+avere dei servizi, delle informazioni, supporto e quindi di tipo in bound oppure per raggiungere il cliente per
+offrire dei prodotti, quindi è un contatto di tipo out bound. Tipicamente vorremmo gestire queste due
+direzioni di contatto. Abbiamo già visto che il CRM può anche essere un modulo inserito all'interno di un
+ERP che potrebbe fornire delle funzionalità che sono tipiche di questa relazione. Però esistono molti
+prodotti che gestiscono la gestione con il cliente come obiettivo principale del prodotto, ovviamente
+possono offrire delle funzionalità più specifiche, più sofisticate rispetto a quelle che possono essere inserite
+all'interno di un'estensione di un prodotto più generico. Un altro aspetto caratteristico dei sistemi CRM è
+che supportano la cosiddetta multicanalità. In genere, il contatto col cliente si suppone che possa avvenire
+tramite vari canali, abbiamo già parlato di multicanalità quando abbiamo parlato di vari aspetti di business
+e del fatto che si potessero utilizzare i canali diversi che possono essere gestiti da un'azienda in un modo
+integrato, quindi un contatto, ad esempio, via mail, piuttosto che un contatto telefonico, piuttosto che un
+contatto di tipo diretto all'interno di un punto di vendita. Quello che è importante, ancora come abbiamo
+visto nel caso dei sistemi ERP, è che si abbiano le caratteristiche tipiche di questi sistemi, quindi il fatto di
+avere dei moduli dedicati a varie tipologie di funzionalità e il fatto che si vogliano gestire tutti questi canali
+in un modo integrato. Quindi se io ho un aggiornamento effettuato tramite un canale vedrò questo stesso
+aggiornamento anche se poi contatterò l'azienda tramite un altro canale. Quindi la multicanalità è integrata
+all'interno del tipico sistema CRM. Parlando di modularità, abbiamo tre tipi di moduli caratteristici che
+andremo poi a esaminare successivamente. Abbiamo il cosiddetto CRM operativo, il CRM analitico e il CRM
+collaborativo. Come vedremo, ciascuno di questi modi a sua volta avrà all'interno delle tipiche funzionalità
+che verranno anch'esse organizzate in moduli che possono essere fornite agli utilizzatori. Ovviamente tra
+questi moduli ci saranno dei flussi, in particolare il CRM collaborativo, che raccoglierà degli indicatori di tipo
+strategico per vedere se gli obiettivi dell'azienda sono stati raggiunti, riceverà flussi sia dal CRM operativo
+che da quello analitico, CRM operativo sarà quello che supporterà la gestione proprio della chiamata,
+dell'interazione col cliente, quindi la parte transazionale che abbiamo visto già all'interno della piramide di
+Anthony di gestione delle operazioni, CRM analitico ci servirà per analizzare i dati e quindi ci saranno dei
+flussi che andranno dal CRM operativo a quello analitico, ma anche dei flussi che andranno dall'analitico
+all'operativo perché, analizzando i dati, ad esempio, costruirò dei profili per gli utenti e può darsi che uno
+dei profili degli utenti possa essere, ad esempio, se un CRM è dedicato al contatto con i clienti per quanto
+riguarda l'utilizzo delle loro carte di credito, potrebbe essere una segnalazione di un utilizzo anomalo
+rispetto al profilo dell'utente e quindi un contatto con l'utente che viene fatto tramite il CRM operativo.
+Quindi abbiamo questi tre moduli principali all'interno di un CRM. Quello che faremo adesso è andare a
+esaminare questi moduli, in particolare vedremo le caratteristiche del CRM operativo, del CRM analitico e
+cominceremo anche a vedere alcune caratteristiche di tipo architetturale tecnologico che possono essere
+relative all'utilizzo di dati di tipo analitico. Vediamo quindi questi moduli con un'articolazione maggiore.
+Vediamo che all'interno del CRM operativo abbiamo marketing, automazione vendite, servizi ai clienti
+come moduli tipici. Il marketing sarà orientato a contattare possibili clienti per i prodotti e quindi legato alla
+vendita dei prodotti; automazione e vendite sarà orientato soprattutto a fare varie operazioni legate alla
+vendita ai clienti, servizi ai clienti saranno soprattutto servizi di post vendita o servizi per gestire eventuali
+problemi e così via. Abbiamo già visto i vari flussi di dati e all'interno del CRM analitico abbiamo parlato di
+profilatura e analisi dei clienti. Dal punto di vista tecnologico, noi possiamo vedere che i dati saranno
+realizzati in modo diverso. Per il sistema operativo, come abbiamo visto nel caso delle ERP, i vari moduli
+faranno riferimento ad un'unica base di dati che gestirà in modo integrato, quindi avremo di nuovo l'unicità
+del dato, i dati che vengono forniti dai vari moduli del CRM operativo. Dal punto di vista poi del
+trasferimento ad altri moduli, noi potremmo avere dei flussi, appunto dal CRM operativo, dei flussi che ci
+
+porteranno ad avere trasferimenti di dati ad altri moduli di back end che potranno utilizzare. Tipicamente,
+abbiamo visto: questo può essere un flusso verso gli ERP, ma può essere anche un flusso verso altri moduli
+applicativi dell'azienda. Nel caso del CRM analitico, tipicamente noi andremo a costruire quello che è un
+datawarehouse. Ci sarà un modulo dedicato a questa tecnologia, che è una tecnologia che consente di
+analizzare i dati che provengono, vengono estratti dal database operativo, con un'operazione di estrazione
+e trasformazione, vengono caricati in un datawarehouse che consente di fare analisi dei clienti secondo
+delle dimensioni predefinite, quindi, ad esempio, rispetto ai prodotti, rispetto alla collocazione geografica
+dei clienti nel tempo e così via. L'obiettivo sarà analizzare le caratteristiche del cliente, vedere, ad esempio,
+se ci sono clienti che sono classificabili all'interno di una certa tipologia, quindi farne la profilatura ed
+eventualmente utilizzare queste informazioni per poi svolgere attività di tipo operativo, ad esempio, per
+dare servizi ai clienti in modo differenziato a seconda del profilo del cliente. Vediamo adesso di parlare più
+in dettaglio, appunto, dei moduli principali che sono all'interno di un CRM. È chiaro che i moduli principali
+sono all'interno del CRM operativo, che ci consente appunto di effettuare tutte le operazioni, le transazioni
+di contatto con il cliente. Vediamo articolati all'interno di questa suddivisione ulteriori moduli: ad esempio,
+vediamo di nuovo i nostri tre moduli, marketing, vendite e servizi ai clienti e vediamo che, all'interno del
+marketing, io posso avere diverse operazioni, generazione liste cliente, gestione campagne, Cross-selling e
+Upselling. Cominciamo a vedere quelle che sono le caratteristiche di queste funzionalità. Quando vado a
+generare delle liste dei clienti, vado a cercare quelli che sono i clienti, acquisendo eventualmente
+informazioni da attività svolte precedentemente oppure da liste che ho acquisito dall'esterno, vado a
+cercare il cliente che è più opportuno contattare per vendere un certo tipo di prodotto. Quindi io cerco di
+generare liste di clienti da contattare che vengono segnate degli operatori per quanto riguarda il contatto
+effettivo e questo può essere inserito all'interno di un ciclo di vita della vendita. Andiamo a vedere un
+attimo questo ciclo di vita possibile che possiamo avere all'interno di un sistema di questo tipo. Noi avremo
+un contatto diretto del cliente oppure una lista dei clienti generata che ci porta poi a decidere, prima come
+gestire questo cliente, e poi effettivamente seguire la vendita ed eventuali ordini successivi. Quindi, dal
+momento in cui abbiamo appunto un cliente contattabile, dobbiamo prima registrare il cliente se è un
+nuovo cliente, oppure appunto registrarlo da liste esterne e poi assegnarlo a dei venditori, quindi questa è
+una fase che è preliminare a quella che poi sarà la fase successiva di vendita. Il venditore cercherà di
+contattare il cliente con una offerta di possibili prodotti per questo cliente e viene generata, tipicamente
+come risultato, una offerta che è personalizzata per quel singolo cliente, secondo quelli che sono i requisiti
+per il cliente; successivamente ci sono le operazioni più amministrative di generazione dell'ordine e di
+esecuzione dell'ordine che spesso poi escono dalla gestione del CRM e vengono gestite all'interno di un
+sistema di ERP. Ovviamente tutte queste informazioni sono integrate e uno degli obiettivi è quello di
+cercare di convertire quello che è il potenziale cliente in effettivamente un ordine del cliente, quindi uno
+dei parametri che si cerca di migliorare è quello che viene chiamato il Convention Rate, cioè qual è la
+percentuale di clienti che effettivamente poi acquisteranno il prodotto. Quindi vediamo che abbiamo
+diverse fasi in questo ciclo di vita che parte dalla selezione dei clienti o da un elenco dei clienti da
+contattare all'effettiva gestione di un ordine da parte dei clienti. Quindi quello che possiamo fare appunto
+nelle attività di marketing è non solo gestire clienti, ma anche creare delle vere e proprie campagne, quindi
+contattare sistematicamente per promuovere, ad esempio, un certo prodotto, un insieme di clienti che
+possono essere considerati adatti per quella tipologia di prodotto. Si vuole arrivare a evitare di contattare i
+clienti che probabilmente non compreranno quel prodotto, quindi, per avere queste informazioni
+ovviamente possono essere utili le operazioni fatte dal CRM analitico di profilatura che ci dicono quali sono
+le caratteristiche del cliente. La gestione campagne mi consentirà di prendere una lista di clienti che è stata
+generata adatta a un certo prodotto e di contattarli in modo sistematico attraverso i vari canali di contatto
+che saranno stati scelti. Altre operazioni che sono tipiche di attività di marketing sono orientate a cambiare
+il tipo di prodotti che può avere un certo cliente. Tipicamente sono due operazioni che si possono fare,
+chiamate Cross-selling e Upselling. Cross-selling vuol dire offrire ad un cliente con certe caratteristiche
+anche altri prodotti che potrebbero essere interessanti per questo cliente. Upselling, invece, è uno sviluppo
+
+della relazione col cliente nella direzione di fornire il prodotto scelto dal cliente con caratteristiche più
+sofisticate, quindi un prodotto tipicamente più caro che però può interessare il cliente perché ha certe
+caratteristiche in più rispetto a un prodotto base. Quindi nel marketing siamo orientati a contattare i clienti
+per offrire prodotti secondo appunto le varie modalità che abbiamo visto adesso. Per la vendita invece
+vogliamo effettuare quella che era la seconda parte del ciclo di vita che abbiamo visto prima per, dopo il
+primo contatto del cliente, andare avanti. Noi abbiamo sostanzialmente una differenziazione fra quelli che
+possono essere i potenziali clienti che sono già clienti dell'organizzazione oppure dei nuovi clienti, quindi
+noi andremo a fare una gestione dei contatti quando partiremo da clienti che abbiamo già all'interno della
+nostra clientela oppure potremmo avere una gestione delle opportunità per nuovi contatti che vogliamo
+sviluppare e poi abbiamo le fasi della preparazione dell'offerta fino ad arrivare effettivamente alla vendita.
+Un'altra attività di tipo operativo che viene svolta all'interno del CRM è la possibilità di contattare i clienti
+attraverso contact center di tipo diverso, ad esempio i tipici call center, quindi la possibilità di gestire
+chiamate da parte dei clienti che vengono riconosciuti all'interno del sistema, quindi si ha già una
+conoscenza base di quelle che sono le caratteristiche del cliente dei servizi che sta utilizzando ed eventuali
+problematiche già segnalate, questo grazie alla unicità dei dati che consentono di condividere queste
+informazioni. I canali possono essere diversi. Ovviamente, un canale che si è molto sviluppato negli ultimi
+anni è un canale basato sul web con la caratteristica di self service, quindi la possibilità da parte del cliente
+di trovare già una risposta ai propri dubbi all'interno di un servizio web che lo supporta nell'analisi di quelle
+che possono essere le problematiche. Un'altra tipologia che può essere legata a diversi canali è quella dello
+Scripting delle chiamate, quindi un sistema basato su domande e risposte tipiche che vengono fornite, che
+possono essere date sia dagli operatori sia possono essere la base per lo sviluppo di chat-bot che
+rispondono automaticamente agli utenti sulla base di domande tipiche che vengono fatte in certe situazioni
+e le risposte che vengono date dagli utenti. Nel CRM analitico, noi sostanzialmente vogliamo fare attività di
+analisi. Le attività di analisi possono avere varie tipologie di reporting, ad esempio voglio sapere com'è
+andata una campagna, quindi quali sono stati i risultati in termini di vendite di prodotti di una certa
+campagna, dopo aver fatto un contratto sistematico ad una certa lista di utenti, reporting sull'uso dei
+servizi e sull'uso dei servizi di contatto al cliente e così via. Un altro tipo di servizio è la profilazione e quindi
+l'analisi dei clienti orientata alla segmentazione della clientela. Questo è quello che sarà utile poi per poter
+rispondere in modo personalizzato ai clienti, fornendo i servizi a seconda della tipologia del cliente, ma
+anche poi per organizzare campagne, per offrire prodotti che possano essere di interesse della clientela.
+Un'altra tipica attività di tipo analitico è quella di tipo predittivo. Ad esempio, un'attività di tipo predittivo
+che è molto interessante nella gestione del cliente è quella che analizza la probabilità che ci sia il cosiddetto
+Churn del cliente, il fatto che il cliente lasci il servizio e vada ad utilizzare prodotti di una compagnia
+concorrente. E quindi, si cercano quegli indicatori nel comportamento del cliente che possono portare a
+predire un suo possibile non utilizzo ulteriore dei servizi dell'azienda. Ovviamente poi questo può essere
+seguito da offerte specifiche che vengono fatte al cliente per fidelizzarlo, mantenerlo ed evitare che cambi
+fornitore oppure per risolvere eventuali problemi che sta riscontrando e quindi ancora fare in modo che
+continui a utilizzare i servizi dell'azienda. Per quanto riguarda il CRM collaborativo, abbiamo detto che
+vogliamo soprattutto raccogliere delle informazioni dal CRM operativo e dal CRM analitico per verificare
+l'andamento, utilizzando degli indicatori che possono essere utilizzati a livello decisionale, ad esempio
+spesso le aziende definiscono dei Key Performance Indicator (KPI). Ad esempio, possiamo definire qual è il
+numero di prodotti che vogliamo vendere in una certa campagna oppure il loro valore, un numero di clienti
+di un certo tipo che vogliamo raggiungere con successo. Quindi, definiti questi obiettivi, estraendo le
+informazioni dal CRM operativo e da quello analitico, possiamo poi andare a verificare l'andamento, ad
+esempio con dei cruscotti, quindi con degli strumenti di visualizzazione dell'andamento dell'azienda che
+possono essere utili per un processo di tipo decisionale. Concludiamo, sottolineando quelli che sono i
+benefici che ci sono a utilizzare tecnologie di questo tipo. Di nuovo, è una tecnologia che spesso si
+considera come applicativo da acquisire in modalità Buy, quindi di tipo COTS e quindi abbiamo le
+caratteristiche tipiche dei COTS che sono quelle dell'avere studiato i processi di un supporto per quanto
+
+riguarda il contatto del cliente, la gestione integrata dei canali e così via, che ci porta ad avere una maggiore
+efficienza nel contatto con il cliente e anche una maggiore efficacia, nel senso che riusciamo a raggiungere
+gli obiettivi prefissati perché siamo in grado di profilare gli utenti e di scegliere quelli che possono essere i
+destinatari, ad esempio, di una certa campagna, oppure possiamo ridurre il numero di reclami che arrivano
+dai clienti e quindi anche questo è un obiettivo che mi posso porre, che posso misurare, secondo un criterio
+di valutazione di efficacia.
+
+
